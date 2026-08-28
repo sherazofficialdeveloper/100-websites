@@ -1,2340 +1,1305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Al Dhafra Technical Services | Professional Corporate Support Abu Dhabi</title>
-    <meta name="description" content="Al Dhafra Technical Services provides reliable technical support and professional service solutions in Abu Dhabi with a focus on quality and efficiency." />
-
-    <!-- Google Fonts -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Al Dhafra Technical Services | MEP &amp; Fit-Out Abu Dhabi</title>
+    <meta
+      name="description"
+      content="Al Dhafra Technical Services delivers MEP contracting, turnkey interior fit-out and facility management for properties across Abu Dhabi, UAE."
+    />
+    <link rel="canonical" href="https://aldhafratechnical.ae/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Al Dhafra Technical Services | MEP &amp; Fit-Out Abu Dhabi" />
+    <meta
+      property="og:description"
+      content="Engineering, fit-out and facility management contracting for villas, offices, retail and industrial properties in Abu Dhabi."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome 6 (Free) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        /* ============================================================
-               CSS VARIABLES — Corporate Identity
-            ============================================================ */
-        :root {
-            --color-navy-50: #f0f4f8;
-            --color-navy-100: #d9e2ec;
-            --color-navy-200: #bcccd9;
-            --color-navy-300: #9fb3c8;
-            --color-navy-400: #829ab1;
-            --color-navy-500: #627d98;
-            --color-navy-600: #486581;
-            --color-navy-700: #334e68;
-            --color-navy-800: #243b53;
-            --color-navy-900: #102a43;
-            --color-navy-950: #0a1a2e;
-            --color-teal: #0d9488;
-            --color-teal-light: #14b8a6;
-            --color-gold-50: #fdf8f0;
-            --color-gold-100: #f9ecd4;
-            --color-gold-200: #f4d9a8;
-            --color-gold-300: #efc67c;
-            --color-gold-400: #eab350;
-            --color-gold-500: #d49a2e;
-            --color-gold-600: #b88324;
-            --color-white: #ffffff;
-            --color-gray-50: #f9fafb;
-            --color-gray-100: #f3f4f6;
-            --color-gray-200: #e5e7eb;
-            --color-gray-300: #d1d5db;
-            --color-gray-400: #9ca3af;
-            --color-gray-500: #6b7280;
-            --color-gray-600: #4b5563;
-            --color-gray-700: #374151;
-            --color-gray-800: #1f2937;
-            --color-gray-900: #111827;
-            --radius: 16px;
-            --radius-full: 9999px;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
-            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.08);
-            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.10);
-            --transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --header-height: 72px;
+      /* ----- RESET & VARIABLES ----- */
+      :root {
+        --ink: #101114;
+        --ink-line: rgba(255, 255, 255, 0.12);
+        --ink-fg: #f5f4f2;
+        --ink-muted: rgba(245, 244, 242, 0.62);
+        --bg: #faf9f7;
+        --card: #ffffff;
+        --border: #e3e0da;
+        --fg: #16171a;
+        --muted: #63646a;
+        --primary: #a80052;
+        --primary-bright: #e6297f;
+        --primary-fg: #ffffff;
+        --accent: #f6e8ef;
+        --grad: linear-gradient(120deg, #a80052 0%, #e6297f 100%);
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+        --radius: 8px;
+        --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "DM Sans", system-ui, sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1,
+      h2,
+      h3,
+      .brand strong,
+      .btn,
+      dt {
+        font-family: "Space Grotesk", system-ui, sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      ul {
+        list-style: none;
+      }
+
+      /* ----- UTILITY ----- */
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .section {
+        padding: 96px 24px;
+      }
+      .band {
+        border-block: 1px solid var(--border);
+        background: #f2efe9;
+        padding: 96px 0;
+      }
+      .surface-ink {
+        background: var(--ink);
+        color: var(--ink-fg);
+        position: relative;
+        overflow: hidden;
+      }
+      .grid-lines {
+        position: absolute;
+        inset: 0;
+        opacity: 0.35;
+        pointer-events: none;
+        background-image: linear-gradient(var(--ink-line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--ink-line) 1px, transparent 1px);
+        background-size: 64px 64px;
+      }
+      .grad {
+        background: var(--grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+      .eyebrow.bright {
+        color: var(--primary-bright);
+      }
+      .dash {
+        display: block;
+        width: 32px;
+        height: 1px;
+        background: currentColor;
+      }
+      .section-title {
+        margin-top: 20px;
+        font-size: clamp(26px, 3.4vw, 38px);
+      }
+      .section-title.light {
+        color: var(--ink-fg);
+        max-width: 620px;
+      }
+      .body {
+        margin-top: 18px;
+        color: var(--muted);
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 28px;
+        border: 0;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-primary {
+        background: var(--grad);
+        color: var(--primary-fg);
+      }
+      .btn-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(168, 0, 82, 0.3);
+      }
+      .btn-ghost {
+        border: 1px solid var(--ink-line);
+        color: var(--ink-fg);
+        background: transparent;
+      }
+      .btn-ghost:hover {
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+      .btn-sm {
+        padding: 11px 20px;
+        font-size: 12px;
+      }
+
+      /* ----- HEADER (with scroll animation) ----- */
+      .site-header {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 50;
+        transition: background 0.4s, border-color 0.4s, box-shadow 0.4s;
+        border-bottom: 1px solid transparent;
+      }
+      .site-header.scrolled {
+        background: rgba(16, 17, 20, 0.92);
+        backdrop-filter: blur(12px);
+        border-color: var(--ink-line);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 76px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--ink-fg);
+        transition: var(--transition);
+      }
+      .brand:hover .brand-mark {
+        transform: rotate(-6deg) scale(1.05);
+      }
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        background: var(--grad);
+        color: #fff;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        transition: var(--transition);
+        border-radius: 4px;
+      }
+      .brand-text strong {
+        display: block;
+        font-size: 15px;
+      }
+      .brand-text small {
+        display: block;
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-muted);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+      .nav a {
+        font-size: 14px;
+        color: var(--ink-muted);
+        transition: var(--transition);
+        position: relative;
+      }
+      .nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background: var(--grad);
+        transition: var(--transition);
+      }
+      .nav a:hover {
+        color: var(--ink-fg);
+      }
+      .nav a:hover::after {
+        width: 100%;
+      }
+      .menu-btn {
+        display: none;
+        background: none;
+        border: 0;
+        padding: 8px;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .menu-btn span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--ink-fg);
+        transition: var(--transition);
+        transform-origin: center;
+      }
+      .menu-btn.open span:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+      }
+      .menu-btn.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-btn.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -4px);
+      }
+
+      /* ----- HERO (parallax & fade) ----- */
+      .hero {
+        padding: 0;
+        position: relative;
+      }
+      .hero-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+        transition: transform 0.8s ease;
+        transform: scale(1.02);
+      }
+      .hero:hover .hero-img {
+        transform: scale(1.05);
+      }
+      .hero-fade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(100deg, var(--ink) 18%, transparent 85%);
+      }
+      .hero-content {
+        position: relative;
+        padding-top: 168px;
+        padding-bottom: 112px;
+        animation: heroFade 1s ease forwards;
+      }
+      @keyframes heroFade {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero h1 {
+        margin-top: 24px;
+        max-width: 900px;
+        font-size: clamp(36px, 6vw, 68px);
+        color: var(--ink-fg);
+      }
+      .lead {
+        margin-top: 26px;
+        max-width: 640px;
+        color: var(--ink-muted);
+        font-size: 17px;
+      }
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 38px;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--ink-line);
+        border: 1px solid var(--ink-line);
+        max-width: 760px;
+        margin: 64px 0 0;
+        transition: var(--transition);
+      }
+      .stats div {
+        background: var(--ink);
+        padding: 22px 20px;
+        transition: var(--transition);
+      }
+      .stats div:hover {
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .stats dt {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--ink-fg);
+      }
+      .stats dd {
+        margin: 4px 0 0;
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-muted);
+      }
+
+      /* ----- ABOUT (image hover) ----- */
+      .about {
+        display: grid;
+        grid-template-columns: 0.85fr 1fr;
+        gap: 56px;
+        align-items: center;
+      }
+      .about-media {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+      .about-media img {
+        transition: var(--transition);
+        transform: scale(1);
+      }
+      .about-media:hover img {
+        transform: scale(1.03);
+      }
+      .about-badge {
+        position: absolute;
+        right: -24px;
+        bottom: -24px;
+        max-width: 300px;
+        margin: 0;
+        padding: 22px;
+        background: var(--grad);
+        color: #fff;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: var(--radius);
+        box-shadow: 0 12px 30px rgba(168, 0, 82, 0.3);
+        animation: badgePulse 3s ease-in-out infinite;
+      }
+      @keyframes badgePulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.02);
+        }
+      }
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        margin-top: 40px;
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .mini-grid div {
+        background: var(--card);
+        padding: 22px 20px;
+        transition: var(--transition);
+      }
+      .mini-grid div:hover {
+        background: var(--accent);
+        transform: translateY(-2px);
+      }
+      .mini-grid strong {
+        font-family: "Space Grotesk", sans-serif;
+        display: block;
+      }
+      .mini-grid span {
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      /* ----- SERVICES (bento with hover) ----- */
+      .bento {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        margin-top: 56px;
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .tile {
+        background: var(--card);
+        padding: 40px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 32px;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+      .tile::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--grad);
+        opacity: 0;
+        transition: var(--transition);
+        z-index: 0;
+      }
+      .tile:hover::before {
+        opacity: 0.04;
+      }
+      .tile:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+      }
+      .tile.span2 {
+        grid-column: span 2;
+      }
+      .tile > div {
+        position: relative;
+        z-index: 1;
+      }
+      .tile .ico {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        background: var(--accent);
+        color: var(--primary);
+        font-size: 20px;
+        transition: var(--transition);
+        border-radius: 4px;
+      }
+      .tile:hover .ico {
+        background: var(--grad);
+        color: #fff;
+        transform: rotate(-6deg) scale(1.1);
+      }
+      .tile h3 {
+        margin-top: 24px;
+        font-size: 20px;
+      }
+      .tile p {
+        margin: 12px 0 0;
+        font-size: 15px;
+        color: var(--muted);
+      }
+      .tile .link {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--primary);
+        font-family: "Space Grotesk", sans-serif;
+        transition: var(--transition);
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .tile .link::after {
+        content: "→";
+        transition: var(--transition);
+      }
+      .tile .link:hover {
+        gap: 12px;
+      }
+
+      /* ----- WHY (staggered cards) ----- */
+      .why {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+        gap: 56px;
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .why-grid > div {
+        background: var(--bg);
+        padding: 32px;
+        border-left: 2px solid var(--primary);
+        transition: var(--transition);
+      }
+      .why-grid > div:hover {
+        background: var(--card);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+      }
+      .why-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .why-num {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #d7d3cb;
+        transition: var(--transition);
+      }
+      .why-grid > div:hover .why-num {
+        color: var(--primary);
+      }
+      .why-grid h3 {
+        margin-top: 24px;
+        font-size: 18px;
+      }
+      .why-grid p {
+        margin: 8px 0 0;
+        font-size: 15px;
+        color: var(--muted);
+      }
+
+      /* ----- PROCESS (step cards) ----- */
+      .process {
+        padding: 96px 0;
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--ink-line);
+        margin: 56px 0 0;
+        list-style: none;
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .steps li {
+        background: var(--ink);
+        padding: 32px;
+        transition: var(--transition);
+        position: relative;
+      }
+      .steps li:hover {
+        background: rgba(255, 255, 255, 0.04);
+        transform: translateY(-4px);
+      }
+      .steps .num {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        background: var(--grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transition: var(--transition);
+      }
+      .steps li:hover .num {
+        transform: scale(1.1);
+        display: inline-block;
+      }
+      .steps h3 {
+        margin-top: 18px;
+        font-size: 18px;
+        color: var(--ink-fg);
+      }
+      .steps p {
+        margin: 8px 0 0;
+        font-size: 15px;
+        color: var(--ink-muted);
+      }
+
+      /* ----- REVIEWS (with quote animation) ----- */
+      .reviews {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        margin-top: 56px;
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .reviews figure {
+        background: var(--card);
+        margin: 0;
+        padding: 32px;
+        transition: var(--transition);
+      }
+      .reviews figure:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow);
+      }
+      .reviews blockquote {
+        margin: 18px 0 0;
+        font-size: 16px;
+        font-style: italic;
+      }
+      .reviews figcaption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 24px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .stars {
+        color: var(--primary);
+        letter-spacing: 2px;
+        transition: var(--transition);
+      }
+      .reviews figure:hover .stars {
+        transform: scale(1.05);
+      }
+      .stars .off {
+        color: var(--border);
+      }
+      .qmark {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 28px;
+        color: var(--primary);
+        line-height: 1;
+        transition: var(--transition);
+      }
+      .reviews figure:hover .qmark {
+        transform: rotate(-6deg) scale(1.1);
+      }
+
+      /* ----- CONTACT (form with focus) ----- */
+      .contact {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap: 56px;
+      }
+      .info {
+        margin-top: 40px;
+        display: grid;
+        gap: 1px;
+        background: var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+      .info div {
+        background: #f2efe9;
+        padding: 18px 20px;
+        transition: var(--transition);
+      }
+      .info div:hover {
+        background: var(--card);
+        transform: translateX(4px);
+      }
+      .info strong {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 14px;
+        display: block;
+      }
+      .info span {
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .form {
+        background: var(--card);
+        border: 1px solid var(--border);
+        padding: 32px;
+        display: grid;
+        gap: 18px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+      .form:hover {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      }
+      .form .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .form label {
+        display: grid;
+        gap: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .form input,
+      .form select,
+      .form textarea {
+        font: inherit;
+        text-transform: none;
+        letter-spacing: normal;
+        color: var(--fg);
+        padding: 13px 14px;
+        border: 1px solid var(--border);
+        background: #fff;
+        border-radius: 4px;
+        width: 100%;
+        transition: var(--transition);
+      }
+      .form input:focus,
+      .form select:focus,
+      .form textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(168, 0, 82, 0.15);
+        transform: translateY(-1px);
+      }
+      .form .invalid {
+        border-color: var(--primary);
+      }
+      .form-note {
+        margin: 0;
+        font-size: 14px;
+        color: var(--primary);
+        min-height: 20px;
+      }
+
+      /* ----- FOOTER ----- */
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+      .footer-title {
+        margin: 18px 0 0;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        color: var(--ink-fg);
+      }
+      .footer .muted {
+        color: var(--ink-muted);
+        font-size: 15px;
+      }
+      .footer h3 {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--ink-fg);
+      }
+      .footer ul {
+        margin-top: 18px;
+        display: grid;
+        gap: 12px;
+        font-size: 15px;
+        color: var(--ink-muted);
+      }
+      .footer ul li a {
+        transition: var(--transition);
+      }
+      .footer ul li a:hover {
+        color: var(--ink-fg);
+        padding-left: 6px;
+      }
+      .map-link {
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 14px;
+        color: var(--primary-bright);
+        transition: var(--transition);
+      }
+      .map-link:hover {
+        transform: translateX(4px);
+      }
+      .footer-bar {
+        border-top: 1px solid var(--ink-line);
+      }
+      .footer-bar small {
+        display: block;
+        padding: 20px 0;
+        font-size: 12px;
+        color: var(--ink-muted);
+      }
+
+      /* ----- RESPONSIVE ----- */
+      @media (max-width: 1024px) {
+        .about,
+        .why,
+        .contact {
+          grid-template-columns: 1fr;
+        }
+        .bento,
+        .reviews {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .tile.span2 {
+          grid-column: span 2;
+        }
+        .steps {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .about-badge {
+          position: static;
+          margin-top: 16px;
+          max-width: none;
+        }
+      }
+      @media (max-width: 720px) {
+        .section,
+        .band,
+        .process {
+          padding-top: 64px;
+          padding-bottom: 64px;
+        }
+        .hero-content {
+          padding-top: 132px;
+          padding-bottom: 80px;
+        }
+        .menu-btn {
+          display: flex;
+        }
+        .nav {
+          position: absolute;
+          top: 76px;
+          left: 0;
+          right: 0;
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 18px;
+          padding: 24px;
+          background: var(--ink);
+          border-top: 1px solid var(--ink-line);
+          backdrop-filter: blur(12px);
+        }
+        .nav.open {
+          display: flex;
+        }
+        .bento,
+        .reviews,
+        .why-grid,
+        .mini-grid,
+        .steps,
+        .form .row {
+          grid-template-columns: 1fr;
+        }
+        .tile.span2 {
+          grid-column: span 1;
+        }
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
         }
-
-        /* ============================================================
-               RESET & BASE
-            ============================================================ */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        body {
-            font-family: var(--font-primary);
-            background: var(--color-white);
-            color: var(--color-navy-900);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        ul {
-            list-style: none;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* ============================================================
-               UTILITY
-            ============================================================ */
-        .section-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 4px 16px;
-            border-radius: var(--radius-full);
-            background: var(--color-gold-50);
-            border: 1px solid rgba(212, 154, 46, 0.2);
-            color: var(--color-gold-600);
-            font-size: 0.65rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 4vw, 3.2rem);
-            font-weight: 800;
-            line-height: 1.08;
-            letter-spacing: -0.02em;
-            color: var(--color-navy-900);
-        }
-
-        .section-title .highlight {
-            background: linear-gradient(135deg, var(--color-navy-600), var(--color-navy-800));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .section-subtitle {
-            font-size: 1.05rem;
-            color: var(--color-navy-500);
-            max-width: 560px;
-            line-height: 1.8;
-            font-weight: 300;
-        }
-
-        .section {
-            padding: 80px 0;
-        }
-        .section--light {
-            background: var(--color-gray-50);
-        }
-        .section--white {
-            background: var(--color-white);
-        }
-        .section--dark {
-            background: var(--color-navy-900);
-            color: #fff;
-        }
-        .text-center {
-            text-align: center;
-        }
-        .mx-auto {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* ============================================================
-               BUTTONS
-            ============================================================ */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 12px 28px;
-            border-radius: var(--radius-full);
-            font-weight: 600;
-            font-size: 0.85rem;
-            border: 2px solid transparent;
-            transition: var(--transition);
-            cursor: pointer;
-            text-align: center;
-            line-height: 1.4;
-            font-family: var(--font-primary);
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--color-navy-600), var(--color-navy-800));
-            color: #fff;
-            border-color: var(--color-navy-600);
-            box-shadow: 0 4px 20px rgba(72, 101, 129, 0.2);
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(72, 101, 129, 0.25);
-        }
-
-        .btn-outline-light {
-            background: transparent;
-            color: #fff;
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-        .btn-outline-light:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: #fff;
-            transform: translateY(-2px);
-        }
-
-        .btn-gold {
-            background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-500));
-            color: var(--color-navy-900);
-            border-color: var(--color-gold-400);
-            box-shadow: 0 4px 20px rgba(212, 154, 46, 0.2);
-        }
-        .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(212, 154, 46, 0.25);
-        }
-
-        .btn-white {
-            background: #fff;
-            color: var(--color-navy-900);
-            border-color: #fff;
-        }
-        .btn-white:hover {
-            background: transparent;
-            color: #fff;
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-            box-shadow: none;
-        }
-
-        .btn-sm {
-            padding: 8px 20px;
-            font-size: 0.78rem;
-        }
-
-        /* ============================================================
-               NAVBAR
-            ============================================================ */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 16px 0;
-            transition: var(--transition);
-            background: transparent;
-        }
-
-        .navbar.scrolled {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-            padding: 10px 0;
-        }
-
-        .navbar .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .navbar-logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-shrink: 0;
-        }
-
-        .navbar-logo .logo-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: var(--radius);
-            background: linear-gradient(135deg, var(--color-navy-600), var(--color-navy-800));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 800;
-            font-size: 0.7rem;
-            box-shadow: 0 4px 16px rgba(72, 101, 129, 0.2);
-        }
-
-        .navbar-logo .logo-text {
-            font-weight: 700;
-            font-size: 0.9rem;
-            color: var(--color-white);
-            line-height: 1.2;
-            transition: var(--transition);
-        }
-        .navbar-logo .logo-text span {
-            display: block;
-            font-weight: 400;
-            font-size: 0.5rem;
-            opacity: 0.6;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .navbar.scrolled .navbar-logo .logo-text {
-            color: var(--color-navy-900);
-        }
-
-        .navbar-links {
-            display: none;
-            align-items: center;
-            gap: 28px;
-        }
-
-        .navbar-links a {
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.8);
-            transition: var(--transition);
-            position: relative;
-        }
-        .navbar-links a:hover {
-            color: #fff;
-        }
-
-        .navbar.scrolled .navbar-links a {
-            color: var(--color-navy-600);
-        }
-        .navbar.scrolled .navbar-links a:hover {
-            color: var(--color-navy-900);
-        }
-
-        .navbar-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--color-gold-400), var(--color-gold-500));
-            transition: var(--transition);
-        }
-        .navbar-links a:hover::after {
-            width: 100%;
-        }
-
-        .navbar-cta {
-            display: none;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: var(--color-white);
-            color: var(--color-navy-800);
-            border-radius: var(--radius-full);
-            font-weight: 600;
-            font-size: 0.8rem;
-            transition: var(--transition);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-        }
-        .navbar-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-        }
-
-        .navbar-hamburger {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 4px;
-        }
-        .navbar-hamburger span {
-            width: 26px;
-            height: 2px;
-            background: #fff;
-            border-radius: 2px;
-            transition: var(--transition);
-        }
-
-        .navbar.scrolled .navbar-hamburger span {
-            background: var(--color-navy-800);
-        }
-
-        .navbar-hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        .navbar-hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .navbar-hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-
-        /* Mobile Menu */
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 320px;
-            max-width: 80%;
-            height: 100%;
-            background: var(--color-white);
-            z-index: 999;
-            padding: 100px 32px 40px;
-            transition: right 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-            box-shadow: -8px 0 40px rgba(0, 0, 0, 0.06);
-            display: flex;
-            flex-direction: column;
-        }
-        .mobile-menu.open {
-            right: 0;
-        }
-
-        .mobile-menu-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(4px);
-            z-index: 998;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-        }
-        .mobile-menu-overlay.open {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .mobile-menu a {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: var(--color-navy-800);
-            padding: 12px 0;
-            border-bottom: 1px solid var(--color-gray-100);
-            transition: var(--transition);
-        }
-        .mobile-menu a:hover {
-            color: var(--color-gold-500);
-            padding-left: 8px;
-        }
-
-        .mobile-menu .footer-text {
-            margin-top: auto;
-            padding-top: 20px;
-            border-top: 1px solid var(--color-gray-100);
-            font-size: 0.8rem;
-            color: var(--color-gray-400);
-        }
-
-        /* ============================================================
-               HERO
-            ============================================================ */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding-top: 80px;
-            position: relative;
-            overflow: hidden;
-            background: var(--color-navy-900);
-        }
-
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse at 70% 40%, rgba(13, 148, 136, 0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 30% 80%, rgba(212, 154, 46, 0.06) 0%, transparent 50%),
-                var(--color-navy-900);
-            z-index: 0;
-        }
-
-        .hero-bg .grid-overlay {
-            position: absolute;
-            inset: 0;
-            background-image:
-                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255, 255, 255, 0.02) 40px, rgba(255, 255, 255, 0.02) 41px),
-                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255, 255, 255, 0.02) 40px, rgba(255, 255, 255, 0.02) 41px);
-            background-size: 80px 80px;
-        }
-
-        .hero .container {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-        }
-
-        .hero-content-panel {
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: var(--radius);
-            padding: 40px 32px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-            max-width: 700px;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 4px 16px;
-            border-radius: var(--radius-full);
-            background: rgba(212, 154, 46, 0.15);
-            border: 1px solid rgba(212, 154, 46, 0.2);
-            color: var(--color-gold-300);
-            font-size: 0.6rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 16px;
-        }
-
-        .hero-content-panel h1 {
-            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
-            font-weight: 900;
-            line-height: 1.05;
-            letter-spacing: -0.02em;
-            color: #fff;
-            margin-bottom: 16px;
-        }
-        .hero-content-panel h1 .highlight {
-            background: linear-gradient(135deg, var(--color-gold-300), var(--color-gold-400));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-content-panel p {
-            font-size: 1.05rem;
-            color: rgba(255, 255, 255, 0.6);
-            max-width: 480px;
-            line-height: 1.8;
-            margin-bottom: 24px;
-        }
-
-        .hero-content-panel .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .hero-content-panel .trust-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 16px 24px;
-            margin-top: 24px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        .hero-content-panel .trust-row span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.4);
-        }
-        .hero-content-panel .trust-row i {
-            color: var(--color-gold-400);
-        }
-        .hero-content-panel .trust-row .divider {
-            width: 1px;
-            height: 20px;
-            background: rgba(255, 255, 255, 0.06);
-        }
-
-        /* Floating decorative */
-        .hero-float {
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
-            display: none;
-            z-index: 1;
-        }
-        .hero-float .ring {
-            width: 100px;
-            height: 100px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: spin 20s linear infinite;
-        }
-        .hero-float .ring .inner {
-            width: 60px;
-            height: 60px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .hero-float .ring .inner .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--color-gold-400);
-            opacity: 0.2;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* ============================================================
-               COMPANY INTRODUCTION
-            ============================================================ */
-        .company-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .company-image {
-            position: relative;
-            border-radius: var(--radius);
-            overflow: hidden;
-            background: linear-gradient(145deg, var(--color-navy-100), var(--color-navy-200));
-            aspect-ratio: 4/3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: var(--shadow-lg);
-        }
-        .company-image .placeholder-icon {
-            font-size: 3.5rem;
-            color: var(--color-navy-300);
-            opacity: 0.5;
-        }
-
-        .company-image .quote-overlay {
-            position: absolute;
-            bottom: -16px;
-            right: -16px;
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(12px);
-            padding: 16px 20px;
-            border-radius: var(--radius);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: var(--shadow-lg);
-            max-width: 220px;
-        }
-        .company-image .quote-overlay .text {
-            font-size: 0.85rem;
-            font-style: italic;
-            color: var(--color-navy-700);
-            line-height: 1.5;
-        }
-
-        .company-content .stats-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px 32px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--color-gray-200);
-        }
-        .company-content .stats-row .stat .num {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--color-navy-800);
-        }
-        .company-content .stats-row .stat .num .accent {
-            color: var(--color-gold-500);
-        }
-        .company-content .stats-row .stat .label {
-            font-size: 0.6rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--color-navy-400);
-            margin-top: 2px;
-        }
-
-        /* ============================================================
-               EXPERTISE
-            ============================================================ */
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .expertise-card {
-            background: var(--color-white);
-            border-radius: var(--radius);
-            padding: 24px 28px;
-            border: 1px solid var(--color-gray-100);
-            transition: var(--transition);
-            cursor: default;
-            position: relative;
-            overflow: hidden;
-        }
-        .expertise-card:hover {
-            border-color: rgba(212, 154, 46, 0.2);
-            box-shadow: var(--shadow-md);
-            transform: translateX(6px);
-        }
-
-        .expertise-card .num {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--color-navy-200);
-            line-height: 1;
-            transition: var(--transition);
-        }
-        .expertise-card:hover .num {
-            color: var(--color-navy-300);
-        }
-
-        .expertise-card .content h3 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--color-navy-800);
-            margin-top: 4px;
-        }
-        .expertise-card .content p {
-            font-size: 0.85rem;
-            color: var(--color-navy-500);
-            margin-top: 2px;
-        }
-
-        .expertise-card .line {
-            width: 24px;
-            height: 2px;
-            background: var(--color-gold-400);
-            margin-top: 12px;
-            transition: var(--transition);
-        }
-        .expertise-card:hover .line {
-            width: 40px;
-        }
-
-        .expertise-card .bg-glow {
-            position: absolute;
-            inset: 0;
-            border-radius: var(--radius);
-            background: linear-gradient(135deg, rgba(212, 154, 46, 0.02), transparent);
-            opacity: 0;
-            transition: var(--transition);
-            pointer-events: none;
-        }
-        .expertise-card:hover .bg-glow {
-            opacity: 1;
-        }
-
-        /* ============================================================
-               WHY WORK WITH US
-            ============================================================ */
-        .why-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .why-item {
-            position: relative;
-            padding: 20px 24px 20px 80px;
-            border-radius: var(--radius);
-            border: 1px solid var(--color-gray-100);
-            background: var(--color-white);
-            transition: var(--transition);
-        }
-        .why-item:hover {
-            border-color: rgba(212, 154, 46, 0.15);
-            box-shadow: var(--shadow-md);
-            transform: translateX(4px);
-        }
-
-        .why-item .num {
-            position: absolute;
-            left: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2.4rem;
-            font-weight: 900;
-            color: var(--color-navy-100);
-            line-height: 1;
-            transition: var(--transition);
-        }
-        .why-item:hover .num {
-            color: var(--color-gold-300);
-        }
-
-        .why-item h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--color-navy-800);
-        }
-        .why-item p {
-            font-size: 0.85rem;
-            color: var(--color-navy-500);
-        }
-        .why-item .line {
-            width: 24px;
-            height: 2px;
-            background: var(--color-gold-400);
-            margin-top: 8px;
-            transition: var(--transition);
-        }
-        .why-item:hover .line {
-            width: 40px;
-        }
-
-        /* ============================================================
-               WORK APPROACH
-            ============================================================ */
-        .approach-wrapper {
-            max-width: 700px;
-            margin: 0 auto;
-            padding-left: 24px;
-            position: relative;
-        }
-
-        .approach-wrapper .line-bg {
-            position: absolute;
-            left: 4px;
-            top: 8px;
-            bottom: 8px;
-            width: 2px;
-            background: var(--color-navy-200);
-            border-radius: 1px;
-        }
-
-        .approach-wrapper .line-fill {
-            position: absolute;
-            left: 4px;
-            top: 8px;
-            width: 2px;
-            background: linear-gradient(to bottom, var(--color-gold-400), var(--color-gold-500));
-            border-radius: 1px;
-            height: 0%;
-            transition: height 1.2s ease;
-        }
-
-        .approach-step {
-            padding: 0 0 32px 32px;
-            position: relative;
-            opacity: 0.4;
-            transition: var(--transition);
-        }
-        .approach-step.active {
-            opacity: 1;
-        }
-
-        .approach-step .dot {
-            position: absolute;
-            left: -28px;
-            top: 4px;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: var(--color-white);
-            border: 2px solid var(--color-navy-200);
-            transition: var(--transition);
-        }
-        .approach-step.active .dot {
-            border-color: var(--color-gold-500);
-            background: var(--color-gold-500);
-            box-shadow: 0 0 0 4px rgba(212, 154, 46, 0.15);
-        }
-
-        .approach-step .num {
-            font-size: 0.65rem;
-            font-weight: 700;
-            color: var(--color-navy-300);
-            letter-spacing: 1px;
-        }
-        .approach-step h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--color-navy-800);
-            margin: 2px 0 2px;
-        }
-        .approach-step p {
-            font-size: 0.85rem;
-            color: var(--color-navy-500);
-        }
-
-        /* ============================================================
-               REVIEWS
-            ============================================================ */
-        .reviews-container {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .review-main {
-            background: var(--color-navy-50);
-            border-radius: var(--radius);
-            padding: 40px 32px;
-            text-align: center;
-            border: 1px solid var(--color-gray-100);
-            transition: var(--transition);
-        }
-
-        .review-main .quote-icon {
-            font-size: 2.4rem;
-            color: var(--color-gold-200);
-            margin-bottom: 8px;
-        }
-        .review-main blockquote {
-            font-size: 1.15rem;
-            color: var(--color-navy-700);
-            line-height: 1.8;
-            font-style: italic;
-        }
-        .review-main .name {
-            font-weight: 700;
-            color: var(--color-navy-800);
-            margin-top: 12px;
-        }
-        .review-main .stars {
-            color: var(--color-gold-400);
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            margin-top: 4px;
-        }
-
-        .review-dots {
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 20px;
-        }
-        .review-dots .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--color-navy-200);
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            padding: 0;
-        }
-        .review-dots .dot.active {
-            background: var(--color-gold-500);
-            width: 24px;
-            border-radius: 4px;
-        }
-
-        /* ============================================================
-               STATS
-            ============================================================ */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 16px;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .stats-grid .stat {
-            text-align: center;
-            padding: 16px;
-            background: var(--color-white);
-            border-radius: var(--radius);
-            border: 1px solid var(--color-gray-100);
-        }
-        .stats-grid .stat .num {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--color-navy-800);
-        }
-        .stats-grid .stat .num .accent {
-            color: var(--color-gold-500);
-        }
-        .stats-grid .stat .label {
-            font-size: 0.6rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--color-navy-400);
-            margin-top: 2px;
-        }
-
-        /* ============================================================
-               CTA
-            ============================================================ */
-        .cta-section {
-            background: linear-gradient(135deg, var(--color-navy-800), var(--color-navy-900));
-            padding: 80px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-section .bg-pattern {
-            position: absolute;
-            inset: 0;
-            opacity: 0.03;
-            background-image:
-                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255, 255, 255, 0.5) 40px, rgba(255, 255, 255, 0.5) 41px),
-                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255, 255, 255, 0.5) 40px, rgba(255, 255, 255, 0.5) 41px);
-            background-size: 80px 80px;
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #fff;
-        }
-
-        .cta-content h2 {
-            font-size: clamp(2rem, 3.5vw, 3rem);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 12px;
-        }
-        .cta-content h2 .highlight {
-            background: linear-gradient(135deg, var(--color-gold-300), var(--color-gold-400));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .cta-content p {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 1.05rem;
-            margin-bottom: 24px;
-        }
-        .cta-content .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        /* ============================================================
-               CONTACT
-            ============================================================ */
-        .contact-section {
-            background: var(--color-white);
-            padding: 80px 0;
-            position: relative;
-        }
-
-        .contact-section .bg-grid {
-            position: absolute;
-            inset: 0;
-            opacity: 0.02;
-            background-image:
-                repeating-linear-gradient(0deg, transparent, transparent 30px, var(--color-navy-900) 30px, var(--color-navy-900) 31px),
-                repeating-linear-gradient(90deg, transparent, transparent 30px, var(--color-navy-900) 30px, var(--color-navy-900) 31px);
-            background-size: 60px 60px;
-            pointer-events: none;
-        }
-
-        .contact-form-wrap {
-            max-width: 640px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .contact-form-wrap .form-container {
-            background: var(--color-white);
-            border-radius: var(--radius);
-            padding: 32px 28px;
-            border: 1px solid var(--color-gray-200);
-            box-shadow: var(--shadow-md);
-            position: relative;
-        }
-
-        /* Decorative circles */
-        .form-container .deco-circle {
-            position: absolute;
-            border-radius: 50%;
-            border: 1px solid rgba(212, 154, 46, 0.06);
-            pointer-events: none;
-        }
-        .form-container .deco-circle.c1 {
-            width: 160px;
-            height: 160px;
-            top: -40px;
-            right: -40px;
-        }
-        .form-container .deco-circle.c2 {
-            width: 200px;
-            height: 200px;
-            bottom: -60px;
-            left: -60px;
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-        .form-group label {
-            display: block;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--color-navy-700);
-            margin-bottom: 4px;
-        }
-        .form-group label .required {
-            color: var(--color-gold-500);
-        }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px 14px;
-            border-radius: var(--radius);
-            border: 1px solid var(--color-gray-200);
-            background: var(--color-gray-50);
-            font-size: 0.9rem;
-            font-family: var(--font-primary);
-            transition: var(--transition);
-            color: var(--color-navy-900);
-        }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--color-gold-400);
-            box-shadow: 0 0 0 4px rgba(212, 154, 46, 0.06);
-            background: var(--color-white);
-        }
-        .form-group textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .form-success {
-            display: none;
-            padding: 20px;
-            border-radius: var(--radius);
-            background: rgba(212, 154, 46, 0.06);
-            border: 1px solid rgba(212, 154, 46, 0.12);
-            color: var(--color-gold-600);
-            text-align: center;
-            font-weight: 600;
-            margin-top: 16px;
-        }
-        .form-success.show {
-            display: block;
-        }
-
-        .location-strip {
-            margin-top: 32px;
-            padding: 20px 24px;
-            background: var(--color-navy-50);
-            border-radius: var(--radius);
-            text-align: center;
-            border: 1px solid var(--color-gray-100);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
-        .location-strip i {
-            color: var(--color-gold-500);
-            margin-right: 8px;
-        }
-        .location-strip .name {
-            font-weight: 600;
-            color: var(--color-navy-800);
-        }
-        .location-strip .address {
-            color: var(--color-navy-500);
-            font-size: 0.9rem;
-        }
-
-        /* ============================================================
-               FOOTER
-            ============================================================ */
-        .footer {
-            background: var(--color-navy-950);
-            color: var(--color-navy-300);
-            padding: 48px 0 24px;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
-        }
-
         .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 32px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+          grid-template-columns: 1fr;
+          gap: 36px;
         }
-
-        .footer-brand .logo-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: var(--radius);
-            background: linear-gradient(135deg, var(--color-navy-600), var(--color-navy-800));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 800;
-            font-size: 0.7rem;
-            margin-bottom: 8px;
-        }
-        .footer-brand h3 {
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 700;
-        }
-        .footer-brand h3 span {
-            display: block;
-            font-weight: 400;
-            font-size: 0.6rem;
-            opacity: 0.3;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-        .footer-brand p {
-            font-size: 0.85rem;
-            max-width: 280px;
-            margin-top: 4px;
-        }
-
-        .footer-links h4 {
-            color: #fff;
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-            opacity: 0.2;
-        }
-        .footer-links ul {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-        .footer-links a {
-            font-size: 0.8rem;
-            transition: var(--transition);
-        }
-        .footer-links a:hover {
-            color: #fff;
-            padding-left: 4px;
-        }
-
-        .footer-bottom {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            padding-top: 24px;
-            font-size: 0.7rem;
-            text-align: center;
-            opacity: 0.3;
-        }
-
-        /* ============================================================
-               BACK TO TOP
-            ============================================================ */
-        .back-to-top {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            z-index: 900;
-            width: 44px;
-            height: 44px;
-            border-radius: var(--radius-full);
-            background: linear-gradient(135deg, var(--color-navy-600), var(--color-navy-800));
-            color: #fff;
-            border: none;
-            font-size: 1rem;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(72, 101, 129, 0.2);
-            transition: var(--transition);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(16px);
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .back-to-top:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 28px rgba(72, 101, 129, 0.25);
-        }
-
-        /* ============================================================
-               SCROLL REVEAL
-            ============================================================ */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-delay-1 {
-            transition-delay: 0.05s;
-        }
-        .reveal-delay-2 {
-            transition-delay: 0.1s;
-        }
-        .reveal-delay-3 {
-            transition-delay: 0.15s;
-        }
-        .reveal-delay-4 {
-            transition-delay: 0.2s;
-        }
-
-        /* ============================================================
-               RESPONSIVE
-            ============================================================ */
-        @media (min-width: 640px) {
-            .expertise-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .why-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .location-strip {
-                flex-direction: row;
-                justify-content: center;
-                gap: 8px 16px;
-                flex-wrap: wrap;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .navbar-links {
-                display: flex;
-            }
-            .navbar-cta {
-                display: inline-flex;
-            }
-            .navbar-hamburger {
-                display: none;
-            }
-
-            .hero-content-panel {
-                padding: 48px 40px;
-            }
-
-            .company-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 48px;
-            }
-
-            .hero-float {
-                display: block;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-            }
-            .footer-bottom {
-                flex-direction: row;
-                justify-content: space-between;
-                text-align: left;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-
-            .contact-form-wrap .form-container {
-                padding: 40px 36px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .expertise-grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-            .why-grid {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .stats-grid .stat:last-child {
-                grid-column: span 2;
-            }
-            .company-content .stats-row {
-                gap: 12px 20px;
-            }
-            .company-content .stats-row .stat .num {
-                font-size: 1.1rem;
-            }
-            .review-main {
-                padding: 28px 20px;
-            }
-            .review-main blockquote {
-                font-size: 1rem;
-            }
-            .hero-content-panel {
-                padding: 28px 20px;
-            }
-            .hero-content-panel .btn-group .btn {
-                width: 100%;
-                justify-content: center;
-            }
-            .why-item {
-                padding: 16px 16px 16px 64px;
-            }
-            .why-item .num {
-                font-size: 1.8rem;
-                left: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .navbar-logo .logo-text {
-                font-size: 0.75rem;
-            }
-            .section-title {
-                font-size: 1.6rem;
-            }
-            .hero-content-panel h1 {
-                font-size: 1.8rem;
-            }
-            .hero-content-panel p {
-                font-size: 0.95rem;
-            }
-            .expertise-card {
-                padding: 18px 20px;
-            }
-            .expertise-card .num {
-                font-size: 1.4rem;
-            }
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .stats-grid .stat:last-child {
-                grid-column: span 2;
-            }
-        }
-
-        /* ============================================================
-               PREFERS REDUCED MOTION
-            ============================================================ */
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-            html {
-                scroll-behavior: auto;
-            }
-            .reveal {
-                opacity: 1 !important;
-                transform: none !important;
-            }
-            .approach-wrapper .line-fill {
-                transition: none !important;
-            }
-            .hero-float .ring {
-                animation: none !important;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
+  <body id="top">
+    <header class="site-header" id="siteHeader">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark">AD</span>
+          <span class="brand-text">
+            <strong>Al Dhafra</strong>
+            <small>Technical Services</small>
+          </span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Main">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why us</a>
+          <a href="#process">Process</a>
+          <a href="#reviews">Reviews</a>
+          <a class="btn btn-primary btn-sm" href="#contact">Get a quote</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-<body>
-
-    <!-- ============================================================
-    NAVBAR
-    ============================================================ -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#home" class="navbar-logo">
-                <div class="logo-icon">AD</div>
-                <div class="logo-text">
-                    Al Dhafra
-                    <span>Technical Services</span>
-                </div>
-            </a>
-
-            <div class="navbar-links">
-                <a href="#home">Home</a>
-                <a href="#company">Company</a>
-                <a href="#services">Services</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <a href="#contact" class="navbar-cta">
-                Talk to Us
-                <i class="fas fa-arrow-right"></i>
-            </a>
-
-            <button class="navbar-hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <main>
+      <!-- HERO -->
+      <section class="hero surface-ink">
+        <img
+          class="hero-img"
+          src="https://media.istockphoto.com/id/671619180/photo/construction-site-in-abu-dhabi-uae.webp?a=1&b=1&s=612x612&w=0&k=20&c=WVVfOSWoc4mATBk_agx-GZ7x3y4tzNILRFXfhEcpJ38="
+          alt="Commercial interior fit-out project in Abu Dhabi"
+          width="1600"
+          height="1200"
+        />
+        <div class="hero-fade"></div>
+        <div class="grid-lines"></div>
+        <div class="wrap hero-content">
+          <p class="eyebrow bright"><span class="dash"></span>Abu Dhabi · United Arab Emirates</p>
+          <h1>Engineering, fit-out and <span class="grad">facility management</span> contracting.</h1>
+          <p class="lead">
+            Al Dhafra Technical Services is a technical services and property maintenance contractor
+            delivering MEP, interior fit-out and maintenance programmes for residential, commercial
+            and industrial properties across Abu Dhabi.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#services">Our capabilities →</a>
+            <a class="btn btn-ghost" href="#contact">Talk to our team</a>
+          </div>
+          <dl class="stats">
+            <div><dt>3.7★</dt><dd>Google rating</dd></div>
+            <div><dt>6</dt><dd>Service divisions</dd></div>
+            <div><dt>24/7</dt><dd>AMC call-outs</dd></div>
+            <div><dt>Zone 1</dt><dd>Al Danah, Abu Dhabi</dd></div>
+          </dl>
         </div>
-    </nav>
+      </section>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#home">Home</a>
-        <a href="#company">Company</a>
-        <a href="#services">Services</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
-        <div class="footer-text">
-            <p>Al Dhafra Technical Services</p>
-            <p style="opacity:0.4; font-size:0.7rem;">Abu Dhabi, UAE</p>
+      <!-- ABOUT -->
+      <section id="about" class="wrap section about">
+        <div class="about-media">
+          <img
+            src="https://media.istockphoto.com/id/664653904/photo/building-with-cranes-construction-cranes-over-abu-dhabi-grand-mosque.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZNtGu73dSGeaoOeVuQFd53SajiEIFR2hjEGrPpjZvlc="
+            alt="Certified engineer inspecting an electrical distribution board"
+            width="1200"
+            height="1408"
+            loading="lazy"
+          />
+          <p class="about-badge">Certified, uniformed crews — supervised by qualified engineers on every project.</p>
         </div>
-    </div>
-
-    <!-- ============================================================
-    HERO
-    ============================================================ -->
-    <section class="hero" id="home">
-        <div class="hero-bg">
-            <div class="grid-overlay"></div>
+        <div>
+          <p class="eyebrow"><span class="dash"></span>Who we are</p>
+          <h2>A technical contractor built for modern Abu Dhabi infrastructure</h2>
+          <p class="body">
+            We specialise in engineering, fit-out and facility management solutions — from MEP
+            contracting and turnkey interiors to comprehensive maintenance programmes.
+          </p>
+          <p class="body">
+            Our teams serve villas, residential buildings, corporate offices, retail showrooms and
+            industrial warehouses, working to agreed programmes, transparent pricing and strict site
+            safety standards.
+          </p>
+          <div class="mini-grid">
+            <div><strong>Residential</strong><span>Villas &amp; buildings</span></div>
+            <div><strong>Commercial</strong><span>Offices &amp; retail</span></div>
+            <div><strong>Industrial</strong><span>Warehouses &amp; plant</span></div>
+          </div>
         </div>
+      </section>
 
-        <div class="container">
-            <div class="hero-content-panel">
-                <div class="hero-badge">
-                    <i class="fas fa-map-pin"></i>
-                    ABU DHABI • UAE
-                </div>
-
-                <h1>
-                    Professional Solutions
-                    <span class="highlight">for Modern Business Needs</span>
-                </h1>
-
-                <p>
-                    Al Dhafra Technical Services provides reliable technical support and
-                    professional service solutions with a focus on quality, efficiency,
-                    and client satisfaction.
-                </p>
-
-                <div class="btn-group">
-                    <a href="#services" class="btn btn-white">
-                        Explore Our Services
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline-light">
-                        Contact Our Team
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-
-                <div class="trust-row">
-                    <span><i class="fas fa-map-pin"></i> Abu Dhabi, UAE</span>
-                    <span class="divider"></span>
-                    <span><i class="fas fa-star" style="color:var(--color-gold-400);"></i> 3.7 Google Rating</span>
-                </div>
-            </div>
+      <!-- SERVICES -->
+      <section id="services" class="band">
+        <div class="wrap">
+          <p class="eyebrow"><span class="dash"></span>Our expertise</p>
+          <h2 class="section-title">Six divisions, one accountable contractor</h2>
+          <div class="bento" id="services-grid"></div>
         </div>
+      </section>
 
-        <div class="hero-float">
-            <div class="ring">
-                <div class="inner">
-                    <div class="dot"></div>
-                </div>
-            </div>
+      <!-- WHY -->
+      <section id="why" class="wrap section why">
+        <div>
+          <p class="eyebrow"><span class="dash"></span>Why choose us</p>
+          <h2>Built on trust, compliance and delivery</h2>
         </div>
-    </section>
+        <div class="why-grid" id="why-grid"></div>
+      </section>
 
-    <!-- ============================================================
-    COMPANY INTRODUCTION
-    ============================================================ -->
-    <section class="section section--white" id="company">
-        <div class="container">
-            <div class="company-grid">
-                <div class="company-image reveal">
-                    <i class="fas fa-building placeholder-icon"></i>
-                    <div class="quote-overlay">
-                        <div class="text">"Reliable service begins with professional commitment."</div>
-                    </div>
-                </div>
-
-                <div class="company-content reveal reveal-delay-1">
-                    <div class="section-label">WHO WE ARE</div>
-                    <h2 class="section-title">
-                        Professional Service
-                        <span class="highlight">With a Focus on Quality</span>
-                    </h2>
-                    <p style="color:var(--color-navy-500); font-size:1.05rem; line-height:1.8; font-weight:300;">
-                        Al Dhafra Technical Services is a premier technical services and corporate
-                        support provider based in Abu Dhabi. We deliver professional solutions
-                        that combine technical expertise with a commitment to excellence.
-                    </p>
-                    <p style="color:var(--color-navy-400); font-size:0.95rem; line-height:1.8; margin-top:8px;">
-                        From technical support to corporate service solutions, our team is
-                        dedicated to understanding your needs and delivering results that
-                        make a difference.
-                    </p>
-
-                    <div class="stats-row">
-                        <div class="stat">
-                            <div class="num">3.7 <span class="accent">★</span></div>
-                            <div class="label">Google Rating</div>
-                        </div>
-                        <div class="stat">
-                            <div class="num">Abu Dhabi</div>
-                            <div class="label">Service Location</div>
-                        </div>
-                        <div class="stat">
-                            <div class="num">Professional</div>
-                            <div class="label">Technical Support</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- PROCESS -->
+      <section id="process" class="surface-ink section process">
+        <div class="grid-lines"></div>
+        <div class="wrap">
+          <p class="eyebrow bright"><span class="dash"></span>Our process</p>
+          <h2 class="section-title light">How we deliver, from survey to maintenance</h2>
+          <ol class="steps" id="steps"></ol>
         </div>
-    </section>
+      </section>
 
-    <!-- ============================================================
-    EXPERTISE
-    ============================================================ -->
-    <section class="section section--light" id="expertise">
-        <div class="container">
-            <div class="text-center reveal">
-                <div class="section-label" style="display:inline-flex;">OUR EXPERTISE</div>
-                <h2 class="section-title">
-                    Our Areas of
-                    <span class="highlight">Expertise</span>
-                </h2>
+      <!-- REVIEWS -->
+      <section id="reviews" class="wrap section">
+        <p class="eyebrow"><span class="dash"></span>Testimonials</p>
+        <h2 class="section-title">What clients say</h2>
+        <div class="reviews" id="reviews-grid"></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="band">
+        <div class="wrap contact">
+          <div>
+            <p class="eyebrow"><span class="dash"></span>Contact</p>
+            <h2>Request a site survey or quotation</h2>
+            <p class="body">
+              Share your scope and our engineering team will respond with a technical proposal and
+              indicative programme.
+            </p>
+            <div class="info">
+              <div>
+                <strong>Al Dhafra Technical Services</strong>
+                <span>F9R3+7W2, Al Danah – Zone 1, Abu Dhabi, UAE</span>
+              </div>
+              <div>
+                <strong>Emergency AMC support</strong>
+                <span>Round-the-clock call-outs for contracted clients</span>
+              </div>
             </div>
+          </div>
 
-            <div class="expertise-grid">
-                <div class="expertise-card reveal reveal-delay-1">
-                    <div class="bg-glow"></div>
-                    <div class="num">01</div>
-                    <div class="content">
-                        <h3>Technical Services</h3>
-                        <p>Comprehensive technical support for businesses and organizations.</p>
-                    </div>
-                    <div class="line"></div>
-                </div>
-
-                <div class="expertise-card reveal reveal-delay-2">
-                    <div class="bg-glow"></div>
-                    <div class="num">02</div>
-                    <div class="content">
-                        <h3>Corporate Support</h3>
-                        <p>Professional corporate service solutions tailored to your needs.</p>
-                    </div>
-                    <div class="line"></div>
-                </div>
-
-                <div class="expertise-card reveal reveal-delay-3">
-                    <div class="bg-glow"></div>
-                    <div class="num">03</div>
-                    <div class="content">
-                        <h3>Maintenance Solutions</h3>
-                        <p>Reliable maintenance services to keep your operations running smoothly.</p>
-                    </div>
-                    <div class="line"></div>
-                </div>
-
-                <div class="expertise-card reveal reveal-delay-4">
-                    <div class="bg-glow"></div>
-                    <div class="num">04</div>
-                    <div class="content">
-                        <h3>Professional Assistance</h3>
-                        <p>Expert assistance for all your technical and corporate requirements.</p>
-                    </div>
-                    <div class="line"></div>
-                </div>
-
-                <div class="expertise-card reveal reveal-delay-1">
-                    <div class="bg-glow"></div>
-                    <div class="num">05</div>
-                    <div class="content">
-                        <h3>Business Service Solutions</h3>
-                        <p>Integrated business solutions that drive efficiency and growth.</p>
-                    </div>
-                    <div class="line"></div>
-                </div>
+          <form class="form" id="quoteForm" novalidate>
+            <div class="row">
+              <label>Full name<input name="name" type="text" required placeholder="Your name" /></label>
+              <label>Phone<input name="phone" type="tel" required placeholder="+971 ..." /></label>
             </div>
+            <label>Email<input name="email" type="email" required placeholder="you@company.com" /></label>
+            <label>
+              Service required
+              <select name="service" required>
+                <option value="">Select a service</option>
+                <option>MEP Contracting &amp; Maintenance</option>
+                <option>Turnkey Interior Fit-Out</option>
+                <option>Painting &amp; Wall Treatments</option>
+                <option>Carpentry &amp; Woodwork</option>
+                <option>Civil &amp; Masonry Works</option>
+                <option>Facility Management &amp; AMC</option>
+              </select>
+            </label>
+            <label>Project details<textarea name="details" rows="4" placeholder="Scope, location, timeline"></textarea></label>
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ============================================================
-    WHY WORK WITH US
-    ============================================================ -->
-    <section class="section section--white" id="services">
-        <div class="container">
-            <div class="text-center reveal">
-                <div class="section-label" style="display:inline-flex;">WHY WORK WITH US</div>
-                <h2 class="section-title">
-                    Built on
-                    <span class="highlight">Trust &amp; Excellence</span>
-                </h2>
-            </div>
-
-            <div class="why-grid">
-                <div class="why-item reveal reveal-delay-1">
-                    <div class="num">01</div>
-                    <h3>Professional Approach</h3>
-                    <p>We bring a methodical and professional approach to every engagement.</p>
-                    <div class="line"></div>
-                </div>
-
-                <div class="why-item reveal reveal-delay-2">
-                    <div class="num">02</div>
-                    <h3>Reliable Service</h3>
-                    <p>Consistent and dependable service you can count on.</p>
-                    <div class="line"></div>
-                </div>
-
-                <div class="why-item reveal reveal-delay-3">
-                    <div class="num">03</div>
-                    <h3>Quality Focus</h3>
-                    <p>Quality is at the heart of everything we do.</p>
-                    <div class="line"></div>
-                </div>
-
-                <div class="why-item reveal reveal-delay-4">
-                    <div class="num">04</div>
-                    <h3>Client Satisfaction</h3>
-                    <p>Your satisfaction is our ultimate goal.</p>
-                    <div class="line"></div>
-                </div>
-            </div>
+    <footer class="surface-ink footer">
+      <div class="wrap footer-grid">
+        <div>
+          <span class="brand-mark">AD</span>
+          <p class="footer-title">Al Dhafra Technical Services</p>
+          <p class="muted">Engineering, fit-out and facility management contracting in Abu Dhabi.</p>
         </div>
-    </section>
-
-    <!-- ============================================================
-    WORK APPROACH
-    ============================================================ -->
-    <section class="section section--light" id="process">
-        <div class="container">
-            <div class="text-center reveal">
-                <div class="section-label" style="display:inline-flex;">OUR APPROACH</div>
-                <h2 class="section-title">
-                    How We
-                    <span class="highlight">Work</span>
-                </h2>
-            </div>
-
-            <div class="approach-wrapper" id="approachWrapper">
-                <div class="line-bg"></div>
-                <div class="line-fill" id="approachFill"></div>
-
-                <div class="approach-step active" data-index="0">
-                    <div class="dot"></div>
-                    <div class="num">01</div>
-                    <h3>Understand Your Needs</h3>
-                    <p>We listen carefully to your requirements.</p>
-                </div>
-
-                <div class="approach-step" data-index="1">
-                    <div class="dot"></div>
-                    <div class="num">02</div>
-                    <h3>Plan the Right Solution</h3>
-                    <p>We design a tailored plan of action.</p>
-                </div>
-
-                <div class="approach-step" data-index="2">
-                    <div class="dot"></div>
-                    <div class="num">03</div>
-                    <h3>Deliver Professional Service</h3>
-                    <p>We execute with precision and care.</p>
-                </div>
-
-                <div class="approach-step" data-index="3">
-                    <div class="dot"></div>
-                    <div class="num">04</div>
-                    <h3>Ensure Quality Results</h3>
-                    <p>We follow up to ensure satisfaction.</p>
-                </div>
-            </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- ============================================================
-    REVIEWS
-    ============================================================ -->
-    <section class="section section--white" id="reviews">
-        <div class="container">
-            <div class="text-center reveal">
-                <div class="section-label" style="display:inline-flex;">CUSTOMER REVIEWS</div>
-                <h2 class="section-title">
-                    What Our
-                    <span class="highlight">Customers Say</span>
-                </h2>
-            </div>
-
-            <div class="reviews-container">
-                <div class="review-main reveal" id="reviewMain">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <blockquote id="reviewText">"Good"</blockquote>
-                    <div class="name" id="reviewName">Mirza Faisal</div>
-                    <div class="stars" id="reviewStars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star" style="color:var(--color-gray-300);"></i>
-                    </div>
-                </div>
-
-                <div class="review-dots" id="reviewDots">
-                    <button class="dot active" data-index="0" aria-label="Review 1"></button>
-                    <button class="dot" data-index="1" aria-label="Review 2"></button>
-                    <button class="dot" data-index="2" aria-label="Review 3"></button>
-                </div>
-            </div>
+        <div>
+          <h3>Services</h3>
+          <ul id="footer-services"></ul>
         </div>
-    </section>
-
-    <!-- ============================================================
-    STATS
-    ============================================================ -->
-    <section class="section section--light" id="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat reveal reveal-delay-1">
-                    <div class="num">3.7 <span class="accent">★</span></div>
-                    <div class="label">Google Rating</div>
-                </div>
-                <div class="stat reveal reveal-delay-2">
-                    <div class="num">Abu Dhabi</div>
-                    <div class="label">Service Location</div>
-                </div>
-                <div class="stat reveal reveal-delay-3">
-                    <div class="num">Professional</div>
-                    <div class="label">Technical Support</div>
-                </div>
-            </div>
+        <div>
+          <h3>Location</h3>
+          <p class="muted">F9R3+7W2<br />Al Danah – Zone 1<br />Abu Dhabi, UAE</p>
+          <a class="map-link" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
         </div>
-    </section>
-
-    <!-- ============================================================
-    CTA
-    ============================================================ -->
-    <section class="cta-section">
-        <div class="bg-pattern"></div>
-
-        <div class="container">
-            <div class="cta-content">
-                <h2>
-                    Let's Discuss Your
-                    <span class="highlight">Service Requirements</span>
-                </h2>
-                <p>
-                    Our team is ready to understand your requirements and provide professional
-                    technical support.
-                </p>
-                <div class="btn-group">
-                    <a href="#contact" class="btn btn-gold">
-                        Get in Touch
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#services" class="btn btn-outline-light">
-                        Request Information
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-    CONTACT
-    ============================================================ -->
-    <section class="contact-section" id="contact">
-        <div class="bg-grid"></div>
-
-        <div class="container">
-            <div class="text-center reveal">
-                <div class="section-label" style="display:inline-flex;">CONTACT</div>
-                <h2 class="section-title">
-                    Start a
-                    <span class="highlight">Conversation</span>
-                </h2>
-            </div>
-
-            <div class="contact-form-wrap">
-                <div class="form-container reveal">
-                    <div class="deco-circle c1"></div>
-                    <div class="deco-circle c2"></div>
-
-                    <form id="contactForm" novalidate>
-                        <div class="form-group">
-                            <label for="fullName">Full Name <span class="required">*</span></label>
-                            <input type="text" id="fullName" placeholder="Your full name" required />
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number <span class="required">*</span></label>
-                                <input type="tel" id="phone" placeholder="Your phone number" required />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address <span class="required">*</span></label>
-                                <input type="email" id="email" placeholder="your@email.com" required />
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="serviceSelect">Service Required</label>
-                            <select id="serviceSelect">
-                                <option value="">Select a service</option>
-                                <option value="Technical Services">Technical Services</option>
-                                <option value="Corporate Support">Corporate Support</option>
-                                <option value="Maintenance Solutions">Maintenance Solutions</option>
-                                <option value="Professional Assistance">Professional Assistance</option>
-                                <option value="Business Service Solutions">Business Service Solutions</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message <span class="required">*</span></label>
-                            <textarea id="message" placeholder="Tell us about your requirements..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary" style="width:100%;">
-                            Send Your Request
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-
-                        <div class="form-success" id="formSuccess">
-                            <i class="fas fa-check-circle"></i>
-                            Thank you! Your request has been received.
-                        </div>
-                    </form>
-                </div>
-
-                <div class="location-strip">
-                    <span class="name"><i class="fas fa-map-pin"></i> Al Dhafra Technical Services</span>
-                    <span class="address">F9R3+7W2, Al Danah - Zone 1, Abu Dhabi, UAE</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-    FOOTER
-    ============================================================ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo-icon">AD</div>
-                    <h3>
-                        Al Dhafra
-                        <span>Technical Services</span>
-                    </h3>
-                    <p>Professional technical services and corporate support solutions in Abu Dhabi.</p>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#company">Company</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Technical Services</a></li>
-                        <li><a href="#services">Corporate Support</a></li>
-                        <li><a href="#services">Maintenance Solutions</a></li>
-                        <li><a href="#services">Professional Assistance</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Location</h4>
-                    <ul>
-                        <li style="font-size:0.8rem; opacity:0.6;">F9R3+7W2</li>
-                        <li style="font-size:0.8rem; opacity:0.6;">Al Danah - Zone 1</li>
-                        <li style="font-size:0.8rem; opacity:0.6;">Abu Dhabi, UAE</li>
-                        <li style="margin-top:8px;">
-                            <a href="https://www.google.com/maps" target="_blank" rel="noopener" style="color:var(--color-gold-400); font-size:0.8rem;">
-                                <i class="fas fa-map-pin"></i> View on Google Maps
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <span>&copy; 2026 Al Dhafra Technical Services. All Rights Reserved.</span>
-                <span>Abu Dhabi, United Arab Emirates</span>
-            </div>
-        </div>
+      </div>
+      <div class="footer-bar"><div class="wrap"><small>© <span id="year"></span> Al Dhafra Technical Services. All rights reserved.</small></div></div>
     </footer>
 
-    <!-- ============================================================
-    BACK TO TOP
-    ============================================================ -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- ============================================================
-    JAVASCRIPT
-    ============================================================ -->
     <script>
-        (function() {
-            'use strict';
+      const services = [
+        {
+          icon: "⚡",
+          title: "MEP Contracting & Maintenance",
+          body: "High-grade electrical wiring, DB upgrading, advanced plumbing, and complete HVAC installation and servicing.",
+          span: true,
+        },
+        {
+          icon: "🏢",
+          title: "Turnkey Interior Fit-Out",
+          body: "Office and residential fit-outs, glass and aluminium partitions, false ceilings and premium flooring.",
+        },
+        {
+          icon: "🎨",
+          title: "Painting & Wall Treatments",
+          body: "Decorative painting, waterproof coatings, texture walls, putty works and wallpaper installation.",
+        },
+        {
+          icon: "🔨",
+          title: "Carpentry & Woodwork",
+          body: "Bespoke furniture, kitchen cabinets, wardrobes, doors, architraves and partition framing.",
+        },
+        {
+          icon: "🧱",
+          title: "Civil & Masonry Works",
+          body: "Structural modifications, block masonry, plastering, concrete repairs and waterproofing.",
+        },
+        {
+          icon: "📋",
+          title: "Facility Management & AMCs",
+          body: "Tailored Annual Maintenance Contracts with round-the-clock emergency call-outs and preventive upkeep.",
+          span: true,
+        },
+      ];
 
-            // ============================================================
-            // NAVBAR SCROLL
-            // ============================================================
-            const navbar = document.getElementById('navbar');
+      const advantages = [
+        {
+          icon: "🛡",
+          num: "01",
+          title: "Certified technical team",
+          body: "Skilled, certified and uniformed engineers and tradesmen on every site.",
+        },
+        {
+          icon: "⛑",
+          num: "02",
+          title: "Safety & quality standards",
+          body: "Strict compliance with UAE safety regulation and industry quality benchmarks.",
+        },
+        {
+          icon: "🔧",
+          num: "03",
+          title: "Advanced tools & materials",
+          body: "Diagnostic instrumentation and premium-grade building materials as standard.",
+        },
+        {
+          icon: "⏱",
+          num: "04",
+          title: "On-time delivery",
+          body: "Transparent pricing, disciplined programmes and dedicated client support.",
+        },
+      ];
 
-            function handleNavbarScroll() {
-                if (window.scrollY > 20) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
+      const steps = [
+        { num: "01", title: "Consult & assess", body: "We survey the site and define the technical requirement." },
+        { num: "02", title: "Design & plan", body: "Scope, drawings, materials and programme agreed upfront." },
+        { num: "03", title: "Execute & deliver", body: "Certified crews deliver to specification and safety standard." },
+        { num: "04", title: "Support & maintain", body: "AMC coverage and emergency response keep assets running." },
+      ];
 
-            window.addEventListener('scroll', handleNavbarScroll, { passive: true });
-            window.addEventListener('load', handleNavbarScroll);
+      const reviews = [
+        { text: "Professional team, clean workmanship and delivered on the agreed schedule.", name: "Mirza Faisal", stars: 4 },
+        { text: "Handled our office fit-out end to end. Coordination with building management was excellent.", name: "A. Rahman", stars: 4 },
+        { text: "Responsive AMC support — HVAC call-outs are attended the same day.", name: "S. Khalid", stars: 4 },
+      ];
 
-            // ============================================================
-            // MOBILE MENU
-            // ============================================================
-            const hamburger = document.getElementById('hamburger');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileOverlay = document.getElementById('mobileOverlay');
+      const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-            function openMobileMenu() {
-                hamburger.classList.add('active');
-                mobileMenu.classList.add('open');
-                mobileOverlay.classList.add('open');
-                document.body.style.overflow = 'hidden';
-            }
+      document.getElementById("services-grid").innerHTML = services
+        .map(
+          (s) => `<article class="tile${s.span ? " span2" : ""}">
+            <div>
+              <span class="ico" aria-hidden="true">${s.icon}</span>
+              <h3>${esc(s.title)}</h3>
+              <p>${esc(s.body)}</p>
+            </div>
+            <a class="link" href="#contact">Enquire →</a>
+          </article>`
+        )
+        .join("");
 
-            function closeMobileMenu() {
-                hamburger.classList.remove('active');
-                mobileMenu.classList.remove('open');
-                mobileOverlay.classList.remove('open');
-                document.body.style.overflow = '';
-            }
+      document.getElementById("why-grid").innerHTML = advantages
+        .map(
+          (a) => `<div>
+            <div class="why-head"><span aria-hidden="true">${a.icon}</span><span class="why-num">${a.num}</span></div>
+            <h3>${esc(a.title)}</h3>
+            <p>${esc(a.body)}</p>
+          </div>`
+        )
+        .join("");
 
-            hamburger.addEventListener('click', function() {
-                if (mobileMenu.classList.contains('open')) {
-                    closeMobileMenu();
-                } else {
-                    openMobileMenu();
-                }
-            });
+      document.getElementById("steps").innerHTML = steps
+        .map((s) => `<li><span class="num">${s.num}</span><h3>${esc(s.title)}</h3><p>${esc(s.body)}</p></li>`)
+        .join("");
 
-            mobileOverlay.addEventListener('click', closeMobileMenu);
+      document.getElementById("reviews-grid").innerHTML = reviews
+        .map(
+          (r) => `<figure>
+            <span class="qmark" aria-hidden="true">&ldquo;</span>
+            <blockquote>&ldquo;${esc(r.text)}&rdquo;</blockquote>
+            <figcaption>
+              <span>${esc(r.name)}</span>
+              <span class="stars" aria-label="${r.stars} out of 5">${"★".repeat(r.stars)}<span class="off">${"★".repeat(5 - r.stars)}</span></span>
+            </figcaption>
+          </figure>`
+        )
+        .join("");
 
-            document.querySelectorAll('.mobile-menu a').forEach(function(link) {
-                link.addEventListener('click', closeMobileMenu);
-            });
+      document.getElementById("footer-services").innerHTML = services
+        .map((s) => `<li><a href="#services">${esc(s.title)}</a></li>`)
+        .join("");
 
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-                    closeMobileMenu();
-                }
-            });
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-            // ============================================================
-            // ACTIVE NAV LINK
-            // ============================================================
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('.navbar-links a');
+      // Header scroll
+      const header = document.getElementById("siteHeader");
+      const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 20);
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
 
-            function updateActiveNav() {
-                const scrollPos = window.scrollY + 120;
-                let currentId = 'home';
+      // Mobile menu
+      const nav = document.getElementById("nav");
+      const menuBtn = document.getElementById("menuBtn");
+      menuBtn.addEventListener("click", () => {
+        const open = nav.classList.toggle("open");
+        menuBtn.classList.toggle("open", open);
+        menuBtn.setAttribute("aria-expanded", String(open));
+      });
+      nav.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+          nav.classList.remove("open");
+          menuBtn.classList.remove("open");
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
+      });
 
-                sections.forEach(function(section) {
-                    const top = section.offsetTop;
-                    const height = section.offsetHeight;
-                    if (scrollPos >= top && scrollPos < top + height) {
-                        currentId = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(function(link) {
-                    link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
-                });
-            }
-
-            window.addEventListener('scroll', updateActiveNav, { passive: true });
-            window.addEventListener('load', updateActiveNav);
-
-            // ============================================================
-            // SCROLL REVEAL
-            // ============================================================
-            const revealEls = document.querySelectorAll('.reveal');
-
-            if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver(function(entries) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                        }
-                    });
-                }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
-
-                revealEls.forEach(function(el) {
-                    observer.observe(el);
-                });
-            } else {
-                revealEls.forEach(function(el) {
-                    el.classList.add('visible');
-                });
-            }
-
-            // ============================================================
-            // APPROACH TIMELINE
-            // ============================================================
-            const approachSteps = document.querySelectorAll('.approach-step');
-            const approachFill = document.getElementById('approachFill');
-            const approachWrapper = document.getElementById('approachWrapper');
-            let approachAnimated = false;
-
-            function animateApproach() {
-                if (approachAnimated) return;
-                const rect = approachWrapper.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 80) {
-                    approachAnimated = true;
-
-                    // Animate line
-                    if (approachFill) {
-                        approachFill.style.height = '100%';
-                    }
-
-                    // Animate steps
-                    approachSteps.forEach(function(step, index) {
-                        setTimeout(function() {
-                            step.classList.add('active');
-                        }, 200 + index * 300);
-                    });
-                }
-            }
-
-            window.addEventListener('scroll', animateApproach, { passive: true });
-            window.addEventListener('load', animateApproach);
-
-            // ============================================================
-            // REVIEWS CAROUSEL
-            // ============================================================
-            const reviews = [
-                { name: 'Mirza Faisal', text: 'Good', rating: 3.7 },
-                { name: 'Sultan Mughal', text: '5-Star Rating', rating: 5 },
-                { name: 'Anjum', text: '5-Star Rating', rating: 5 },
-            ];
-
-            const reviewText = document.getElementById('reviewText');
-            const reviewName = document.getElementById('reviewName');
-            const reviewStars = document.getElementById('reviewStars');
-            const dots = document.querySelectorAll('.review-dots .dot');
-
-            let currentReview = 0;
-            let reviewInterval = null;
-
-            function updateReview(index) {
-                const review = reviews[index];
-                reviewText.textContent = '"' + review.text + '"';
-                reviewName.textContent = review.name;
-
-                // Update stars
-                const fullStars = Math.round(review.rating);
-                let starsHtml = '';
-                for (let i = 0; i < 5; i++) {
-                    if (i < fullStars) {
-                        starsHtml += '<i class="fas fa-star" style="color:var(--color-gold-400);"></i>';
-                    } else {
-                        starsHtml += '<i class="fas fa-star" style="color:var(--color-gray-300);"></i>';
-                    }
-                }
-                reviewStars.innerHTML = starsHtml;
-
-                // Update dots
-                dots.forEach(function(dot, i) {
-                    dot.classList.toggle('active', i === index);
-                });
-
-                currentReview = index;
-            }
-
-            function nextReview() {
-                updateReview((currentReview + 1) % reviews.length);
-            }
-
-            function startReviewAutoplay() {
-                if (reviewInterval) return;
-                reviewInterval = setInterval(nextReview, 5000);
-            }
-
-            function stopReviewAutoplay() {
-                if (reviewInterval) {
-                    clearInterval(reviewInterval);
-                    reviewInterval = null;
-                }
-            }
-
-            // Dot clicks
-            dots.forEach(function(dot, index) {
-                dot.addEventListener('click', function() {
-                    stopReviewAutoplay();
-                    updateReview(index);
-                    setTimeout(startReviewAutoplay, 3000);
-                });
-            });
-
-            // Pause on hover
-            const reviewContainer = document.querySelector('.reviews-container');
-            reviewContainer.addEventListener('mouseenter', stopReviewAutoplay);
-            reviewContainer.addEventListener('mouseleave', startReviewAutoplay);
-
-            // Init
-            updateReview(0);
-            setTimeout(startReviewAutoplay, 2000);
-
-            // ============================================================
-            // CONTACT FORM
-            // ============================================================
-            const contactForm = document.getElementById('contactForm');
-            const formSuccess = document.getElementById('formSuccess');
-
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-
-                let isValid = true;
-                const fields = contactForm.querySelectorAll('input, textarea, select');
-
-                fields.forEach(function(field) {
-                    if (field.hasAttribute('required') && !field.value.trim()) {
-                        field.style.borderColor = '#ef4444';
-                        isValid = false;
-                    } else {
-                        field.style.borderColor = '';
-                    }
-                    if (field.type === 'email' && field.value.trim()) {
-                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                        if (!emailRegex.test(field.value.trim())) {
-                            field.style.borderColor = '#ef4444';
-                            isValid = false;
-                        }
-                    }
-                });
-
-                if (isValid) {
-                    formSuccess.classList.add('show');
-                    contactForm.reset();
-                    setTimeout(function() {
-                        formSuccess.classList.remove('show');
-                    }, 6000);
-                } else {
-                    const firstError = contactForm.querySelector('[style*="border-color: #ef4444"]');
-                    if (firstError) {
-                        firstError.focus();
-                    }
-                }
-            });
-
-            // Clear error on input
-            contactForm.querySelectorAll('input, textarea, select').forEach(function(field) {
-                field.addEventListener('input', function() {
-                    this.style.borderColor = '';
-                });
-                field.addEventListener('change', function() {
-                    this.style.borderColor = '';
-                });
-            });
-
-            // ============================================================
-            // BACK TO TOP
-            // ============================================================
-            const backToTop = document.getElementById('backToTop');
-
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 600) {
-                    backToTop.classList.add('visible');
-                } else {
-                    backToTop.classList.remove('visible');
-                }
-            }, { passive: true });
-
-            backToTop.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // ============================================================
-            // CONSOLE
-            // ============================================================
-            console.log('Al Dhafra Technical Services – Premium Website loaded.');
-            console.log('Designed for client presentation – all data from real business listing.');
-
-        })();
+      // Contact form
+      const form = document.getElementById("quoteForm");
+      const note = document.getElementById("formNote");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let valid = true;
+        form.querySelectorAll("[required]").forEach((el) => {
+          const ok = el.checkValidity() && el.value.trim() !== "";
+          el.classList.toggle("invalid", !ok);
+          if (!ok) valid = false;
+        });
+        if (!valid) {
+          note.textContent = "Please complete the highlighted fields.";
+          return;
+        }
+        const name = form.elements.name.value.trim();
+        form.reset();
+        note.textContent = `Thank you ${name}, your request has been received. Our team will respond shortly.`;
+      });
     </script>
-
-</body>
+  </body>
 </html>
