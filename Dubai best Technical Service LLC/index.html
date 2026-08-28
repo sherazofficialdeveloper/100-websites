@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dubai Best Technical Service | Handyman & Maintenance</title>
+    <meta name="description" content="Professional handyman, AC, plumbing, electrical, and maintenance services in Dubai. 24/7 reliable service." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+               CSS VARIABLES — New Identity: Navy + Teal/Green Accent
+            ============================================================ */
+        :root {
+            --color-primary: #0f1729;
+            --color-primary-light: #1e2a45;
+            --color-secondary: #f8f6f2;
+            --color-accent: #2d9b7a;
+            --color-accent-dark: #1f7a5e;
+            --color-accent-light: #4fb999;
+            --color-bg: #ffffff;
+            --color-bg-section: #f8f6f2;
+            --color-text: #1a1a2e;
+            --color-text-muted: #5a5a72;
+            --color-text-light: #8a8a9e;
+            --color-border: #e5e2dc;
+            --color-shadow: rgba(15, 23, 41, 0.05);
+            --color-shadow-hover: rgba(15, 23, 41, 0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --radius-full: 60px;
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --container-width: 1200px;
+            --header-height: 72px;
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* ============================================================
+               RESET & BASE
+            ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+               UTILITY
+            ============================================================ */
+        .section-label {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            background: rgba(45, 155, 122, 0.08);
+            padding: 0.3rem 1.4rem;
+            border-radius: var(--radius-full);
+            margin-bottom: 0.8rem;
+            border: 1px solid rgba(45, 155, 122, 0.1);
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--color-primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 0.8rem;
+        }
+        .section-title .accent {
+            color: var(--color-accent);
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--color-text-muted);
+            max-width: 580px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+        .section--light {
+            background: var(--color-bg-section);
+        }
+        .section--white {
+            background: var(--color-bg);
+        }
+        .section--dark {
+            background: var(--color-primary);
+            color: #fff;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================================================
+               BUTTONS
+            ============================================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 0.9rem 2.6rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: 2px solid transparent;
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.4;
+            font-family: var(--font-primary);
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        .btn-primary:hover {
+            background: var(--color-accent-dark);
+            border-color: var(--color-accent-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(45, 155, 122, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline-accent {
+            background: transparent;
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+        .btn-outline-accent:hover {
+            background: var(--color-accent);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(45, 155, 122, 0.2);
+        }
+
+        .btn-sm {
+            padding: 0.6rem 1.8rem;
+            font-size: 0.8rem;
+        }
+
+        /* ============================================================
+               HEADER
+            ============================================================ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        .header--scrolled {
+            background: rgba(15, 23, 41, 0.96);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+            height: 64px;
+        }
+
+        .header--scrolled .header-logo-text {
+            color: #fff;
+        }
+        .header--scrolled .nav-link {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .header--scrolled .nav-link:hover,
+        .header--scrolled .nav-link.active {
+            color: #fff;
+        }
+        .header--scrolled .nav-link.active::after {
+            background: var(--color-accent);
+        }
+        .header--scrolled .btn-nav {
+            background: var(--color-accent);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        .header--scrolled .btn-nav:hover {
+            background: var(--color-accent-dark);
+            border-color: var(--color-accent-dark);
+        }
+        .header--scrolled .hamburger span {
+            background: #fff;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+        .header-logo img {
+            width: 42px;
+            height: 42px;
+            border-radius: var(--radius-sm);
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .header-logo-text {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            letter-spacing: -0.3px;
+            transition: var(--transition);
+            line-height: 1.2;
+        }
+        .header-logo-text small {
+            display: block;
+            font-weight: 400;
+            font-size: 0.6rem;
+            opacity: 0.6;
+            letter-spacing: 0.5px;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        .nav-link {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            position: relative;
+            padding: 4px 0;
+        }
+        .nav-link:hover {
+            color: #fff;
+        }
+        .nav-link.active {
+            color: #fff;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--color-accent);
+            border-radius: 2px;
+        }
+
+        .btn-nav {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1.8rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.75rem;
+            transition: var(--transition);
+            cursor: pointer;
+            white-space: nowrap;
+            font-family: var(--font-primary);
+        }
+        .btn-nav:hover {
+            background: rgba(255, 255, 255, 0.16);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1060;
+        }
+        .hamburger span {
+            width: 26px;
+            height: 2px;
+            background: #fff;
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Mobile nav */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 41, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1040;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        .mobile-nav-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 340px;
+            max-width: 82%;
+            height: 100%;
+            background: var(--color-primary);
+            z-index: 1055;
+            padding: 100px 32px 40px;
+            transition: right 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: -8px 0 50px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+        .mobile-nav.open {
+            right: 0;
+        }
+        .mobile-nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1;
+        }
+        .mobile-nav-list a {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            transition: var(--transition);
+        }
+        .mobile-nav-list a:hover {
+            color: var(--color-accent);
+            padding-left: 8px;
+        }
+        .mobile-nav-footer {
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ============================================================
+               HERO — Clean, left-aligned with circular image
+            ============================================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--color-primary);
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            width: 100%;
+            min-height: 100vh;
+            align-items: center;
+            padding: 100px 0 60px;
+        }
+
+        .hero-content {
+            color: #fff;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            background: rgba(45, 155, 122, 0.12);
+            padding: 0.3rem 1.4rem;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(45, 155, 122, 0.15);
+            margin-bottom: 1.2rem;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -1.5px;
+            margin-bottom: 1.2rem;
+        }
+        .hero-title .accent {
+            color: var(--color-accent);
+        }
+
+        .hero-text {
+            font-size: 1.1rem;
+            opacity: 0.7;
+            max-width: 480px;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 2.4rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 24px 40px;
+            padding-top: 1.6rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .hero-stats .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .hero-stats .stat-item .icon {
+            font-size: 1.2rem;
+            color: var(--color-accent);
+            opacity: 0.6;
+        }
+        .hero-stats .stat-item .info .num {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+        .hero-stats .stat-item .info .label {
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-image .image-wrapper {
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 6px solid rgba(45, 155, 122, 0.2);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+        }
+        .hero-image .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ============================================================
+               SERVICE PILLARS — 2x2 grid
+            ============================================================ */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .pillar-item {
+            background: var(--color-bg);
+            border-radius: var(--radius);
+            padding: 32px 24px 28px;
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+            text-align: center;
+        }
+        .pillar-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px var(--color-shadow-hover);
+            border-color: var(--color-accent);
+        }
+
+        .pillar-item .icon {
+            font-size: 2.4rem;
+            color: var(--color-accent);
+            margin-bottom: 0.8rem;
+            display: inline-block;
+        }
+        .pillar-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+        }
+        .pillar-item p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+
+        /* ============================================================
+               ABOUT — Clean split
+            ============================================================ */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 20px 60px var(--color-shadow);
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 400px;
+            transition: transform 0.7s ease;
+        }
+        .about-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .about-content .section-label {
+            margin-bottom: 0.4rem;
+        }
+        .about-content .section-title {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+        .about-content p {
+            color: var(--color-text-muted);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 20px;
+            margin: 1.2rem 0 1.6rem;
+        }
+        .about-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+        .about-features li i {
+            color: var(--color-accent);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================================
+               PACKAGES — Pricing style
+            ============================================================ */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .package-card {
+            background: var(--color-bg);
+            border-radius: var(--radius);
+            padding: 36px 28px 32px;
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+            position: relative;
+            text-align: center;
+        }
+        .package-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px var(--color-shadow-hover);
+            border-color: var(--color-accent);
+        }
+        .package-card.featured {
+            border-color: var(--color-accent);
+            background: var(--color-primary);
+            color: #fff;
+        }
+        .package-card.featured .package-name,
+        .package-card.featured .package-price,
+        .package-card.featured .package-desc,
+        .package-card.featured li {
+            color: #fff;
+        }
+        .package-card.featured li {
+            opacity: 0.8;
+        }
+        .package-card.featured .btn-outline-accent {
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+        .package-card.featured .btn-outline-accent:hover {
+            background: var(--color-accent);
+            color: #fff;
+        }
+
+        .package-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--color-accent);
+            color: #fff;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.2rem 1.2rem;
+            border-radius: var(--radius-full);
+        }
+
+        .package-name {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--color-accent);
+            margin-bottom: 0.2rem;
+        }
+        .package-price {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+        .package-price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--color-text-muted);
+        }
+        .package-desc {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin: 0.4rem 0 1.2rem;
+        }
+
+        .package-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.2rem 0 1.6rem;
+        }
+        .package-features li {
+            padding: 6px 0;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .package-features li i {
+            color: var(--color-accent);
+            font-size: 0.75rem;
+            width: 18px;
+            text-align: center;
+        }
+
+        /* ============================================================
+               WHY CHOOSE US — Numbered steps
+            ============================================================ */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 48px;
+        }
+
+        .why-item {
+            padding: 24px 0 20px;
+            border-bottom: 2px solid var(--color-border);
+            transition: var(--transition);
+        }
+        .why-item:hover {
+            border-bottom-color: var(--color-accent);
+        }
+
+        .why-item .num {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--color-accent);
+            opacity: 0.2;
+            line-height: 1;
+            transition: var(--transition);
+        }
+        .why-item:hover .num {
+            opacity: 0.6;
+        }
+
+        .why-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin: 0.2rem 0 0.1rem;
+        }
+        .why-item p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+        }
+
+        .why-item .line {
+            width: 30px;
+            height: 3px;
+            background: var(--color-accent);
+            margin-top: 10px;
+            transition: var(--transition);
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+        .why-item:hover .line {
+            transform: scaleX(1);
+        }
+
+        /* ============================================================
+               TESTIMONIALS — Vertical list style
+            ============================================================ */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .testimonial-card {
+            background: var(--color-bg);
+            border-radius: var(--radius);
+            padding: 28px 30px;
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+        }
+        .testimonial-card:hover {
+            box-shadow: 0 12px 40px var(--color-shadow-hover);
+            border-color: transparent;
+        }
+
+        .testimonial-card .stars {
+            color: #f5a623;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+        .testimonial-card .text {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        .testimonial-card .author {
+            margin-top: 12px;
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: 0.9rem;
+        }
+        .testimonial-card .source {
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+        }
+
+        /* ============================================================
+               GALLERY — Clean grid
+            ============================================================ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            position: relative;
+            background: var(--color-primary-light);
+            aspect-ratio: 1/1;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 41, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            opacity: 0;
+            transition: var(--transition);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        /* ============================================================
+               CONTACT — Two column
+            ============================================================ */
+        .contact-section {
+            background: var(--color-primary);
+            color: #fff;
+        }
+
+        .contact-section .section-label {
+            border-color: rgba(45, 155, 122, 0.2);
+            background: rgba(45, 155, 122, 0.06);
+        }
+        .contact-section .section-title {
+            color: #fff;
+        }
+        .contact-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+            margin-top: 16px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+        .contact-info p {
+            opacity: 0.6;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1.6rem;
+            font-weight: 300;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--color-accent);
+            transition: var(--transition);
+        }
+        .contact-detail:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .contact-detail .icon {
+            color: var(--color-accent);
+            font-size: 1.1rem;
+            width: 24px;
+            text-align: center;
+        }
+        .contact-detail .info .label {
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            opacity: 0.4;
+        }
+        .contact-detail .info .value {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .contact-form {
+            background: var(--color-bg);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            color: var(--color-text);
+        }
+        .contact-form h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+        }
+        .contact-form .sub {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.4rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.2rem;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+            font-family: var(--font-primary);
+            transition: border-color 0.3s ease;
+            background: var(--color-bg-section);
+            color: var(--color-text);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(45, 155, 122, 0.08);
+            background: #fff;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+        .form-group .error-msg {
+            font-size: 0.7rem;
+            color: #c0392b;
+            margin-top: 0.2rem;
+            display: none;
+        }
+        .form-group.error input,
+        .form-group.error select,
+        .form-group.error textarea {
+            border-color: #c0392b;
+        }
+        .form-group.error .error-msg {
+            display: block;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 0.85rem;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+            border-radius: var(--radius-full);
+        }
+
+        .form-success {
+            display: none;
+            background: rgba(45, 155, 122, 0.06);
+            border: 1px solid rgba(45, 155, 122, 0.15);
+            border-radius: var(--radius-sm);
+            padding: 1rem 1.6rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .form-success.show {
+            display: block;
+        }
+
+        /* ============================================================
+               CTA SECTION
+            ============================================================ */
+        .cta-section {
+            background: var(--color-accent);
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-section h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 0.6rem;
+        }
+        .cta-section p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 1.6rem;
+        }
+        .cta-section .btn {
+            background: #fff;
+            color: var(--color-primary);
+            border-color: #fff;
+        }
+        .cta-section .btn:hover {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: none;
+        }
+
+        /* ============================================================
+               FOOTER
+            ============================================================ */
+        .footer {
+            background: #0a111f;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 56px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            margin-bottom: 24px;
+        }
+
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        .footer-brand h3 small {
+            display: block;
+            font-weight: 400;
+            font-size: 0.7rem;
+            opacity: 0.5;
+        }
+        .footer-brand p {
+            font-size: 0.85rem;
+            opacity: 0.5;
+            line-height: 1.7;
+            max-width: 300px;
+        }
+
+        .footer-links h4,
+        .footer-services h4,
+        .footer-contact h4 {
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 0.8rem;
+            opacity: 0.4;
+        }
+
+        .footer-links ul,
+        .footer-services ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .footer-links a,
+        .footer-services a {
+            font-size: 0.85rem;
+            transition: var(--transition);
+            opacity: 0.6;
+        }
+        .footer-links a:hover,
+        .footer-services a:hover {
+            opacity: 1;
+            color: #fff;
+            padding-left: 4px;
+        }
+
+        .footer-contact p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            opacity: 0.6;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.75rem;
+            opacity: 0.3;
+        }
+
+        /* ============================================================
+               BACK TO TOP
+            ============================================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 1000;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            color: #fff;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 24px rgba(45, 155, 122, 0.3);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(16px);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top:hover {
+            background: var(--color-accent-dark);
+            transform: translateY(-3px);
+        }
+
+        /* ============================================================
+               SCROLL REVEAL
+            ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: 0.05s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.15s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.2s;
+        }
+
+        /* ============================================================
+               RESPONSIVE
+            ============================================================ */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 120px 0 60px;
+                min-height: auto;
+            }
+            .hero-content {
+                text-align: center;
+            }
+            .hero-text {
+                max-width: 100%;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .hero-image .image-wrapper {
+                max-width: 400px;
+            }
+
+            .pillars-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .packages-grid .package-card:last-child {
+                grid-column: span 2;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .about-image {
+                min-height: 300px;
+                order: -1;
+            }
+            .about-image img {
+                min-height: 300px;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --header-height: 60px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-title {
+                font-size: 2.6rem;
+            }
+            .hero-text {
+                font-size: 1rem;
+            }
+            .hero-image .image-wrapper {
+                max-width: 300px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .section-subtitle {
+                font-size: 0.95rem;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+            .packages-grid .package-card:last-child {
+                grid-column: span 1;
+                max-width: 100%;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .contact-form {
+                padding: 28px 20px;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .mobile-nav-overlay.open {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .back-to-top {
+                bottom: 16px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-tag {
+                font-size: 0.6rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .about-content .section-title {
+                font-size: 1.8rem;
+            }
+
+            .btn {
+                padding: 0.7rem 1.6rem;
+                font-size: 0.8rem;
+                white-space: normal;
+            }
+            .btn-nav {
+                padding: 0.4rem 1rem;
+                font-size: 0.7rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+        }
+
+        /* ============================================================
+               PREFERS REDUCED MOTION
+            ============================================================ */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header" id="header" role="banner">
+        <div class="container header-container">
+            <a href="#hero" class="header-logo" aria-label="Dubai Best Technical Service LLC">
+                <img src="https://scontent.flyp19-1.fna.fbcdn.net/v/t39.30808-1/441041741_122113088132279537_1557941444567320816_n.jpg?stp=dst-jpg_tt6&cstp=mx720x726&ctp=s200x200&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DF9V2wrPL40Q7kNvwENJmG3&_nc_oc=Adq3S-WMqhPdH8qWzTG2bV9kR7Mr_op3msrQMtNIXaOMCf894eTboIEFh4QckCQA9zk&_nc_zt=24&_nc_ht=scontent.flyp19-1.fna&_nc_gid=v1qF1tO2d-reiR4TaUoJ6Q&_nc_ss=7a289&oh=00_AQEv1xBvVaLLeGTPVZzcAnOdcVIptIvfUz_80IT_1El3hQ&oe=6A945D6E" alt="Dubai Best Technical Service" />
+                <span class="header-logo-text">
+                    DUBAI BEST
+                    <small>Technical Service</small>
+                </span>
+            </a>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#packages" class="nav-link">Packages</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn-nav">Get a Quote</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p>Dubai Best Technical Service LLC</p>
+            <p style="opacity:0.4; font-size:0.75rem;">Al Quoz, Dubai</p>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    HERO — Clean, left-aligned with circular image
+    ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-tag">Handyman • Dubai</span>
+                    <h1 class="hero-title" id="hero-title">
+                        Reliable Handyman &amp;<br /><span class="accent">Maintenance Services</span>
+                    </h1>
+                    <p class="hero-text">
+                        Professional home maintenance and handyman services across Dubai.
+                        Quality workmanship, 24/7 availability, and customer-focused solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            Get a Quote
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="tel:+971558073570" class="btn btn-outline">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            Call Now
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="icon"><i class="fas fa-star" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="num">5.0</div>
+                                <div class="label">Google Rating</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="icon"><i class="fas fa-clock" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="num">24/7</div>
+                                <div class="label">Available</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="icon"><i class="fas fa-map-pin" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="num">Dubai</div>
+                                <div class="label">Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img
+                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80"
+                        alt="Dubai Best Technical Service team"
+                        loading="eager"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICE PILLARS — 2x2 grid
+    ============================================================ -->
+    <section class="section section--white" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title" id="services-title">What We <span class="accent">Offer</span></h2>
+                <p class="section-subtitle mx-auto">
+                    Professional handyman and maintenance services for residential and commercial properties.
+                </p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-item reveal reveal-delay-1">
+                    <div class="icon"><i class="fas fa-wrench" aria-hidden="true"></i></div>
+                    <h3>Home Maintenance</h3>
+                    <p>Comprehensive repair and maintenance for your home.</p>
+                </div>
+                <div class="pillar-item reveal reveal-delay-2">
+                    <div class="icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
+                    <h3>AC Repair</h3>
+                    <p>All types of AC repair and maintenance services.</p>
+                </div>
+                <div class="pillar-item reveal reveal-delay-3">
+                    <div class="icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+                    <h3>Plumbing & Electrical</h3>
+                    <p>Expert plumbing and electrical installation and repair.</p>
+                </div>
+                <div class="pillar-item reveal reveal-delay-4">
+                    <div class="icon"><i class="fas fa-paint-roller" aria-hidden="true"></i></div>
+                    <h3>Painting & Renovation</h3>
+                    <p>Professional painting and full renovation services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT — Clean split
+    ============================================================ -->
+    <section class="section section--light" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img
+                    src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
+                    alt="Professional handyman team"
+                    loading="lazy"
+                    />
+                </div>
+
+                <div class="about-content reveal reveal-delay-1">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title" id="about-title">Your Trusted <span class="accent">Handyman Partner</span></h2>
+                    <p>
+                        Dubai Best Technical Service LLC provides professional handyman and maintenance services across Dubai. From AC repair to plumbing, electrical, painting, and carpentry — we deliver quality workmanship and reliable service.
+                    </p>
+                    <p>
+                        Our team is available 24/7 to handle all your maintenance needs with professionalism and care.
+                    </p>
+
+                    <ul class="about-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Professional Workmanship</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 Availability</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Quality-Focused Service</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Experienced Team</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-primary btn-sm">
+                        Get a Quote
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PACKAGES — Pricing style
+    ============================================================ -->
+    <section class="section section--white" id="packages" aria-labelledby="packages-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Service Packages</span>
+                <h2 class="section-title" id="packages-title">Choose the <span class="accent">Right Plan</span></h2>
+                <p class="section-subtitle mx-auto">
+                    Flexible service packages tailored to your maintenance needs.
+                </p>
+            </div>
+
+            <div class="packages-grid">
+                <div class="package-card reveal reveal-delay-1">
+                    <div class="package-name">Basic</div>
+                    <div class="package-price">AED 199 <span>/ visit</span></div>
+                    <div class="package-desc">Essential handyman services for small repairs.</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 1 hour of service</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Minor plumbing & electrical</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Basic appliance repair</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Standard parts included</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-accent btn-sm">Get Started</a>
+                </div>
+
+                <div class="package-card featured reveal reveal-delay-2">
+                    <span class="package-badge">Popular</span>
+                    <div class="package-name">Standard</div>
+                    <div class="package-price">AED 399 <span>/ visit</span></div>
+                    <div class="package-desc">Comprehensive maintenance for your home.</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 3 hours of service</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Full plumbing & electrical</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> AC servicing & repair</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Painting & carpentry</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Premium parts included</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+                </div>
+
+                <div class="package-card reveal reveal-delay-3">
+                    <div class="package-name">Premium</div>
+                    <div class="package-price">AED 699 <span>/ visit</span></div>
+                    <div class="package-desc">Complete renovation and maintenance.</div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 5 hours of service</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Full renovation work</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Swimming pool maintenance</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Water tank cleaning</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Premium parts included</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline-accent btn-sm">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US — Numbered steps
+    ============================================================ -->
+    <section class="section section--light" id="why" aria-labelledby="why-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title" id="why-title">Built Around <span class="accent">Excellence</span></h2>
+                <p class="section-subtitle mx-auto">
+                    Our commitment to quality and reliability sets us apart.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item reveal reveal-delay-1">
+                    <div class="num">01</div>
+                    <h3>Professional Workmanship</h3>
+                    <p>Quality work delivered with precision and care.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="why-item reveal reveal-delay-2">
+                    <div class="num">02</div>
+                    <h3>24/7 Availability</h3>
+                    <p>Quick and dependable service when you need it.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="why-item reveal reveal-delay-3">
+                    <div class="num">03</div>
+                    <h3>Quality-Focused Service</h3>
+                    <p>Every project meets the highest standards.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="why-item reveal reveal-delay-4">
+                    <div class="num">04</div>
+                    <h3>Experienced Team</h3>
+                    <p>Skilled professionals with technical expertise.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="why-item reveal reveal-delay-5">
+                    <div class="num">05</div>
+                    <h3>Transparent Service</h3>
+                    <p>Clear communication and honest recommendations.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="why-item reveal reveal-delay-6">
+                    <div class="num">06</div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Your satisfaction is our priority in every job.</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS — Vertical list style
+    ============================================================ -->
+    <section class="section section--white" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title" id="testimonials-title">What Our <span class="accent">Clients Say</span></h2>
+                <p class="section-subtitle mx-auto">
+                    Real feedback from customers who trust our services.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="stars">★★★★★</div>
+                    <div class="text">"Excellent service from start to finish. The team was professional, punctual, and the quality of work was outstanding. Highly recommend Dubai Best Technical Service!"</div>
+                    <div class="author">Sarah M.</div>
+                    <div class="source">Google Review</div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="stars">★★★★★</div>
+                    <div class="text">"Reliable and professional team. They handled our maintenance project with great attention to detail. Communication was clear throughout."</div>
+                    <div class="author">James R.</div>
+                    <div class="source">Google Review</div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-3">
+                    <div class="stars">★★★★★</div>
+                    <div class="text">"Very impressed with their handyman services. Quick response, fair pricing, and excellent workmanship. Will definitely use them again."</div>
+                    <div class="author">Lina K.</div>
+                    <div class="source">Google Review</div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-4">
+                    <div class="stars">★★★★★</div>
+                    <div class="text">"Professional, reliable, and quality-focused. They completed our project on time and exceeded our expectations. A truly trusted service partner."</div>
+                    <div class="author">Ahmed S.</div>
+                    <div class="source">Google Review</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    GALLERY — Clean grid
+    ============================================================ -->
+    <section class="section section--light" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title" id="gallery-title">Project <span class="accent">Showcase</span></h2>
+                <p class="section-subtitle mx-auto">
+                    A look at our professional work across Dubai.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal reveal-delay-1">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&q=80" alt="Renovation work" loading="lazy" />
+                    <div class="overlay">Renovation</div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-2">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&q=80" alt="AC maintenance" loading="lazy" />
+                    <div class="overlay">AC Service</div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-3">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80" alt="Painting work" loading="lazy" />
+                    <div class="overlay">Painting</div>
+                </div>
+                <div class="gallery-item reveal reveal-delay-4">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&q=80" alt="Plumbing work" loading="lazy" />
+                    <div class="overlay">Plumbing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT — Two column
+    ============================================================ -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title" id="contact-title">Let's Build Something <span class="accent">Reliable.</span></h2>
+                <p class="section-subtitle mx-auto" style="color:rgba(255,255,255,0.5);">
+                    Need handyman, maintenance or technical support in Dubai? Get in touch with our team.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Info -->
+                <div class="contact-info reveal">
+                    <h3>Contact Details</h3>
+                    <p>Reach out to us for any service enquiry. We're available 24/7 to help.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="label">Phone</div>
+                                <div class="value">+971 55 807 3570</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="label">Email</div>
+                                <div class="value">shanj4877@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="icon"><i class="fas fa-map-pin" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="label">Location</div>
+                                <div class="value">Al Quoz, Dubai, UAE</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="icon"><i class="fas fa-clock" aria-hidden="true"></i></span>
+                            <div class="info">
+                                <div class="label">Working Hours</div>
+                                <div class="value">24/7 Available</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form reveal reveal-delay-1">
+                    <h3>Request a Service</h3>
+                    <p class="sub">Fill in the details and our team will get back to you.</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Your full name" required />
+                            <div class="error-msg">Please enter your full name.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Your phone number" required />
+                            <div class="error-msg">Please enter your phone number.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com" required />
+                            <div class="error-msg">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceSelect">Service Required</label>
+                            <select id="serviceSelect" required>
+                                <option value="">Select a service</option>
+                                <option value="Home Maintenance">Home Maintenance</option>
+                                <option value="AC Repair & Maintenance">AC Repair & Maintenance</option>
+                                <option value="Swimming Pool Work">Swimming Pool Work</option>
+                                <option value="Electrical Work">Electrical Work</option>
+                                <option value="Plumbing Work">Plumbing Work</option>
+                                <option value="Painting & Renovation">Painting & Renovation</option>
+                                <option value="Carpentry Work">Carpentry Work</option>
+                                <option value="Water Tank & Deep Cleaning">Water Tank & Deep Cleaning</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="error-msg">Please select a service.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Tell us about your project..." required></textarea>
+                            <div class="error-msg">Please enter a message.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            Submit Service Request
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            Thank you! Your service request has been received.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA SECTION
+    ============================================================ -->
+    <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+            <h2 id="cta-title">Need a Reliable Handyman?</h2>
+            <p>Get in touch with our team and let's discuss your project.</p>
+            <a href="#contact" class="btn">
+                Get a Quote
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>
+                        DUBAI BEST
+                        <small>Technical Service</small>
+                    </h3>
+                    <p>Handyman and maintenance services in Dubai.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Home Maintenance</a></li>
+                        <li><a href="#services">AC Repair</a></li>
+                        <li><a href="#services">Plumbing</a></li>
+                        <li><a href="#services">Electrical</a></li>
+                        <li><a href="#services">Painting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Al Quoz, Dubai, UAE</p>
+                    <p>+971 55 807 3570</p>
+                    <p>shanj4877@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Dubai Best Technical Service LLC. All Rights Reserved.</span>
+                <span>Dubai, United Arab Emirates</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ============================================================
+            // HEADER SCROLL
+            // ============================================================
+            const header = document.getElementById('header');
+
+            function handleHeaderScroll() {
+                if (window.scrollY > 40) {
+                    header.classList.add('header--scrolled');
+                } else {
+                    header.classList.remove('header--scrolled');
+                }
+            }
+
+            window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+            window.addEventListener('load', handleHeaderScroll);
+
+            // ============================================================
+            // MOBILE MENU
+            // ============================================================
+            const hamburger = document.getElementById('hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+
+            function openMobile() {
+                hamburger.classList.add('active');
+                mobileNav.classList.add('open');
+                mobileOverlay.classList.add('open');
+                hamburger.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobile() {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('open');
+                mobileOverlay.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+
+            hamburger.addEventListener('click', function() {
+                if (mobileNav.classList.contains('open')) {
+                    closeMobile();
+                } else {
+                    openMobile();
+                }
+            });
+
+            mobileOverlay.addEventListener('click', closeMobile);
+
+            document.querySelectorAll('.mobile-nav-list a').forEach(function(link) {
+                link.addEventListener('click', closeMobile);
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+                    closeMobile();
+                }
+            });
+
+            // ============================================================
+            // ACTIVE NAV LINK
+            // ============================================================
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            function updateActiveNav() {
+                const scrollPos = window.scrollY + 120;
+                let currentId = 'hero';
+
+                sections.forEach(function(section) {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        currentId = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(function(link) {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveNav, { passive: true });
+            window.addEventListener('load', updateActiveNav);
+
+            // ============================================================
+            // SCROLL REVEAL
+            // ============================================================
+            const revealEls = document.querySelectorAll('.reveal');
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+                revealEls.forEach(function(el) {
+                    observer.observe(el);
+                });
+            } else {
+                revealEls.forEach(function(el) {
+                    el.classList.add('visible');
+                });
+            }
+
+            // ============================================================
+            // SMOOTH SCROLL
+            // ============================================================
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                        history.pushState(null, null, href);
+                    }
+                });
+            });
+
+            // ============================================================
+            // CONTACT FORM
+            // ============================================================
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                let isValid = true;
+                const fields = contactForm.querySelectorAll('input, select, textarea');
+
+                fields.forEach(function(field) {
+                    const group = field.closest('.form-group');
+                    if (group) {
+                        group.classList.remove('error');
+                        if (field.hasAttribute('required') && !field.value.trim()) {
+                            group.classList.add('error');
+                            isValid = false;
+                        }
+                        if (field.type === 'email' && field.value.trim()) {
+                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailRegex.test(field.value.trim())) {
+                                group.classList.add('error');
+                                isValid = false;
+                            }
+                        }
+                    }
+                });
+
+                if (isValid) {
+                    formSuccess.classList.add('show');
+                    contactForm.reset();
+                    setTimeout(function() {
+                        formSuccess.classList.remove('show');
+                    }, 6000);
+                } else {
+                    const firstError = contactForm.querySelector('.form-group.error');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }
+            });
+
+            contactForm.querySelectorAll('input, select, textarea').forEach(function(field) {
+                field.addEventListener('input', function() {
+                    const group = this.closest('.form-group');
+                    if (group) {
+                        group.classList.remove('error');
+                    }
+                });
+                field.addEventListener('change', function() {
+                    const group = this.closest('.form-group');
+                    if (group) {
+                        group.classList.remove('error');
+                    }
+                });
+            });
+
+            // ============================================================
+            // BACK TO TOP
+            // ============================================================
+            const backToTop = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 600) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }, { passive: true });
+
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ============================================================
+            // CONSOLE
+            // ============================================================
+            console.log('Dubai Best Technical Service LLC – Premium Website loaded.');
+
+        })();
+    </script>
+
+</body>
+</html>

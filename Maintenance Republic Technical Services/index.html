@@ -1,0 +1,2899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance Republic Technical Services | Property Maintenance Dubai</title>
+    <meta name="description" content="Maintenance Republic Technical Services provides professional property maintenance solutions in Dubai for homes, businesses and commercial spaces." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+               CSS VARIABLES — Architectural / Premium Property
+            ============================================================ */
+        :root {
+            --color-primary: #1a1a1a;
+            --color-primary-light: #2a2a2a;
+            --color-secondary: #3a3a3a;
+            --color-accent: #b8956e;
+            --color-accent-light: #d4b69a;
+            --color-accent-soft: #f0ebe5;
+            --color-ivory: #f5f0eb;
+            --color-bg: #f5f0eb;
+            --color-bg-white: #ffffff;
+            --color-bg-section: #f0ece7;
+            --color-text: #1a1a1a;
+            --color-text-muted: #5a5a5a;
+            --color-text-light: #8a8a8a;
+            --color-border: #e0d9d2;
+            --color-shadow: rgba(26, 26, 26, 0.04);
+            --color-shadow-hover: rgba(26, 26, 26, 0.08);
+            --radius: 4px;
+            --radius-sm: 2px;
+            --radius-full: 50px;
+            --transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --container-width: 1200px;
+            --header-height: 72px;
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Playfair Display', 'Inter', serif;
+        }
+
+        /* ============================================================
+               RESET & BASE
+            ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--color-ivory);
+            color: var(--color-text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================================
+               UTILITY
+            ============================================================ */
+        .section-label {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            padding: 0.2rem 0;
+            margin-bottom: 0.6rem;
+            border-bottom: 2px solid var(--color-accent);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--color-primary);
+            letter-spacing: -0.3px;
+            margin-bottom: 0.75rem;
+        }
+        .section-title .accent {
+            color: var(--color-accent);
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--color-text-muted);
+            max-width: 580px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+        .section--light {
+            background: var(--color-bg-section);
+        }
+        .section--white {
+            background: var(--color-bg-white);
+        }
+        .section--ivory {
+            background: var(--color-ivory);
+        }
+        .section--dark {
+            background: var(--color-primary);
+            color: #fff;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================================================
+               BUTTONS
+            ============================================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0.85rem 2.6rem;
+            border-radius: var(--radius-sm);
+            font-weight: 500;
+            font-size: 0.85rem;
+            border: 1.5px solid transparent;
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+            line-height: 1.4;
+            font-family: var(--font-primary);
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        .btn-primary:hover {
+            background: #a07a56;
+            border-color: #a07a56;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(184, 149, 110, 0.25);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-dark {
+            background: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-border);
+        }
+        .btn-outline-dark:hover {
+            background: var(--color-primary);
+            color: #fff;
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-accent {
+            background: transparent;
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+        .btn-outline-accent:hover {
+            background: var(--color-accent);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(184, 149, 110, 0.15);
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1.6rem;
+            font-size: 0.75rem;
+        }
+
+        /* ============================================================
+               HEADER — Transparent → Ivory on scroll
+            ============================================================ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        .header--scrolled {
+            background: rgba(245, 240, 235, 0.96);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 1px 20px rgba(0, 0, 0, 0.04);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .header--scrolled .header-logo-text {
+            color: var(--color-primary);
+        }
+        .header--scrolled .header-logo-mark {
+            background: var(--color-accent);
+            color: #fff;
+        }
+        .header--scrolled .nav-link {
+            color: var(--color-text-muted);
+        }
+        .header--scrolled .nav-link:hover,
+        .header--scrolled .nav-link.active {
+            color: var(--color-primary);
+        }
+        .header--scrolled .nav-link.active::after {
+            background: var(--color-accent);
+        }
+        .header--scrolled .btn-nav {
+            background: var(--color-accent);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        .header--scrolled .btn-nav:hover {
+            background: #a07a56;
+            border-color: #a07a56;
+        }
+        .header--scrolled .hamburger span {
+            background: var(--color-primary);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        .header-logo-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.55rem;
+            color: #fff;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            text-align: center;
+            line-height: 1.1;
+        }
+        .header-logo-mark span {
+            display: block;
+            font-size: 0.4rem;
+            font-weight: 400;
+            opacity: 0.5;
+            letter-spacing: 0.3px;
+        }
+        .header-logo-text {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1rem;
+            color: #fff;
+            letter-spacing: -0.2px;
+            transition: var(--transition);
+            line-height: 1.2;
+        }
+        .header-logo-text small {
+            display: block;
+            font-family: var(--font-primary);
+            font-weight: 400;
+            font-size: 0.55rem;
+            opacity: 0.5;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .nav-link {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            position: relative;
+            padding: 4px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .nav-link:hover {
+            color: #fff;
+        }
+        .nav-link.active {
+            color: #fff;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background: var(--color-accent);
+            border-radius: 1px;
+        }
+
+        .btn-nav {
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.4rem 1.6rem;
+            border-radius: var(--radius-sm);
+            font-weight: 500;
+            font-size: 0.7rem;
+            transition: var(--transition);
+            cursor: pointer;
+            white-space: nowrap;
+            font-family: var(--font-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn-nav:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1060;
+        }
+        .hamburger span {
+            width: 26px;
+            height: 1.5px;
+            background: #fff;
+            border-radius: 1px;
+            transition: var(--transition);
+        }
+        .header--scrolled .hamburger span {
+            background: var(--color-primary);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Mobile nav - full height elegant panel */
+        .mobile-nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1040;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        .mobile-nav-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 380px;
+            max-width: 85%;
+            height: 100%;
+            background: var(--color-ivory);
+            z-index: 1055;
+            padding: 100px 40px 40px;
+            transition: right 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: -8px 0 50px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+        }
+        .mobile-nav.open {
+            right: 0;
+        }
+        .mobile-nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex: 1;
+        }
+        .mobile-nav-list a {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            padding: 8px 0;
+            border-bottom: 1px solid var(--color-border);
+            transition: var(--transition);
+        }
+        .mobile-nav-list a:hover {
+            color: var(--color-accent);
+            padding-left: 8px;
+        }
+        .mobile-nav-footer {
+            padding-top: 24px;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ============================================================
+               HERO — Editorial full-screen with overlay
+            ============================================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            background: var(--color-primary);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_aAwX5YuTzEkuTd0o05I9A5i5ANJy30epZO7dvL-g2wLZD6AxDLGvNQ8OieFZ1LMEwLML9A7O8bOxsG3CaYoOvNCAPdNC_Y19qLyA45v9cxKhEimRT_nEcdm9B-FhnSie-3xoj6XjObkV=w408-h544-k-no') center/cover no-repeat;
+            opacity: 0.35;
+            transform: scale(1.05);
+            transition: transform 10s ease;
+        }
+        .hero:hover .hero-bg {
+            transform: scale(1);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.4) 50%, rgba(26, 26, 26, 0.2) 100%);
+            z-index: 1;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 120px 24px 80px;
+        }
+
+        .hero-content {
+            max-width: 680px;
+            color: #fff;
+        }
+
+        .hero-vertical-label {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-accent-light);
+            margin-bottom: 1.2rem;
+            border-left: 2px solid var(--color-accent);
+            padding-left: 14px;
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: 4.2rem;
+            font-weight: 600;
+            line-height: 1.05;
+            letter-spacing: -1.5px;
+            margin-bottom: 1rem;
+        }
+        .hero-title .accent {
+            color: var(--color-accent-light);
+        }
+
+        .hero-text {
+            font-size: 1.1rem;
+            opacity: 0.75;
+            max-width: 480px;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-trust {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px 28px;
+            padding-top: 1.4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .hero-trust .stars {
+            color: #f5a623;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+        .hero-trust .rating {
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .hero-trust .label {
+            opacity: 0.5;
+            font-size: 0.85rem;
+            font-weight: 300;
+        }
+
+        .hero-floating-badge {
+            position: absolute;
+            top: 120px;
+            right: 60px;
+            background: rgba(26, 26, 26, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-sm);
+            padding: 16px 20px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+            z-index: 2;
+            min-width: 100px;
+        }
+        .hero-floating-badge .big {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1;
+            color: var(--color-accent-light);
+        }
+        .hero-floating-badge .big span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .hero-floating-badge .stars {
+            color: #f5a623;
+            letter-spacing: 2px;
+            font-size: 0.7rem;
+        }
+        .hero-floating-badge .label {
+            font-size: 0.6rem;
+            opacity: 0.5;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* ============================================================
+               PREMIUM INTRO — Editorial
+            ============================================================ */
+        .intro-wrap {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .intro-text .section-label {
+            margin-bottom: 0.4rem;
+        }
+        .intro-text .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .intro-text p {
+            color: var(--color-text-muted);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            line-height: 1.9;
+            font-weight: 300;
+        }
+
+        .intro-detail {
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-border);
+        }
+        .intro-detail .num {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            opacity: 0.2;
+            line-height: 1;
+        }
+        .intro-detail p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            font-weight: 300;
+        }
+
+        .intro-image {
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            box-shadow: 0 16px 60px rgba(0, 0, 0, 0.04);
+        }
+        .intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 300px;
+            transition: transform 0.7s ease;
+        }
+        .intro-image:hover img {
+            transform: scale(1.02);
+        }
+
+        /* ============================================================
+               SERVICES — Editorial grid with rows
+            ============================================================ */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+            margin-top: 48px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .service-item {
+            padding: 28px 20px 24px;
+            border-bottom: 1px solid var(--color-border);
+            transition: var(--transition);
+            position: relative;
+            background: transparent;
+        }
+        .service-item:hover {
+            background: var(--color-bg-white);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+        }
+
+        .service-item .num {
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            opacity: 0.3;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+        .service-item .icon {
+            font-size: 1.2rem;
+            color: var(--color-accent);
+            margin-bottom: 0.4rem;
+            display: inline-block;
+            transition: var(--transition);
+        }
+        .service-item:hover .icon {
+            transform: translateX(4px);
+        }
+        .service-item h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.1rem;
+        }
+        .service-item p {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+            font-weight: 300;
+        }
+        .service-item .arrow {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.7rem;
+            color: var(--color-accent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .service-item:hover .arrow {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        .service-item .accent-line {
+            width: 0;
+            height: 1.5px;
+            background: var(--color-accent);
+            margin-top: 8px;
+            transition: var(--transition);
+        }
+        .service-item:hover .accent-line {
+            width: 30px;
+        }
+
+        /* ============================================================
+               CINEMATIC IMAGE SECTION
+            ============================================================ */
+        .cinematic-section {
+            position: relative;
+            min-height: 520px;
+            overflow: hidden;
+            background: var(--color-primary);
+        }
+        .cinematic-section .bg-img {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.2;
+            transform: scale(1.02);
+        }
+        .cinematic-section .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(26, 26, 26, 0.5);
+        }
+        .cinematic-section .content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            min-height: 520px;
+            padding: 60px 24px;
+        }
+        .cinematic-section .content .label {
+            font-size: 0.55rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-accent-light);
+            margin-bottom: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 0.2rem 1.2rem;
+            border-radius: var(--radius-sm);
+        }
+        .cinematic-section .content h2 {
+            font-family: var(--font-display);
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 0.6rem;
+        }
+        .cinematic-section .content p {
+            opacity: 0.6;
+            font-size: 1.05rem;
+            max-width: 480px;
+            margin-bottom: 1.6rem;
+            font-weight: 300;
+        }
+
+        /* ============================================================
+               WHY CHOOSE US — Oversized editorial
+            ============================================================ */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 48px;
+            border-top: 1px solid var(--color-border);
+            padding-top: 48px;
+        }
+
+        .why-item {
+            padding: 16px 12px;
+            border-right: 1px solid var(--color-border);
+            transition: var(--transition);
+        }
+        .why-item:last-child {
+            border-right: none;
+        }
+        .why-item:hover {
+            background: var(--color-bg-white);
+            padding-left: 16px;
+        }
+
+        .why-item .num {
+            font-family: var(--font-display);
+            font-size: 2.6rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            opacity: 0.15;
+            line-height: 1;
+            transition: var(--transition);
+        }
+        .why-item:hover .num {
+            opacity: 0.4;
+        }
+        .why-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin: 0.3rem 0 0.1rem;
+        }
+        .why-item p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        /* ============================================================
+               PROCESS — Vertical timeline
+            ============================================================ */
+        .process-section {
+            background: var(--color-bg-white);
+        }
+
+        .process-timeline-v {
+            max-width: 640px;
+            margin: 48px auto 0;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .process-timeline-v::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 1.5px;
+            background: var(--color-border);
+        }
+
+        .process-timeline-v .progress-line-v {
+            position: absolute;
+            left: 8px;
+            top: 0;
+            width: 1.5px;
+            background: var(--color-accent);
+            height: 0%;
+            transition: height 1.2s ease;
+        }
+        .process-timeline-v.animated .progress-line-v {
+            height: 100%;
+        }
+
+        .process-step-v {
+            position: relative;
+            padding: 0 0 32px 28px;
+        }
+        .process-step-v:last-child {
+            padding-bottom: 0;
+        }
+
+        .process-step-v .dot {
+            position: absolute;
+            left: -36px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--color-bg-white);
+            border: 2px solid var(--color-border);
+            transition: var(--transition);
+            z-index: 2;
+        }
+        .process-step-v.active .dot {
+            border-color: var(--color-accent);
+            background: var(--color-accent);
+        }
+        .process-step-v:hover .dot {
+            border-color: var(--color-accent);
+            transform: scale(1.1);
+        }
+
+        .process-step-v .num {
+            font-family: var(--font-display);
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            opacity: 0.3;
+            letter-spacing: 1px;
+        }
+        .process-step-v h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin: 0.1rem 0 0.1rem;
+        }
+        .process-step-v p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        /* ============================================================
+               REVIEWS — Large editorial testimonial
+            ============================================================ */
+        .reviews-section {
+            background: var(--color-bg-section);
+        }
+
+        .reviews-carousel-wrap {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .reviews-track {
+            display: flex;
+            transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+
+        .review-slide {
+            flex: 0 0 100%;
+            padding: 0 20px;
+        }
+
+        .review-slide-inner {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-sm);
+            padding: 48px 48px;
+            border: 1px solid var(--color-border);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .review-slide-meta .name {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        .review-slide-meta .stars {
+            color: #f5a623;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin: 0.2rem 0 0.3rem;
+        }
+        .review-slide-meta .date {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+        }
+        .review-slide-meta .badge {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-accent);
+            border: 1px solid var(--color-border);
+            padding: 0.2rem 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .review-slide-text {
+            position: relative;
+        }
+        .review-slide-text .quote-icon {
+            font-size: 2.4rem;
+            color: var(--color-accent);
+            opacity: 0.15;
+            margin-bottom: 0.4rem;
+            font-family: var(--font-display);
+            line-height: 1;
+        }
+        .review-slide-text blockquote {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            font-weight: 300;
+            font-style: italic;
+        }
+        .review-slide-text blockquote::before {
+            content: '"';
+        }
+        .review-slide-text blockquote::after {
+            content: '"';
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .carousel-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            color: var(--color-primary);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .carousel-btn:hover {
+            background: var(--color-accent);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        .carousel-btn:disabled {
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .carousel-progress {
+            display: flex;
+            gap: 6px;
+        }
+        .carousel-progress .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--color-border);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .carousel-progress .dot.active {
+            background: var(--color-accent);
+            width: 24px;
+            border-radius: 3px;
+        }
+
+        /* ============================================================
+               RATING TRUST BLOCK
+            ============================================================ */
+        .rating-trust {
+            background: var(--color-bg-white);
+            padding: 60px 0;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .rating-trust-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 32px 60px;
+            text-align: center;
+        }
+
+        .rating-trust-block .big {
+            font-family: var(--font-display);
+            font-size: 3.6rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            line-height: 1;
+        }
+        .rating-trust-block .big .accent {
+            color: var(--color-accent);
+        }
+        .rating-trust-block .stars {
+            color: #f5a623;
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+        }
+        .rating-trust-block .label {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .rating-trust-text h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+        }
+        .rating-trust-text p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ============================================================
+               LOCATION — Full-width architectural
+            ============================================================ */
+        .location-section {
+            background: var(--color-ivory);
+            padding: 80px 0;
+        }
+
+        .location-wrap {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 48px;
+            align-items: center;
+            background: var(--color-bg-white);
+            border-radius: var(--radius-sm);
+            padding: 48px 48px;
+            border: 1px solid var(--color-border);
+        }
+
+        .location-text .section-label {
+            margin-bottom: 0.3rem;
+        }
+        .location-text h2 {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            line-height: 1.1;
+            margin-bottom: 0.4rem;
+        }
+        .location-text h2 .accent {
+            color: var(--color-accent);
+        }
+        .location-text .address {
+            font-style: normal;
+            color: var(--color-text-muted);
+            line-height: 1.8;
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+        .location-text .address i {
+            color: var(--color-accent);
+            margin-right: 8px;
+        }
+        .location-text .coords {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            margin-bottom: 1.2rem;
+        }
+
+        .location-map-preview {
+            background: var(--color-primary);
+            border-radius: var(--radius-sm);
+            padding: 32px 24px;
+            text-align: center;
+            color: #fff;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+        .location-map-preview .pin-icon {
+            font-size: 2.2rem;
+            color: var(--color-accent-light);
+            margin-bottom: 0.4rem;
+        }
+        .location-map-preview h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .location-map-preview p {
+            font-size: 0.85rem;
+            opacity: 0.5;
+            margin: 0.2rem 0 1rem;
+        }
+
+        /* ============================================================
+               CONTACT — Elegant ivory editorial
+            ============================================================ */
+        .contact-section {
+            background: var(--color-ivory);
+            padding: 100px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-left .section-label {
+            margin-bottom: 0.3rem;
+        }
+        .contact-left h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--color-primary);
+            margin-bottom: 0.8rem;
+        }
+        .contact-left h2 .accent {
+            color: var(--color-accent);
+        }
+        .contact-left > p {
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            font-weight: 300;
+            max-width: 400px;
+            margin-bottom: 1.8rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-detail-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 10px 16px;
+            background: var(--color-bg-white);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+        }
+        .contact-detail-row:hover {
+            border-color: var(--color-accent);
+            background: var(--color-bg-white);
+        }
+        .contact-detail-row .icon {
+            color: var(--color-accent);
+            font-size: 1rem;
+            width: 24px;
+            text-align: center;
+        }
+        .contact-detail-row .info .label {
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--color-text-muted);
+        }
+        .contact-detail-row .info .value {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .contact-form-panel {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-sm);
+            padding: 40px 36px;
+            border: 1px solid var(--color-border);
+        }
+        .contact-form-panel h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+        }
+        .contact-form-panel .sub {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.4rem;
+            font-weight: 300;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.2rem;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-border);
+            font-size: 0.88rem;
+            font-family: var(--font-primary);
+            transition: var(--transition);
+            background: var(--color-ivory);
+            color: var(--color-text);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(184, 149, 110, 0.06);
+            background: #fff;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .form-group .error-msg {
+            font-size: 0.7rem;
+            color: #c0392b;
+            margin-top: 0.2rem;
+            display: none;
+        }
+        .form-group.error input,
+        .form-group.error select,
+        .form-group.error textarea {
+            border-color: #c0392b;
+        }
+        .form-group.error .error-msg {
+            display: block;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 0.85rem;
+            font-size: 0.85rem;
+            margin-top: 0.2rem;
+            border-radius: var(--radius-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-success {
+            display: none;
+            background: rgba(184, 149, 110, 0.06);
+            border: 1px solid rgba(184, 149, 110, 0.12);
+            border-radius: var(--radius-sm);
+            padding: 1.2rem 1.6rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .form-success.show {
+            display: block;
+        }
+
+        .form-note {
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        /* ============================================================
+               FOOTER — Sophisticated dark
+            ============================================================ */
+        .footer {
+            background: #0f0f0f;
+            color: rgba(255, 255, 255, 0.5);
+            padding: 56px 0 24px;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
+            gap: 40px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            margin-bottom: 24px;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-display);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        .footer-brand h3 small {
+            display: block;
+            font-family: var(--font-primary);
+            font-weight: 400;
+            font-size: 0.6rem;
+            opacity: 0.3;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .footer-brand p {
+            font-size: 0.85rem;
+            opacity: 0.4;
+            line-height: 1.7;
+            max-width: 260px;
+        }
+
+        .footer-links h4,
+        .footer-services h4,
+        .footer-contact h4 {
+            color: #fff;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 0.8rem;
+            opacity: 0.2;
+        }
+
+        .footer-links ul,
+        .footer-services ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .footer-links a,
+        .footer-services a {
+            font-size: 0.8rem;
+            transition: var(--transition);
+            opacity: 0.5;
+        }
+        .footer-links a:hover,
+        .footer-services a:hover {
+            opacity: 1;
+            color: #fff;
+            padding-left: 4px;
+        }
+
+        .footer-contact p {
+            font-size: 0.8rem;
+            line-height: 1.8;
+            opacity: 0.4;
+        }
+        .footer-contact .map-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--color-accent-light);
+            font-weight: 500;
+            font-size: 0.75rem;
+            margin-top: 6px;
+            transition: var(--transition);
+            opacity: 0.7;
+        }
+        .footer-contact .map-btn:hover {
+            gap: 10px;
+            opacity: 1;
+            color: #fff;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 0.7rem;
+            opacity: 0.2;
+        }
+
+        /* ============================================================
+               BACK TO TOP
+            ============================================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 1000;
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            background: var(--color-accent);
+            color: #fff;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(184, 149, 110, 0.25);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(16px);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top:hover {
+            background: #a07a56;
+            transform: translateY(-3px);
+        }
+
+        /* ============================================================
+               SCROLL REVEAL
+            ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: 0.05s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.15s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-5 {
+            transition-delay: 0.25s;
+        }
+
+        /* ============================================================
+               RESPONSIVE
+            ============================================================ */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3.4rem;
+            }
+            .hero-floating-badge {
+                top: 100px;
+                right: 30px;
+                padding: 14px 18px;
+            }
+            .hero-floating-badge .big {
+                font-size: 1.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .service-item {
+                border-bottom: 1px solid var(--color-border);
+                border-right: 1px solid var(--color-border);
+            }
+            .service-item:nth-child(2n) {
+                border-right: none;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-item {
+                border-right: none;
+                border-bottom: 1px solid var(--color-border);
+                padding: 16px 0;
+            }
+            .why-item:last-child {
+                border-bottom: none;
+            }
+
+            .review-slide-inner {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 32px 28px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .location-wrap {
+                grid-template-columns: 1fr;
+                padding: 32px 24px;
+            }
+            .location-map-preview {
+                min-height: 150px;
+            }
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+            .intro-wrap {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .intro-image {
+                min-height: 240px;
+                order: -1;
+            }
+            .intro-image img {
+                min-height: 240px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --header-height: 60px;
+            }
+
+            .header-nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                min-height: 92vh;
+                align-items: center;
+            }
+            .hero-container {
+                padding: 80px 20px 60px;
+            }
+            .hero-title {
+                font-size: 2.4rem;
+            }
+            .hero-text {
+                font-size: 1rem;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .hero-trust {
+                gap: 12px 16px;
+                font-size: 0.8rem;
+            }
+            .hero-floating-badge {
+                top: auto;
+                bottom: 20px;
+                right: 20px;
+                left: auto;
+                padding: 10px 16px;
+                min-width: 70px;
+            }
+            .hero-floating-badge .big {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .section-subtitle {
+                font-size: 0.95rem;
+            }
+
+            .intro-text .section-title {
+                font-size: 2.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .service-item {
+                border-right: none;
+                border-bottom: 1px solid var(--color-border);
+                padding: 20px 16px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            .why-item {
+                border-bottom: 1px solid var(--color-border);
+                padding: 16px 0;
+            }
+            .why-item:last-child {
+                border-bottom: none;
+            }
+
+            .process-timeline-v {
+                padding-left: 28px;
+                margin-top: 32px;
+            }
+            .process-timeline-v::before {
+                left: 4px;
+            }
+            .process-timeline-v .progress-line-v {
+                left: 4px;
+            }
+            .process-step-v {
+                padding: 0 0 24px 20px;
+            }
+            .process-step-v .dot {
+                left: -28px;
+                width: 12px;
+                height: 12px;
+            }
+
+            .review-slide-inner {
+                padding: 24px 20px;
+            }
+            .review-slide-text blockquote {
+                font-size: 0.95rem;
+            }
+
+            .rating-trust-inner {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .contact-form-panel {
+                padding: 24px 20px;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .contact-left h2 {
+                font-size: 2.2rem;
+            }
+
+            .location-wrap {
+                padding: 24px 20px;
+            }
+            .location-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .mobile-nav-overlay.open {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .back-to-top {
+                bottom: 16px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+
+            .cinematic-section .content h2 {
+                font-size: 2.2rem;
+            }
+            .cinematic-section .content p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            .hero-vertical-label {
+                font-size: 0.5rem;
+                padding-left: 10px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .intro-text .section-title {
+                font-size: 1.8rem;
+            }
+
+            .review-slide-inner {
+                padding: 20px 16px;
+            }
+            .review-slide-text blockquote {
+                font-size: 0.85rem;
+            }
+            .review-slide-meta .name {
+                font-size: 1.1rem;
+            }
+
+            .contact-left h2 {
+                font-size: 1.8rem;
+            }
+            .contact-detail-row {
+                padding: 8px 12px;
+            }
+            .contact-detail-row .info .value {
+                font-size: 0.8rem;
+            }
+
+            .btn {
+                padding: 0.7rem 1.6rem;
+                font-size: 0.75rem;
+                white-space: normal;
+            }
+            .btn-nav {
+                padding: 0.3rem 1rem;
+                font-size: 0.65rem;
+            }
+
+            .location-text .address {
+                font-size: 0.85rem;
+            }
+            .cinematic-section .content h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* ============================================================
+               PREFERS REDUCED MOTION
+            ============================================================ */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            html {
+                scroll-behavior: auto;
+            }
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            .process-timeline-v .progress-line-v {
+                transition: none !important;
+            }
+            .hero-bg {
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header" id="header" role="banner">
+        <div class="container header-container">
+            <a href="#hero" class="header-logo" aria-label="Maintenance Republic Technical Services">
+                <span class="header-logo-mark">
+                    MR
+                    <span>tech</span>
+                </span>
+                <span class="header-logo-text">
+                    Maintenance Republic
+                    <small>Technical Services</small>
+                </span>
+            </a>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#location" class="nav-link">Location</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn-nav">Book a Service</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p>Maintenance Republic Technical Services</p>
+            <p style="opacity:0.4; font-size:0.7rem;">Al Quoz, Dubai</p>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+    HERO — Editorial full-screen
+    ============================================================ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-vertical-label">Property Maintenance • Dubai</span>
+                <h1 class="hero-title" id="hero-title">
+                    Property Maintenance,<br /><span class="accent">Delivered With Precision.</span>
+                </h1>
+                <p class="hero-text">
+                    Professional property maintenance solutions for homes, businesses and
+                    commercial spaces across Dubai.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        Book a Service
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="#services" class="btn btn-outline">
+                        Explore Services
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating">5.0</span>
+                    <span class="label">Google Rating</span>
+                    <span class="label" style="opacity:0.2;">•</span>
+                    <span class="label">Trusted Property Maintenance</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-floating-badge">
+            <div class="big">5.0 <span>★</span></div>
+            <div class="stars">★★★★★</div>
+            <div class="label">Google Rating</div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PREMIUM INTRO — Editorial
+    ============================================================ -->
+    <section class="section section--ivory" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="intro-wrap">
+                <div class="intro-text reveal">
+                    <span class="section-label">Maintenance Republic</span>
+                    <h2 class="section-title" id="about-title">Keeping Dubai Properties <span class="accent">Performing At Their Best.</span></h2>
+                    <p>
+                        Maintenance Republic Technical Services is a professional property
+                        maintenance provider serving residential and commercial properties
+                        across Dubai. Our focus is on responsive service, quality workmanship,
+                        and long-term maintenance support that keeps properties functioning
+                        at their highest standard.
+                    </p>
+                    <p>
+                        From routine maintenance to complex repairs, our reliable technicians
+                        deliver practical solutions with attention to detail and a commitment
+                        to customer satisfaction.
+                    </p>
+                    <div class="intro-detail">
+                        <div class="num">5.0</div>
+                        <p>★★★★★ Google Rating — Trusted by property owners across Dubai</p>
+                    </div>
+                </div>
+                <div class="intro-image reveal reveal-delay-1">
+                    <img
+                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
+                    alt="Maintenance Republic professional property maintenance"
+                    loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SERVICES — Editorial grid
+    ============================================================ -->
+    <section class="section section--white" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title" id="services-title">Complete <span class="accent">Property Maintenance</span></h2>
+                <p class="section-subtitle mx-auto">
+                    Comprehensive maintenance solutions designed to keep your property in top condition.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-item reveal reveal-delay-1">
+                    <div class="num">01</div>
+                    <div class="icon"><i class="fas fa-snowflake" aria-hidden="true"></i></div>
+                    <h4>AC &amp; HVAC Maintenance</h4>
+                    <p>Professional air-conditioning and HVAC system care.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-2">
+                    <div class="num">02</div>
+                    <div class="icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+                    <h4>Electrical Maintenance</h4>
+                    <p>Safe and reliable electrical system maintenance.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-3">
+                    <div class="num">03</div>
+                    <div class="icon"><i class="fas fa-wrench" aria-hidden="true"></i></div>
+                    <h4>Plumbing Services</h4>
+                    <p>Professional plumbing repair and maintenance.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-4">
+                    <div class="num">04</div>
+                    <div class="icon"><i class="fas fa-home" aria-hidden="true"></i></div>
+                    <h4>General Property Maintenance</h4>
+                    <p>Comprehensive maintenance for all property types.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-1">
+                    <div class="num">05</div>
+                    <div class="icon"><i class="fas fa-paint-roller" aria-hidden="true"></i></div>
+                    <h4>Painting &amp; Wall Finishing</h4>
+                    <p>Professional painting and wall finishing services.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-2">
+                    <div class="num">06</div>
+                    <div class="icon"><i class="fas fa-hammer" aria-hidden="true"></i></div>
+                    <h4>Carpentry &amp; Joinery</h4>
+                    <p>Quality carpentry and joinery for your property.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-3">
+                    <div class="num">07</div>
+                    <div class="icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+                    <h4>Appliance &amp; Equipment Repair</h4>
+                    <p>Reliable repair for household and commercial appliances.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="service-item reveal reveal-delay-4">
+                    <div class="num">08</div>
+                    <div class="icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                    <h4>Preventive Maintenance</h4>
+                    <p>Planned maintenance to prevent issues before they arise.</p>
+                    <div class="accent-line"></div>
+                    <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CINEMATIC IMAGE SECTION
+    ============================================================ -->
+    <section class="cinematic-section" aria-labelledby="cinematic-title">
+        <div class="bg-img" aria-hidden="true"></div>
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="container content">
+            <span class="label">Dubai Property Maintenance</span>
+            <h2 id="cinematic-title">Professional Maintenance.<br />Built Around Your Property.</h2>
+            <p>Expert care for residential and commercial properties across Dubai.</p>
+            <a href="#contact" class="btn btn-primary btn-sm">
+                Book a Service
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US — Oversized editorial
+    ============================================================ -->
+    <section class="section section--ivory" id="why" aria-labelledby="why-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title" id="why-title">Why Clients <span class="accent">Choose Us</span></h2>
+                <p class="section-subtitle mx-auto">
+                    We combine expertise with a commitment to quality and reliability.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item reveal reveal-delay-1">
+                    <div class="num">01</div>
+                    <h4>Reliable Response</h4>
+                    <p>Quick and dependable service when you need it.</p>
+                </div>
+                <div class="why-item reveal reveal-delay-2">
+                    <div class="num">02</div>
+                    <h4>Professional Workmanship</h4>
+                    <p>Quality work delivered with care and precision.</p>
+                </div>
+                <div class="why-item reveal reveal-delay-3">
+                    <div class="num">03</div>
+                    <h4>Transparent Service</h4>
+                    <p>Clear communication and honest recommendations.</p>
+                </div>
+                <div class="why-item reveal reveal-delay-4">
+                    <div class="num">04</div>
+                    <h4>Long-Term Support</h4>
+                    <p>Building lasting relationships through reliable service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PROCESS — Vertical timeline
+    ============================================================ -->
+    <section class="section process-section" id="process" aria-labelledby="process-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Our Process</span>
+                <h2 class="section-title" id="process-title">From First Call <span class="accent">To Final Check</span></h2>
+                <p class="section-subtitle mx-auto">
+                    A clear, straightforward process from enquiry to completion.
+                </p>
+            </div>
+
+            <div class="process-timeline-v" id="processTimelineV">
+                <div class="progress-line-v" id="progressLineV"></div>
+
+                <div class="process-step-v active" data-step="0">
+                    <div class="dot"></div>
+                    <div class="num">01</div>
+                    <h4>Tell Us What You Need</h4>
+                    <p>Share your maintenance requirements with our team.</p>
+                </div>
+                <div class="process-step-v" data-step="1">
+                    <div class="dot"></div>
+                    <div class="num">02</div>
+                    <h4>Site Assessment</h4>
+                    <p>We visit your property to evaluate the scope of work.</p>
+                </div>
+                <div class="process-step-v" data-step="2">
+                    <div class="dot"></div>
+                    <div class="num">03</div>
+                    <h4>Clear Service Recommendation</h4>
+                    <p>Transparent recommendations with no hidden surprises.</p>
+                </div>
+                <div class="process-step-v" data-step="3">
+                    <div class="dot"></div>
+                    <div class="num">04</div>
+                    <h4>Professional Execution</h4>
+                    <p>Our team carries out the work with precision and care.</p>
+                </div>
+                <div class="process-step-v" data-step="4">
+                    <div class="dot"></div>
+                    <div class="num">05</div>
+                    <h4>Final Quality Check</h4>
+                    <p>Thorough inspection to ensure every detail meets our standard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    REVIEWS — Large editorial testimonial
+    ============================================================ -->
+    <section class="section reviews-section" id="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title" id="reviews-title">Trusted By Property Owners <span class="accent">Across Dubai</span></h2>
+            </div>
+
+            <div class="reviews-carousel-wrap reveal">
+                <div class="reviews-track" id="reviewsTrack">
+                    <!-- Injected by JS -->
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevReview" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <div class="carousel-progress" id="reviewDots"></div>
+                    <button class="carousel-btn" id="nextReview" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    RATING TRUST BLOCK
+    ============================================================ -->
+    <section class="rating-trust" aria-labelledby="rating-title">
+        <div class="container">
+            <div class="rating-trust-inner">
+                <div class="rating-trust-block">
+                    <div class="big">5.0</div>
+                    <div class="stars">★★★★★</div>
+                    <div class="label">Google Customer Rating</div>
+                </div>
+                <div class="rating-trust-text">
+                    <h3 id="rating-title">Highly Rated Property Maintenance Service in Dubai</h3>
+                    <p>Trusted by property owners across the city for professional, reliable maintenance.</p>
+                    <a href="https://www.google.com/maps/place/Maintenance+Republic+Technical+Services/data=!4m7!3m6!1s0x57ce0b2a7dea335:0x64c76b4f0bec657b!8m2!3d25.1663054!4d55.2378863!16s%2Fg%2F11khzz3cr7!19sChIJNaPep7LgfAURe2XsC09rx2Q?authuser=0&hl=en&rclk=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline-accent btn-sm"
+                    style="margin-top:8px;"
+                    >
+                    <i class="fab fa-google" aria-hidden="true"></i>
+                    View Google Reviews
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+LOCATION — Full-width architectural
+============================================================ -->
+<section class="location-section" id="location" aria-labelledby="location-title">
+    <div class="container">
+        <div class="location-wrap">
+            <div class="location-text reveal">
+                <span class="section-label">Find Us</span>
+                <h2 id="location-title">Serving Dubai From <span class="accent">Al Quoz</span></h2>
+                <address class="address">
+                    <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    568Q+M72 - Office M1<br />
+                    33 Sheikh Zayed Road<br />
+                    Al Qouz Third, Al Quoz<br />
+                    Dubai, United Arab Emirates
+                </address>
+                <div class="coords">25.1663054, 55.2378863</div>
+                <a href="https://www.google.com/maps/place/Maintenance+Republic+Technical+Services/data=!4m7!3m6!1s0x57ce0b2a7dea335:0x64c76b4f0bec657b!8m2!3d25.1663054!4d55.2378863!16s%2Fg%2F11khzz3cr7!19sChIJNaPep7LgfAURe2XsC09rx2Q?authuser=0&hl=en&rclk=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+                >
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                Open in Google Maps
+            </a>
+        </div>
+
+        <div class="location-map-preview reveal reveal-delay-1">
+            <div class="pin-icon"><i class="fas fa-map-pin" aria-hidden="true"></i></div>
+            <h4>Al Quoz, Dubai</h4>
+            <p>Office M1, 33 Sheikh Zayed Road</p>
+            <a href="https://www.google.com/maps/place/Maintenance+Republic+Technical+Services/data=!4m7!3m6!1s0x57ce0b2a7dea335:0x64c76b4f0bec657b!8m2!3d25.1663054!4d55.2378863!16s%2Fg%2F11khzz3cr7!19sChIJNaPep7LgfAURe2XsC09rx2Q?authuser=0&hl=en&rclk=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+            >
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            Open in Google Maps
+        </a>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- ============================================================
+CONTACT — Elegant ivory editorial
+============================================================ -->
+<section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-left reveal">
+                <span class="section-label">Get in Touch</span>
+                <h2 id="contact-title">Let's Look After <span class="accent">Your Property.</span></h2>
+                <p>
+                    Whether you need routine maintenance or urgent repairs, our team is
+                    ready to help. Get in touch and we'll take care of the rest.
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-detail-row">
+                        <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <div class="info">
+                            <div class="label">Call</div>
+                            <div class="value">Contact us through the form</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail-row">
+                        <div class="icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+                        <div class="info">
+                            <div class="label">WhatsApp</div>
+                            <div class="value">Available for quick enquiries</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail-row">
+                        <div class="icon"><i class="fas fa-map-pin" aria-hidden="true"></i></div>
+                        <div class="info">
+                            <div class="label">Location</div>
+                            <div class="value">Al Quoz, Dubai, UAE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-panel reveal reveal-delay-1">
+                <h3>Request a Service</h3>
+                <p class="sub">Fill in the details and we'll get back to you as soon as possible.</p>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Your full name" required />
+                        <div class="error-msg">Please enter your full name.</div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Your phone number" required />
+                            <div class="error-msg">Please enter your phone number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com" required />
+                            <div class="error-msg">Please enter a valid email address.</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceSelect">Service Required</label>
+                        <select id="serviceSelect" required>
+                            <option value="">Select a service</option>
+                            <option value="AC & HVAC Maintenance">AC &amp; HVAC Maintenance</option>
+                            <option value="Electrical Maintenance">Electrical Maintenance</option>
+                            <option value="Plumbing Services">Plumbing Services</option>
+                            <option value="General Property Maintenance">General Property Maintenance</option>
+                            <option value="Painting & Wall Finishing">Painting &amp; Wall Finishing</option>
+                            <option value="Carpentry & Joinery">Carpentry &amp; Joinery</option>
+                            <option value="Appliance & Equipment Repair">Appliance &amp; Equipment Repair</option>
+                            <option value="Preventive Maintenance">Preventive Maintenance</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="error-msg">Please select a service.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Tell us what needs attention..." required></textarea>
+                        <div class="error-msg">Please enter a message.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Send Service Request
+                    </button>
+
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        Thank you! Your service request has been received.
+                    </div>
+
+                    <div class="form-note">
+                        <i class="fas fa-lock" aria-hidden="true"></i>
+                        We'll get back to you as soon as possible.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3>
+                    Maintenance Republic
+                    <small>Technical Services</small>
+                </h3>
+                <p>Professional property maintenance solutions across Dubai.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">AC &amp; HVAC</a></li>
+                    <li><a href="#services">Electrical</a></li>
+                    <li><a href="#services">Plumbing</a></li>
+                    <li><a href="#services">Property Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Al Quoz, Dubai, UAE</p>
+                <a href="https://www.google.com/maps/place/Maintenance+Republic+Technical+Services/data=!4m7!3m6!1s0x57ce0b2a7dea335:0x64c76b4f0bec657b!8m2!3d25.1663054!4d55.2378863!16s%2Fg%2F11khzz3cr7!19sChIJNaPep7LgfAURe2XsC09rx2Q?authuser=0&hl=en&rclk=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                >
+                Google Maps <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="map-btn" style="margin-top:4px; color:var(--color-accent-light); opacity:0.7;">
+                Request a Service <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>&copy; 2026 Maintenance Republic Technical Services. All Rights Reserved.</span>
+        <span>Dubai, United Arab Emirates</span>
+    </div>
+</div>
+</footer>
+
+<!-- ============================================================
+BACK TO TOP
+============================================================ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ============================================================
+JAVASCRIPT
+============================================================ -->
+<script>
+    (function() {
+        'use strict';
+
+        // ============================================================
+        // HEADER SCROLL
+        // ============================================================
+        const header = document.getElementById('header');
+
+        function handleHeaderScroll() {
+            if (window.scrollY > 40) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+        window.addEventListener('load', handleHeaderScroll);
+
+        // ============================================================
+        // MOBILE MENU
+        // ============================================================
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        function openMobile() {
+            hamburger.classList.add('active');
+            mobileNav.classList.add('open');
+            mobileOverlay.classList.add('open');
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobile() {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('open');
+            mobileOverlay.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', function() {
+            if (mobileNav.classList.contains('open')) {
+                closeMobile();
+            } else {
+                openMobile();
+            }
+        });
+
+        mobileOverlay.addEventListener('click', closeMobile);
+
+        document.querySelectorAll('.mobile-nav-list a').forEach(function(link) {
+            link.addEventListener('click', closeMobile);
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+                closeMobile();
+            }
+        });
+
+        // ============================================================
+        // ACTIVE NAV LINK
+        // ============================================================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function updateActiveNav() {
+            const scrollPos = window.scrollY + 120;
+            let currentId = 'hero';
+
+            sections.forEach(function(section) {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                if (scrollPos >= top && scrollPos < top + height) {
+                    currentId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(function(link) {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav, { passive: true });
+        window.addEventListener('load', updateActiveNav);
+
+        // ============================================================
+        // SCROLL REVEAL
+        // ============================================================
+        const revealEls = document.querySelectorAll('.reveal');
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+            revealEls.forEach(function(el) {
+                observer.observe(el);
+            });
+        } else {
+            revealEls.forEach(function(el) {
+                el.classList.add('visible');
+            });
+        }
+
+        // ============================================================
+        // SMOOTH SCROLL
+        // ============================================================
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                    history.pushState(null, null, href);
+                }
+            });
+        });
+
+        // ============================================================
+        // PROCESS VERTICAL TIMELINE
+        // ============================================================
+        const processTimelineV = document.getElementById('processTimelineV');
+        const progressLineV = document.getElementById('progressLineV');
+        const processStepsV = document.querySelectorAll('.process-step-v');
+        let processVAnimated = false;
+
+        function animateProcessV() {
+            if (processVAnimated) return;
+            const rect = processTimelineV.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                processVAnimated = true;
+                processTimelineV.classList.add('animated');
+
+                processStepsV.forEach(function(step, index) {
+                    setTimeout(function() {
+                        step.classList.add('active');
+                    }, 150 + index * 180);
+                });
+            }
+        }
+
+        window.addEventListener('scroll', animateProcessV, { passive: true });
+        window.addEventListener('load', animateProcessV);
+
+        // ============================================================
+        // REVIEWS DATA
+        // ============================================================
+        const reviewsData = [{
+            name: 'Maria S',
+            date: '2 months ago',
+            rating: 5,
+            text: 'The team was excellent! The booking of the services was easy and prompt. I had my property inspected thoroughly after previous tenant handover in the morning, and the necessary services to address issues were booked on that very afternoon …'
+        }, {
+            name: 'Katie Lea',
+            date: '3 months ago',
+            rating: 5,
+            text: 'Very professional and helpful team with great communication throughout the planning and execution of the work. Thanks Raffi and team for doing such a fantastic job, we couldn\'t be happier with the standard of work and the overall experience! Highly recommended.'
+        }, {
+            name: 'Krystl Schoettler',
+            date: '4 months ago',
+            rating: 5,
+            text: 'We\'ve used Maintenance Republic Technical Services a few times now and can\'t recommend them enough! Super professional, always there to help, and really easy to deal with great service every time.'
+        }, {
+            name: 'Sophie Lavers',
+            date: '5 months ago',
+            rating: 5,
+            text: 'Great service and understanding for JGE in particular, very grateful for the ease they provided and will use again!'
+        }, {
+            name: 'Shahin B.',
+            date: '6 months ago',
+            rating: 5,
+            text: 'I just would like to share my wonderful experiences here for everyone notice and probable consideration. Team are very trustworthy, prompt and fast of experience can be felt in their …'
+        }];
+
+        // ============================================================
+        // BUILD REVIEW SLIDES
+        // ============================================================
+        const track = document.getElementById('reviewsTrack');
+        const dotsContainer = document.getElementById('reviewDots');
+
+        reviewsData.forEach(function(review, index) {
+            const slide = document.createElement('div');
+            slide.className = 'review-slide';
+
+            const stars = '★★★★★';
+            slide.innerHTML = `
+                    <div class="review-slide-inner">
+                        <div class="review-slide-meta">
+                            <div class="name">${review.name}</div>
+                            <div class="stars">${stars}</div>
+                            <div class="date">${review.date}</div>
+                            <div class="badge"><i class="fab fa-google" aria-hidden="true"></i> Google Review</div>
+                        </div>
+                        <div class="review-slide-text">
+                            <div class="quote-icon">“</div>
+                            <blockquote>${review.text}</blockquote>
+                        </div>
+                    </div>
+                `;
+            track.appendChild(slide);
+
+            const dot = document.createElement('button');
+            dot.className = 'dot' + (index === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Go to review ' + (index + 1));
+            dot.dataset.index = index;
+            dot.addEventListener('click', function() {
+                goToReview(parseInt(this.dataset.index));
+            });
+            dotsContainer.appendChild(dot);
+        });
+
+        // ============================================================
+        // CAROUSEL LOGIC
+        // ============================================================
+        let currentReviewIndex = 0;
+        let autoplayInterval = null;
+        const autoplayDelay = 6000;
+
+        const slides = document.querySelectorAll('.review-slide');
+        const totalSlides = slides.length;
+        const prevBtn = document.getElementById('prevReview');
+        const nextBtn = document.getElementById('nextReview');
+        const dots = document.querySelectorAll('.dot');
+
+        function updateCarousel() {
+            const offset = -currentReviewIndex * 100;
+            track.style.transform = 'translateX(' + offset + '%)';
+
+            prevBtn.disabled = currentReviewIndex === 0;
+            nextBtn.disabled = currentReviewIndex >= totalSlides - 1;
+
+            dots.forEach(function(dot, i) {
+                dot.classList.toggle('active', i === currentReviewIndex);
+            });
+        }
+
+        function goToReview(index) {
+            if (index < 0) index = 0;
+            if (index >= totalSlides) index = totalSlides - 1;
+            currentReviewIndex = index;
+            updateCarousel();
+            resetAutoplay();
+        }
+
+        function nextReview() {
+            if (currentReviewIndex < totalSlides - 1) {
+                goToReview(currentReviewIndex + 1);
+            } else {
+                goToReview(0);
+            }
+        }
+
+        function prevReview() {
+            if (currentReviewIndex > 0) {
+                goToReview(currentReviewIndex - 1);
+            } else {
+                goToReview(totalSlides - 1);
+            }
+        }
+
+        function resetAutoplay() {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+            startAutoplay();
+        }
+
+        function startAutoplay() {
+            if (autoplayInterval) return;
+            autoplayInterval = setInterval(function() {
+                if (currentReviewIndex >= totalSlides - 1) {
+                    goToReview(0);
+                } else {
+                    nextReview();
+                }
+            }, autoplayDelay);
+        }
+
+        function stopAutoplay() {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+        }
+
+        prevBtn.addEventListener('click', function() {
+            prevReview();
+            resetAutoplay();
+        });
+
+        nextBtn.addEventListener('click', function() {
+            nextReview();
+            resetAutoplay();
+        });
+
+        const carouselWrap = document.querySelector('.reviews-carousel-wrap');
+        carouselWrap.addEventListener('mouseenter', stopAutoplay);
+        carouselWrap.addEventListener('mouseleave', startAutoplay);
+
+        setTimeout(updateCarousel, 100);
+        window.addEventListener('load', function() {
+            setTimeout(updateCarousel, 200);
+            startAutoplay();
+        });
+
+        // ============================================================
+        // CONTACT FORM
+        // ============================================================
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let isValid = true;
+            const fields = contactForm.querySelectorAll('input, select, textarea');
+
+            fields.forEach(function(field) {
+                const group = field.closest('.form-group');
+                if (group) {
+                    group.classList.remove('error');
+                    if (field.hasAttribute('required') && !field.value.trim()) {
+                        group.classList.add('error');
+                        isValid = false;
+                    }
+                    if (field.type === 'email' && field.value.trim()) {
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailRegex.test(field.value.trim())) {
+                            group.classList.add('error');
+                            isValid = false;
+                        }
+                    }
+                }
+            });
+
+            if (isValid) {
+                formSuccess.classList.add('show');
+                contactForm.reset();
+                setTimeout(function() {
+                    formSuccess.classList.remove('show');
+                }, 6000);
+            } else {
+                const firstError = contactForm.querySelector('.form-group.error');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        });
+
+        contactForm.querySelectorAll('input, select, textarea').forEach(function(field) {
+            field.addEventListener('input', function() {
+                const group = this.closest('.form-group');
+                if (group) {
+                    group.classList.remove('error');
+                }
+            });
+            field.addEventListener('change', function() {
+                const group = this.closest('.form-group');
+                if (group) {
+                    group.classList.remove('error');
+                }
+            });
+        });
+
+        // ============================================================
+        // BACK TO TOP
+        // ============================================================
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 600) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ============================================================
+        // CONSOLE
+        // ============================================================
+        console.log('Maintenance Republic Technical Services – Premium Demo Website loaded.');
+        console.log('Designed for client presentation – all data from real business listing.');
+
+    })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A to Z Technical Services Co LLC | Interior Construction &amp; Technical Services Dubai</title>
+  <meta name="description" content="A to Z Technical Services Co LLC provides professional interior construction and technical services in Dubai, UAE." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <style>
+    /* ============================================================
+       CSS VARIABLES — Fresh Identity: Navy/Charcoal + Orange Accent
+    ============================================================ */
+    :root {
+      --color-primary: #0e1a2b;
+      --color-primary-light: #1a2c44;
+      --color-secondary: #1e344a;
+      --color-accent: #e8712c;
+      --color-accent-dark: #c95d1e;
+      --color-accent-light: #f08a4a;
+      --color-accent-soft: #fdf0e8;
+      --color-bg: #f6f7f9;
+      --color-bg-white: #ffffff;
+      --color-bg-section: #f0f2f5;
+      --color-text: #0e1a2b;
+      --color-text-muted: #4a5a6e;
+      --color-text-light: #7a8a9e;
+      --color-border: #dce0e6;
+      --color-shadow: rgba(14, 26, 43, 0.06);
+      --color-shadow-hover: rgba(14, 26, 43, 0.10);
+      --radius: 6px;
+      --radius-sm: 4px;
+      --radius-full: 50px;
+      --transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --container-width: 1200px;
+      --header-height: 72px;
+      --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================================================
+       UTILITY
+    ============================================================ */
+    .section-label {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      background: rgba(232, 113, 44, 0.08);
+      padding: 0.2rem 1.2rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.6rem;
+      border: 1px solid rgba(232, 113, 44, 0.12);
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--color-primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 0.75rem;
+    }
+    .section-title .accent {
+      color: var(--color-accent);
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      max-width: 580px;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+    .section--light {
+      background: var(--color-bg-section);
+    }
+    .section--white {
+      background: var(--color-bg-white);
+    }
+    .section--dark {
+      background: var(--color-primary);
+      color: #fff;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0.85rem 2.6rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 2px solid transparent;
+      transition: var(--transition);
+      cursor: pointer;
+      text-align: center;
+      line-height: 1.4;
+      font-family: var(--font-primary);
+      letter-spacing: 0.3px;
+    }
+
+    .btn-primary {
+      background: var(--color-accent);
+      color: #fff;
+      border-color: var(--color-accent);
+    }
+    .btn-primary:hover {
+      background: var(--color-accent-dark);
+      border-color: var(--color-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(232, 113, 44, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--color-primary);
+      border-color: var(--color-border);
+    }
+    .btn-outline-dark:hover {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-accent {
+      background: transparent;
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+    .btn-outline-accent:hover {
+      background: var(--color-accent);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(232, 113, 44, 0.15);
+    }
+
+    .btn-sm {
+      padding: 0.5rem 1.6rem;
+      font-size: 0.75rem;
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1050;
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .header--scrolled {
+      background: rgba(14, 26, 43, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 1px 24px rgba(0, 0, 0, 0.12);
+      height: 64px;
+    }
+
+    .header--scrolled .header-logo-text {
+      color: #fff;
+    }
+    .header--scrolled .header-logo-mark {
+      background: var(--color-accent);
+      color: #fff;
+    }
+    .header--scrolled .nav-link {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .header--scrolled .nav-link:hover,
+    .header--scrolled .nav-link.active {
+      color: #fff;
+    }
+    .header--scrolled .nav-link.active::after {
+      background: var(--color-accent);
+    }
+    .header--scrolled .btn-nav {
+      background: var(--color-accent);
+      color: #fff;
+      border-color: var(--color-accent);
+    }
+    .header--scrolled .btn-nav:hover {
+      background: var(--color-accent-dark);
+      border-color: var(--color-accent-dark);
+    }
+    .header--scrolled .hamburger span {
+      background: #fff;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .header-logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.6rem;
+      color: #fff;
+      letter-spacing: 0.5px;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: center;
+      line-height: 1.1;
+    }
+    .header-logo-mark span {
+      display: block;
+      font-size: 0.4rem;
+      font-weight: 400;
+      opacity: 0.5;
+      letter-spacing: 0.3px;
+    }
+    .header-logo-text {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #fff;
+      letter-spacing: -0.2px;
+      transition: var(--transition);
+      line-height: 1.2;
+    }
+    .header-logo-text small {
+      display: block;
+      font-weight: 400;
+      font-size: 0.55rem;
+      opacity: 0.5;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .nav-link {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      transition: var(--transition);
+      position: relative;
+      padding: 4px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .nav-link:hover {
+      color: #fff;
+    }
+    .nav-link.active {
+      color: #fff;
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: var(--color-accent);
+      border-radius: 1px;
+    }
+
+    .btn-nav {
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0.4rem 1.6rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.7rem;
+      transition: var(--transition);
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: var(--font-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .btn-nav:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 1060;
+    }
+    .hamburger span {
+      width: 26px;
+      height: 1.5px;
+      background: #fff;
+      border-radius: 1px;
+      transition: var(--transition);
+    }
+    .header--scrolled .hamburger span {
+      background: #fff;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Mobile nav */
+    .mobile-nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(14, 26, 43, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 1040;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+    .mobile-nav-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 340px;
+      max-width: 82%;
+      height: 100%;
+      background: var(--color-primary);
+      z-index: 1055;
+      padding: 100px 32px 40px;
+      transition: right 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: -8px 0 50px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-nav.open {
+      right: 0;
+    }
+    .mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
+    }
+    .mobile-nav-list a {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      transition: var(--transition);
+    }
+    .mobile-nav-list a:hover {
+      color: var(--color-accent);
+      padding-left: 8px;
+    }
+    .mobile-nav-footer {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ============================================================
+       HERO — Asymmetric with masked reveal
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--color-primary);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 0;
+      width: 100%;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .hero-left {
+      padding: 120px 48px 80px 24px;
+      color: #fff;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-label {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      background: rgba(232, 113, 44, 0.08);
+      padding: 0.2rem 1.2rem;
+      border-radius: var(--radius-sm);
+      margin-bottom: 1.2rem;
+      border: 1px solid rgba(232, 113, 44, 0.08);
+    }
+
+    .hero-title {
+      font-size: 4.2rem;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      margin-bottom: 1.2rem;
+    }
+    .hero-title .accent {
+      color: var(--color-accent);
+    }
+
+    .hero-text {
+      font-size: 1.1rem;
+      opacity: 0.7;
+      max-width: 480px;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px 28px;
+      padding-top: 1.4rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .hero-trust .stars {
+      color: #f5a623;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+    }
+    .hero-trust .rating {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .hero-trust .label {
+      opacity: 0.5;
+      font-size: 0.85rem;
+      font-weight: 300;
+    }
+
+    .hero-right {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .hero-image-wrap {
+      position: relative;
+      width: 100%;
+      height: 85%;
+      overflow: hidden;
+      border-radius: var(--radius-sm);
+      clip-path: inset(0 0 0 0);
+      transition: clip-path 1.2s ease;
+    }
+
+    .hero-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      transform: scale(1.02);
+      transition: transform 8s ease, opacity 0.8s ease;
+    }
+    .hero:hover .hero-image-wrap img {
+      transform: scale(1);
+      opacity: 0.85;
+    }
+
+    .hero-image-overlay {
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-sm);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Corner accents */
+    .hero-corner {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-color: var(--color-accent);
+      border-style: solid;
+      border-width: 0;
+      opacity: 0.2;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .hero-corner.tl {
+      top: 0;
+      left: 0;
+      border-top-width: 2px;
+      border-left-width: 2px;
+    }
+    .hero-corner.tr {
+      top: 0;
+      right: 0;
+      border-top-width: 2px;
+      border-right-width: 2px;
+    }
+    .hero-corner.bl {
+      bottom: 0;
+      left: 0;
+      border-bottom-width: 2px;
+      border-left-width: 2px;
+    }
+    .hero-corner.br {
+      bottom: 0;
+      right: 0;
+      border-bottom-width: 2px;
+      border-right-width: 2px;
+    }
+
+    .hero-floating-badge {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      background: rgba(14, 26, 43, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-sm);
+      padding: 16px 24px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+    }
+    .hero-floating-badge .big {
+      font-size: 1.8rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--color-accent);
+    }
+    .hero-floating-badge .big span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    .hero-floating-badge .stars {
+      color: #f5a623;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+    }
+    .hero-floating-badge .label {
+      font-size: 0.6rem;
+      opacity: 0.5;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ============================================================
+       TRUST / STATS SECTION
+    ============================================================ */
+    .trust-section {
+      background: var(--color-bg-white);
+      padding: 32px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 8px 12px;
+      border-right: 1px solid var(--color-border);
+      transition: var(--transition);
+    }
+    .trust-item:last-child {
+      border-right: none;
+    }
+    .trust-item:hover {
+      background: var(--color-bg-section);
+    }
+
+    .trust-item .num {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      line-height: 1;
+    }
+    .trust-item .num .accent {
+      color: var(--color-accent);
+    }
+    .trust-item .stars {
+      color: #f5a623;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+    }
+    .trust-item .label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--color-text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* ============================================================
+       SERVICES — Horizontal panels with alternating layout
+    ============================================================ */
+    .services-section {
+      background: var(--color-bg-white);
+    }
+
+    .service-panels {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 48px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .service-panel {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr 0.5fr;
+      align-items: center;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--color-border);
+      transition: var(--transition);
+      cursor: default;
+      position: relative;
+      background: transparent;
+    }
+    .service-panel:hover {
+      background: var(--color-bg-section);
+      padding-left: 32px;
+    }
+
+    .service-panel .num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      opacity: 0.2;
+      letter-spacing: 1px;
+      transition: var(--transition);
+    }
+    .service-panel:hover .num {
+      opacity: 0.6;
+    }
+
+    .service-panel .content {
+      display: flex;
+      flex-direction: column;
+    }
+    .service-panel .content h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      transition: var(--transition);
+    }
+    .service-panel:hover .content h4 {
+      color: var(--color-accent);
+    }
+    .service-panel .content p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      font-weight: 300;
+    }
+
+    .service-panel .arrow {
+      font-size: 0.9rem;
+      color: var(--color-accent);
+      opacity: 0;
+      transition: var(--transition);
+      justify-self: end;
+    }
+    .service-panel:hover .arrow {
+      opacity: 1;
+      transform: translateX(6px);
+    }
+
+    .service-panel .accent-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background: var(--color-accent);
+      transition: var(--transition);
+      opacity: 0.1;
+    }
+    .service-panel:hover .accent-line {
+      width: 4px;
+      opacity: 0.3;
+    }
+
+    /* ============================================================
+       ABOUT — Asymmetric split with clip-path reveal
+    ============================================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image-wrap {
+      position: relative;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: 0 16px 60px rgba(0, 0, 0, 0.04);
+      clip-path: inset(0 0 0 0);
+      transition: clip-path 1s ease;
+    }
+    .about-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 400px;
+      transition: transform 0.7s ease;
+    }
+    .about-image-wrap:hover img {
+      transform: scale(1.02);
+    }
+
+    .about-text .section-label {
+      margin-bottom: 0.4rem;
+    }
+    .about-text .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    .about-text p {
+      color: var(--color-text-muted);
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+
+    .about-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 20px;
+      margin: 1.2rem 0 1.6rem;
+    }
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+    .about-list li i {
+      color: var(--color-accent);
+      font-size: 0.8rem;
+    }
+
+    /* ============================================================
+       WHY CHOOSE US — Editorial with numbered expansion
+    ============================================================ */
+    .why-section {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .why-section .section-label {
+      border-color: rgba(232, 113, 44, 0.2);
+      background: rgba(232, 113, 44, 0.06);
+    }
+    .why-section .section-title {
+      color: #fff;
+    }
+    .why-section .section-subtitle {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px 40px;
+      margin-top: 48px;
+    }
+
+    .why-item {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      transition: var(--transition);
+      cursor: default;
+    }
+    .why-item:hover {
+      border-bottom-color: var(--color-accent);
+    }
+
+    .why-item .num {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--color-accent);
+      opacity: 0.15;
+      line-height: 1;
+      transition: var(--transition);
+    }
+    .why-item:hover .num {
+      opacity: 0.5;
+    }
+
+    .why-item h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0.2rem 0 0.1rem;
+    }
+    .why-item p {
+      font-size: 0.85rem;
+      opacity: 0.5;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .why-item .line {
+      width: 24px;
+      height: 1.5px;
+      background: var(--color-accent);
+      margin-top: 8px;
+      transition: var(--transition);
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    .why-item:hover .line {
+      transform: scaleX(1);
+    }
+
+    /* ============================================================
+       REVIEWS — Horizontal carousel with partial visibility
+    ============================================================ */
+    .reviews-section {
+      background: var(--color-bg-section);
+    }
+
+    .reviews-carousel-wrap {
+      position: relative;
+      overflow: hidden;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .reviews-track {
+      display: flex;
+      gap: 24px;
+      transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+
+    .review-card {
+      flex: 0 0 calc(33.333% - 16px);
+      min-width: 280px;
+      background: var(--color-bg-white);
+      border-radius: var(--radius-sm);
+      padding: 28px 24px;
+      border: 1px solid var(--color-border);
+      transition: var(--transition);
+      transform: scale(0.95);
+      opacity: 0.6;
+    }
+    .review-card.active {
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 8px 32px var(--color-shadow-hover);
+      border-color: var(--color-accent);
+    }
+    .review-card:hover {
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 8px 32px var(--color-shadow-hover);
+      border-color: transparent;
+    }
+
+    .review-card .stars {
+      color: #f5a623;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .review-card .name {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 0.95rem;
+    }
+    .review-card .text {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-top: 4px;
+      font-weight: 300;
+    }
+    .review-card .badge {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--color-accent);
+      border: 1px solid var(--color-border);
+      padding: 0.15rem 1rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .carousel-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-bg-white);
+      border: 1px solid var(--color-border);
+      color: var(--color-primary);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .carousel-btn:hover {
+      background: var(--color-accent);
+      color: #fff;
+      border-color: var(--color-accent);
+    }
+    .carousel-btn:disabled {
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    .carousel-progress {
+      display: flex;
+      gap: 6px;
+    }
+    .carousel-progress .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-border);
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .carousel-progress .dot.active {
+      background: var(--color-accent);
+      width: 24px;
+      border-radius: 3px;
+    }
+
+    /* ============================================================
+       GALLERY — Masonry-style asymmetric
+    ============================================================ */
+    .gallery-section {
+      background: var(--color-bg-white);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-auto-rows: 240px;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .gallery-item {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      position: relative;
+      background: var(--color-primary-light);
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+      opacity: 0.85;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(14, 26, 43, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      opacity: 0;
+      transition: var(--transition);
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+    .gallery-item .overlay .label {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+    .gallery-item .overlay .title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-row: span 2;
+      grid-column: span 1;
+    }
+    .gallery-item:nth-child(2) {
+      grid-column: span 1;
+    }
+    .gallery-item:nth-child(3) {
+      grid-column: span 1;
+    }
+    .gallery-item:nth-child(4) {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    /* ============================================================
+       CONTACT — Dark with technical grid
+    ============================================================ */
+    .contact-section {
+      background: var(--color-primary);
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-grid-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      pointer-events: none;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(255, 255, 255, 0.15) 30px, rgba(255, 255, 255, 0.15) 31px),
+        repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(255, 255, 255, 0.15) 30px, rgba(255, 255, 255, 0.15) 31px);
+      background-size: 60px 60px;
+      animation: gridPulse 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes gridPulse {
+      0% {
+        opacity: 0.02;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0.05;
+        transform: scale(1.02);
+      }
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-left {
+      color: #fff;
+      padding-top: 8px;
+    }
+    .contact-left .section-label {
+      border-color: rgba(232, 113, 44, 0.2);
+      background: rgba(232, 113, 44, 0.06);
+      color: var(--color-accent);
+    }
+    .contact-left h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 0.8rem;
+      clip-path: inset(0 100% 0 0);
+      transition: clip-path 1s ease;
+    }
+    .contact-left h2.visible {
+      clip-path: inset(0 0 0 0);
+    }
+    .contact-left h2 .accent {
+      color: var(--color-accent);
+    }
+    .contact-left > p {
+      opacity: 0.6;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 400px;
+      margin-bottom: 1.8rem;
+      font-weight: 300;
+    }
+
+    .contact-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: var(--radius-sm);
+      border-left: 2px solid var(--color-accent);
+      transition: var(--transition);
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    .contact-row.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .contact-row:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .contact-row .num {
+      font-size: 0.6rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      opacity: 0.3;
+      min-width: 24px;
+    }
+    .contact-row .icon {
+      color: var(--color-accent);
+      font-size: 0.9rem;
+      width: 20px;
+      text-align: center;
+    }
+    .contact-row .info .label {
+      font-size: 0.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      opacity: 0.3;
+    }
+    .contact-row .info .value {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .contact-right {
+      background: var(--color-bg-white);
+      border-radius: var(--radius-sm);
+      padding: 36px 32px;
+      box-shadow: 0 16px 60px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      transform: translateY(30px);
+      opacity: 0;
+      transition: transform 0.8s ease, opacity 0.8s ease;
+    }
+    .contact-right.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .contact-right h3 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 0.2rem;
+    }
+    .contact-right .sub {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.4rem;
+      font-weight: 300;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.2rem;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+      font-size: 0.88rem;
+      font-family: var(--font-primary);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      background: var(--color-bg);
+      color: var(--color-text);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(232, 113, 44, 0.06);
+      background: #fff;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .form-group .error-msg {
+      font-size: 0.7rem;
+      color: #d9534f;
+      margin-top: 0.2rem;
+      display: none;
+    }
+    .form-group.error input,
+    .form-group.error select,
+    .form-group.error textarea {
+      border-color: #d9534f;
+    }
+    .form-group.error .error-msg {
+      display: block;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 0.85rem;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      position: relative;
+      overflow: hidden;
+    }
+    .form-submit .arrow {
+      transition: transform 0.3s ease;
+    }
+    .form-submit:hover .arrow {
+      transform: translateX(6px);
+    }
+
+    .form-success {
+      display: none;
+      background: rgba(232, 113, 44, 0.06);
+      border: 1px solid rgba(232, 113, 44, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem 1.6rem;
+      color: var(--color-accent);
+      font-weight: 600;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .form-success.show {
+      display: block;
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      color: var(--color-text-light);
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    /* Map panel */
+    .contact-map {
+      margin-top: 24px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      height: 160px;
+      background: var(--color-secondary);
+      position: relative;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* ============================================================
+       FINAL CTA — Diagonal/angled section
+    ============================================================ */
+    .final-cta {
+      position: relative;
+      padding: 100px 0;
+      background: var(--color-accent);
+      overflow: hidden;
+      clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+      margin-top: -4px;
+    }
+    .final-cta .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .final-cta .content h2 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 0.8rem;
+    }
+    .final-cta .content p {
+      opacity: 0.8;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    .final-cta .content .btn {
+      background: #fff;
+      color: var(--color-primary);
+      border-color: #fff;
+    }
+    .final-cta .content .btn:hover {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: none;
+    }
+
+    .final-cta-bg {
+      position: absolute;
+      inset: 0;
+      background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJhIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDQwTDQwIDBNNDAgNDBMMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==');
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background: #0a121e;
+      color: rgba(255, 255, 255, 0.5);
+      padding: 56px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      margin-bottom: 24px;
+    }
+
+    .footer-brand h3 {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .footer-brand h3 small {
+      display: block;
+      font-weight: 400;
+      font-size: 0.6rem;
+      opacity: 0.3;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      opacity: 0.4;
+      line-height: 1.7;
+      max-width: 260px;
+    }
+
+    .footer-links h4,
+    .footer-services h4,
+    .footer-contact h4 {
+      color: #fff;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 0.8rem;
+      opacity: 0.2;
+    }
+
+    .footer-links ul,
+    .footer-services ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .footer-links a,
+    .footer-services a {
+      font-size: 0.8rem;
+      transition: var(--transition);
+      opacity: 0.5;
+    }
+    .footer-links a:hover,
+    .footer-services a:hover {
+      opacity: 1;
+      color: #fff;
+      padding-left: 4px;
+    }
+
+    .footer-contact p {
+      font-size: 0.8rem;
+      line-height: 1.8;
+      opacity: 0.4;
+    }
+    .footer-contact .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--color-accent);
+      font-weight: 500;
+      font-size: 0.75rem;
+      margin-top: 6px;
+      transition: var(--transition);
+      opacity: 0.7;
+    }
+    .footer-contact .map-btn:hover {
+      gap: 10px;
+      opacity: 1;
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.7rem;
+      opacity: 0.2;
+    }
+
+    /* ============================================================
+       BACK TO TOP
+    ============================================================ */
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 1000;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(232, 113, 44, 0.25);
+      transition: var(--transition);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(16px);
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .back-to-top:hover {
+      background: var(--color-accent-dark);
+      transform: translateY(-3px);
+    }
+
+    /* ============================================================
+       SCROLL REVEAL
+    ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 0.05s;
+    }
+    .reveal-delay-2 {
+      transition-delay: 0.1s;
+    }
+    .reveal-delay-3 {
+      transition-delay: 0.15s;
+    }
+    .reveal-delay-4 {
+      transition-delay: 0.2s;
+    }
+    .reveal-delay-5 {
+      transition-delay: 0.25s;
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .hero-left {
+        padding: 100px 24px 60px;
+        min-height: 60vh;
+      }
+      .hero-right {
+        height: 50vh;
+        min-height: 300px;
+        padding: 20px;
+      }
+      .hero-image-wrap {
+        height: 90%;
+      }
+      .hero-title {
+        font-size: 3rem;
+      }
+      .hero-floating-badge {
+        bottom: 24px;
+        left: 24px;
+        padding: 14px 20px;
+      }
+      .hero-floating-badge .big {
+        font-size: 1.5rem;
+      }
+
+      .service-panel {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 16px 20px;
+      }
+      .service-panel .num {
+        font-size: 0.6rem;
+      }
+      .service-panel .arrow {
+        display: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .about-image-wrap {
+        min-height: 280px;
+        order: -1;
+      }
+      .about-image-wrap img {
+        min-height: 280px;
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .review-card {
+        flex: 0 0 calc(50% - 12px);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .contact-right {
+        transform: none;
+        opacity: 1;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 200px;
+      }
+      .gallery-item:nth-child(1) {
+        grid-row: span 1;
+      }
+      .gallery-item:nth-child(4) {
+        grid-column: span 1;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+
+      .final-cta {
+        clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+      }
+      .final-cta .content h2 {
+        font-size: 2.6rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --header-height: 60px;
+      }
+
+      .header-nav {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-left {
+        padding: 80px 20px 40px;
+        min-height: 50vh;
+      }
+      .hero-title {
+        font-size: 2.4rem;
+      }
+      .hero-text {
+        font-size: 1rem;
+      }
+      .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .hero-trust {
+        gap: 10px 16px;
+        font-size: 0.8rem;
+      }
+      .hero-right {
+        height: 40vh;
+        min-height: 220px;
+      }
+      .hero-floating-badge {
+        bottom: 16px;
+        left: 16px;
+        padding: 10px 16px;
+        min-width: 70px;
+      }
+      .hero-floating-badge .big {
+        font-size: 1.2rem;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .trust-item {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        padding: 12px 8px;
+      }
+      .trust-item:last-child {
+        border-bottom: none;
+      }
+      .trust-item .num {
+        font-size: 1.8rem;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      .section-subtitle {
+        font-size: 0.95rem;
+      }
+
+      .service-panel {
+        padding: 14px 16px;
+      }
+      .service-panel .content h4 {
+        font-size: 0.95rem;
+      }
+      .service-panel .content p {
+        font-size: 0.8rem;
+      }
+
+      .about-text .section-title {
+        font-size: 2rem;
+      }
+      .about-list {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .why-item .num {
+        font-size: 1.8rem;
+      }
+
+      .review-card {
+        flex: 0 0 100%;
+        min-width: 0;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+      }
+
+      .contact-left h2 {
+        font-size: 2.2rem;
+      }
+      .contact-right {
+        padding: 24px 20px;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .final-cta {
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+        padding: 60px 0;
+      }
+      .final-cta .content h2 {
+        font-size: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .mobile-nav-overlay.open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+      }
+
+      .contact-map {
+        height: 120px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      .hero-label {
+        font-size: 0.5rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .about-text .section-title {
+        font-size: 1.8rem;
+      }
+
+      .trust-item .num {
+        font-size: 1.4rem;
+      }
+      .trust-item .label {
+        font-size: 0.55rem;
+      }
+
+      .contact-left h2 {
+        font-size: 1.8rem;
+      }
+      .contact-row {
+        padding: 8px 12px;
+      }
+      .contact-row .info .value {
+        font-size: 0.8rem;
+      }
+
+      .final-cta .content h2 {
+        font-size: 1.6rem;
+      }
+
+      .btn {
+        padding: 0.7rem 1.6rem;
+        font-size: 0.75rem;
+        white-space: normal;
+      }
+      .btn-nav {
+        padding: 0.3rem 1rem;
+        font-size: 0.6rem;
+      }
+
+      .review-card {
+        padding: 20px 16px;
+      }
+      .review-card .text {
+        font-size: 0.82rem;
+      }
+    }
+
+    /* ============================================================
+       PREFERS REDUCED MOTION
+    ============================================================ */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      html {
+        scroll-behavior: auto;
+      }
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .hero-image-wrap img {
+        transform: none !important;
+      }
+      .contact-grid-bg {
+        animation: none !important;
+      }
+      .contact-left h2 {
+        clip-path: none !important;
+      }
+      .contact-row {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .contact-right {
+        transform: none !important;
+        opacity: 1 !important;
+      }
+      .final-cta {
+        clip-path: none !important;
+      }
+      .review-card {
+        transform: none !important;
+        opacity: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+  HEADER
+  ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="container header-container">
+      <a href="#hero" class="header-logo" aria-label="A to Z Technical Services Co LLC">
+        <img style="width: 100px; height: 60px;" src="https://scontent.flyp19-1.fna.fbcdn.net/v/t39.30808-6/277179031_1538211769896022_6529690177905646421_n.jpg?stp=dst-jpg_tt6&cstp=mx1211x1211&ctp=s1211x1211&_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=9WMSXOy0gq0Q7kNvwFF0cZa&_nc_oc=AdpluWxyLh1xB0xZWzUaBWpc9ZJRlPEXNtKYT8cQtY53RrkzuECcEoAbnbHyrMdgsRM&_nc_zt=23&_nc_ht=scontent.flyp19-1.fna&_nc_gid=UHavT5vWMVS6PQG8ZACaqw&_nc_ss=7b2a8&oh=00_AQGPok4AikvaHKY59OvnIJ7UwZp_Uafm_KWnt5Oe2Iw4Bg&oe=6A96F94C" alt="A to Z Technical Services Co LLC">
+        <span class="header-logo-text">
+          A to Z Technical
+          <small>Services Co LLC</small>
+        </span>
+      </a>
+
+      <nav class="header-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-nav">Request a Service</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <p>A to Z Technical Services Co LLC</p>
+      <p style="opacity:0.4; font-size:0.7rem;">Bur Dubai, Al Mina, Dubai</p>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+  HERO — Asymmetric with masked reveal
+  ============================================================ -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-left">
+        <span class="hero-label">Interior Construction • Dubai</span>
+        <h1 class="hero-title" id="hero-title">
+          Reliable Technical &amp;<br /><span class="accent">Construction Solutions</span>
+        </h1>
+        <p class="hero-text">
+          A to Z Technical Services Co LLC provides professional interior
+          construction and technical services across Dubai — delivering quality,
+          reliability and expertise for every project.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            Request a Service
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Contact Us
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span class="stars">★★★★★</span>
+          <span class="rating">5.0</span>
+          <span class="label">Google Rating</span>
+          <span class="label" style="opacity:0.2;">•</span>
+          <span class="label">Trusted in Dubai</span>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="hero-right">
+        <div class="hero-image-wrap" id="heroImageWrap">
+          <img
+          src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk2ScugsVWFy32iXeh62mz9nx-X7cIpkP4UFndKJqUigeTxyGs_-mUkZYvYTEM96TrF0fixAFvI4fS3na_8zirwof11gAZW6uZQS3Pj7gUBJ3D2Kpp9AEfnurdPvEeDdWBVrGdoRPLyfxSd=w408-h725-k-no"
+          alt="A to Z Technical Services professional team"
+          loading="eager"
+          />
+        </div>
+        <div class="hero-image-overlay"></div>
+        <span class="hero-corner tl"></span>
+        <span class="hero-corner tr"></span>
+        <span class="hero-corner bl"></span>
+        <span class="hero-corner br"></span>
+
+        <div class="hero-floating-badge">
+          <div class="big">5.0 <span>★</span></div>
+          <div class="stars">★★★★★</div>
+          <div class="label">Google Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  TRUST / STATS SECTION
+  ============================================================ -->
+  <section class="trust-section" aria-label="Trust indicators">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="num"><span class="accent">5.0</span></div>
+          <div class="stars">★★★★★</div>
+          <div class="label">Google Rating</div>
+        </div>
+        <div class="trust-item">
+          <div class="num">Professional</div>
+          <div class="label">Technical Services</div>
+        </div>
+        <div class="trust-item">
+          <div class="num">Dubai</div>
+          <div class="label">Based Service</div>
+        </div>
+        <div class="trust-item">
+          <div class="num">Interior</div>
+          <div class="label">Construction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  SERVICES — Horizontal panels (updated with detailed portfolio)
+  ============================================================ -->
+  <section class="section services-section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title" id="services-title">Comprehensive <span class="accent">Service Portfolio</span></h2>
+        <p class="section-subtitle mx-auto">
+          Professional, multi-disciplinary technical services &amp; property maintenance — turnkey solutions for residential, commercial, and industrial properties.
+        </p>
+      </div>
+
+      <div class="service-panels">
+        <div class="service-panel reveal reveal-delay-1">
+          <div class="accent-line"></div>
+          <div class="num">01</div>
+          <div class="content">
+            <h4>MEP Works</h4>
+            <p>Complete electrical installation, plumbing & sanitary works, HVAC, AC servicing, duct cleaning.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-2">
+          <div class="accent-line"></div>
+          <div class="num">02</div>
+          <div class="content">
+            <h4>Interior Fit-Out & Renovation</h4>
+            <p>False ceiling (Gypsum/Armstrong), wall partitions, professional painting, wallpaper, diverse flooring (tiles, marble, vinyl, wooden parquet).</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-3">
+          <div class="accent-line"></div>
+          <div class="num">03</div>
+          <div class="content">
+            <h4>Carpentry & Joinery</h4>
+            <p>Custom wardrobes, kitchen cabinetry, doors, windows, pergolas, furniture assembly, and carpentry repairs.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-4">
+          <div class="accent-line"></div>
+          <div class="num">04</div>
+          <div class="content">
+            <h4>Masonry & Civil Works</h4>
+            <p>Brick/block work, plastering, interlocking tile fixing, structural repairs, specialized waterproofing (roofs, bathrooms, balconies).</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-1">
+          <div class="accent-line"></div>
+          <div class="num">05</div>
+          <div class="content">
+            <h4>Handyman & General Maintenance</h4>
+            <p>Routine upkeep, fixture fixing, bracket mounting, and comprehensive Annual Maintenance Contracts (AMCs).</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-2">
+          <div class="accent-line"></div>
+          <div class="num">06</div>
+          <div class="content">
+            <h4>Cleaning Services</h4>
+            <p>Deep cleaning for move-ins/move-outs, post-renovation cleanups, and regular commercial space maintenance.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-3">
+          <div class="accent-line"></div>
+          <div class="num">07</div>
+          <div class="content">
+            <h4>Property Maintenance</h4>
+            <p>Complete property care and maintenance solutions for villas, apartments, offices, retail shops, and warehouses.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="service-panel reveal reveal-delay-4">
+          <div class="accent-line"></div>
+          <div class="num">08</div>
+          <div class="content">
+            <h4>Repair & Installation</h4>
+            <p>Professional repair and installation for all systems — from fixtures to complex technical components.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  ABOUT — Asymmetric split (updated with company profile)
+  ============================================================ -->
+  <section class="section section--light" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
+          alt="A to Z Technical Services professional team"
+          loading="lazy"
+          />
+        </div>
+
+        <div class="about-text reveal reveal-delay-1">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title" id="about-title">Multi-Disciplinary <span class="accent">Technical Services</span></h2>
+          <p>
+            A to Z Technical Services Co LLC is a professional, multi-disciplinary technical services and property maintenance contracting company dedicated to delivering reliable, high-quality, and turnkey solutions for residential, commercial, and industrial properties under one roof.
+          </p>
+          <p>
+            With a certified, experienced workforce, high-grade materials, and industry-standard safety practices, we provide prompt response times, flexible scheduling, and emergency support. Our transparent pricing and customizable packages — including Annual Maintenance Contracts (AMCs) — ensure peace of mind for every client.
+          </p>
+
+          <ul class="about-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Certified &amp; Experienced</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> High-Grade Materials</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Safety-First Approach</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Prompt Response</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Transparent Pricing</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Customizable AMCs</li>
+          </ul>
+
+          <a href="#services" class="btn btn-primary btn-sm">
+            Explore Services
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  WHY CHOOSE US — Editorial numbered (updated highlights)
+  ============================================================ -->
+  <section class="section why-section" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title" id="why-title">Built Around <span class="accent">Excellence</span></h2>
+        <p class="section-subtitle mx-auto" style="color:rgba(255,255,255,0.5);">
+          Our commitment to quality, reliability, and professional service sets us apart.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item reveal reveal-delay-1">
+          <div class="num">01</div>
+          <h4>Professional &amp; Certified Workforce</h4>
+          <p>Skilled technicians with proven expertise across all technical disciplines.</p>
+          <div class="line"></div>
+        </div>
+        <div class="why-item reveal reveal-delay-2">
+          <div class="num">02</div>
+          <h4>High-Grade Materials &amp; Safety</h4>
+          <p>We use premium materials and follow strict safety protocols on every project.</p>
+          <div class="line"></div>
+        </div>
+        <div class="why-item reveal reveal-delay-3">
+          <div class="num">03</div>
+          <h4>Prompt Response &amp; Flexibility</h4>
+          <p>Quick turnaround times, flexible scheduling, and emergency support available.</p>
+          <div class="line"></div>
+        </div>
+        <div class="why-item reveal reveal-delay-4">
+          <div class="num">04</div>
+          <h4>Transparent Pricing &amp; AMCs</h4>
+          <p>Clear, upfront pricing with customizable packages and Annual Maintenance Contracts.</p>
+          <div class="line"></div>
+        </div>
+        <div class="why-item reveal reveal-delay-5">
+          <div class="num">05</div>
+          <h4>Turnkey Solutions</h4>
+          <p>From MEP to interiors and cleaning — one reliable partner for all your needs.</p>
+          <div class="line"></div>
+        </div>
+        <div class="why-item reveal reveal-delay-6">
+          <div class="num">06</div>
+          <h4>Customer Satisfaction</h4>
+          <p>Your satisfaction is our priority, reflected in our 5-star Google rating.</p>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  REVIEWS — Horizontal carousel
+  ============================================================ -->
+  <section class="section reviews-section" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title" id="reviews-title">What Our <span class="accent">Clients Say</span></h2>
+        <p class="section-subtitle mx-auto">
+          Real feedback from customers who trust our services.
+        </p>
+      </div>
+
+      <div class="reviews-carousel-wrap reveal">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- Injected by JS -->
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevReview" aria-label="Previous review">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="carousel-progress" id="reviewDots"></div>
+          <button class="carousel-btn" id="nextReview" aria-label="Next review">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  GALLERY — Masonry-style (updated with fresh imagery)
+  ============================================================ -->
+  <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title" id="gallery-title">Project <span class="accent">Showcase</span></h2>
+        <p class="section-subtitle mx-auto">
+          A look at our professional work across Dubai — residential, commercial, and industrial projects.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Interior construction work" loading="lazy" />
+          <div class="overlay">
+            <span class="label">Interior Fit-Out</span>
+            <span class="title">Gypsum ceiling &amp; partitions</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Technical maintenance" loading="lazy" />
+          <div class="overlay">
+            <span class="label">MEP &amp; HVAC</span>
+            <span class="title">Professional AC &amp; duct cleaning</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80" alt="Dubai property maintenance" loading="lazy" />
+          <div class="overlay">
+            <span class="label">Property Maintenance</span>
+            <span class="title">Villa &amp; commercial upkeep</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-4">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Construction project" loading="lazy" />
+          <div class="overlay">
+            <span class="label">Carpentry &amp; Joinery</span>
+            <span class="title">Custom wardrobes &amp; cabinetry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+  CONTACT — Dark with technical grid (updated contact details)
+  ============================================================ -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="contact-grid-bg" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left -->
+        <div class="contact-left">
+          <span class="section-label">Get in Touch</span>
+          <h2 id="contact-title">Let's Build Something <span class="accent">Reliable.</span></h2>
+          <p>
+            Need technical, maintenance or construction support in Dubai?
+            Get in touch with our team — we serve villas, apartments, offices, retail shops, and warehouses.
+          </p>
+
+          <div class="contact-rows">
+            <div class="contact-row" style="transition-delay:0.05s;">
+              <span class="num">01</span>
+              <span class="icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+              <div class="info">
+                <div class="label">Phone</div>
+                <div class="value">Contact us through the form</div>
+              </div>
+            </div>
+            <div class="contact-row" style="transition-delay:0.15s;">
+              <span class="num">02</span>
+              <span class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+              <div class="info">
+                <div class="label">Email</div>
+                <div class="value">Reach out via our contact form</div>
+              </div>
+            </div>
+            <div class="contact-row" style="transition-delay:0.25s;">
+              <span class="num">03</span>
+              <span class="icon"><i class="fas fa-map-pin" aria-hidden="true"></i></span>
+              <div class="info">
+                <div class="label">Location</div>
+                <div class="value">Bur Dubai, Al Mina, Dubai, UAE</div>
+              </div>
+            </div>
+            <div class="contact-row" style="transition-delay:0.35s;">
+              <span class="num">04</span>
+              <span class="icon"><i class="fas fa-clock" aria-hidden="true"></i></span>
+              <div class="info">
+                <div class="label">Working Hours</div>
+                <div class="value">Contact us for availability</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.123456!2d55.277511!3d25.2470342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43004900c619%3A0x9fff456bbe45dc21!2sA%20to%20Z%20Technical%20Services%20Co%20LLC!5e0!3m2!1sen!2sae!4v1644323456789"
+            title="A to Z Technical Services Co LLC location in Bur Dubai, Al Mina"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-right" id="contactFormPanel">
+        <h3>Request a Service</h3>
+        <p class="sub">Fill in the details and our team will get back to you.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Your full name" required />
+            <div class="error-msg">Please enter your full name.</div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Your phone number" required />
+              <div class="error-msg">Please enter your phone number.</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+              <div class="error-msg">Please enter a valid email address.</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="serviceSelect">Service Required</label>
+            <select id="serviceSelect" required>
+              <option value="">Select a service</option>
+              <option value="MEP Works">MEP Works</option>
+              <option value="Interior Fit-Out & Renovation">Interior Fit-Out & Renovation</option>
+              <option value="Carpentry & Joinery">Carpentry & Joinery</option>
+              <option value="Masonry & Civil Works">Masonry & Civil Works</option>
+              <option value="Handyman & General Maintenance">Handyman & General Maintenance</option>
+              <option value="Cleaning Services">Cleaning Services</option>
+              <option value="Property Maintenance">Property Maintenance</option>
+              <option value="Repair & Installation">Repair &amp; Installation</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="error-msg">Please select a service.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us about your project..." required></textarea>
+            <div class="error-msg">Please enter a message.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Request a Service
+            <span class="arrow"><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle" aria-hidden="true"></i>
+            Thank you! Your service request has been received.
+          </div>
+
+          <div class="form-note">
+            <i class="fas fa-lock" aria-hidden="true"></i>
+            Your information is secure and will only be used to respond to your enquiry.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+FINAL CTA — Diagonal/angled
+============================================================ -->
+<section class="final-cta" aria-labelledby="cta-title">
+  <div class="final-cta-bg" aria-hidden="true"></div>
+  <div class="container content">
+    <h2 id="cta-title">Need a Reliable <br />Technical Team?</h2>
+    <p>Get in touch with our team and let's discuss your project — from MEP to interiors.</p>
+    <a href="#contact" class="btn">
+      Get in Touch
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+         <img style="width: 100px; height: 60px;" src="https://scontent.flyp19-1.fna.fbcdn.net/v/t39.30808-6/277179031_1538211769896022_6529690177905646421_n.jpg?stp=dst-jpg_tt6&cstp=mx1211x1211&ctp=s1211x1211&_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=9WMSXOy0gq0Q7kNvwFF0cZa&_nc_oc=AdpluWxyLh1xB0xZWzUaBWpc9ZJRlPEXNtKYT8cQtY53RrkzuECcEoAbnbHyrMdgsRM&_nc_zt=23&_nc_ht=scontent.flyp19-1.fna&_nc_gid=UHavT5vWMVS6PQG8ZACaqw&_nc_ss=7b2a8&oh=00_AQGPok4AikvaHKY59OvnIJ7UwZp_Uafm_KWnt5Oe2Iw4Bg&oe=6A96F94C" alt="A to Z Technical Services Co LLC">
+        
+        <h3>
+          A to Z Technical
+          <small>Services Co LLC</small>
+        </h3>
+        <p>Multi-disciplinary technical services &amp; property maintenance — Dubai.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">MEP Works</a></li>
+          <li><a href="#services">Interior Fit-Out</a></li>
+          <li><a href="#services">Carpentry &amp; Joinery</a></li>
+          <li><a href="#services">Masonry &amp; Civil</a></li>
+          <li><a href="#services">Handyman &amp; AMCs</a></li>
+          <li><a href="#services">Cleaning Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Bur Dubai, Al Mina<br />Dubai, UAE</p>
+        <a href="https://www.google.com/maps/place/A+to+Z+Technical+Services+Co+LLC/data=!4m7!3m6!1s0x3e5f43004900c619:0x9fff456bbe45dc21!8m2!3d25.2470342!4d55.277511!16s%2Fg%2F11zg49txr_!19sChIJGcYASQBDXz4RIdxFvmtF_58"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="map-btn"
+        >
+        Google Maps <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 A to Z Technical Services Co LLC. All Rights Reserved.</span>
+    <span>Dubai, United Arab Emirates</span>
+  </div>
+</div>
+</footer>
+
+<!-- ============================================================
+BACK TO TOP
+============================================================ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- ============================================================
+JAVASCRIPT
+============================================================ -->
+<script>
+  (function() {
+    'use strict';
+
+    // ============================================================
+    // HEADER SCROLL
+    // ============================================================
+    const header = document.getElementById('header');
+
+    function handleHeaderScroll() {
+      if (window.scrollY > 40) {
+        header.classList.add('header--scrolled');
+      } else {
+        header.classList.remove('header--scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+    window.addEventListener('load', handleHeaderScroll);
+
+    // ============================================================
+    // MOBILE MENU
+    // ============================================================
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+
+    function openMobile() {
+      hamburger.classList.add('active');
+      mobileNav.classList.add('open');
+      mobileOverlay.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobile() {
+      hamburger.classList.remove('active');
+      mobileNav.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', function() {
+      if (mobileNav.classList.contains('open')) {
+        closeMobile();
+      } else {
+        openMobile();
+      }
+    });
+
+    mobileOverlay.addEventListener('click', closeMobile);
+
+    document.querySelectorAll('.mobile-nav-list a').forEach(function(link) {
+      link.addEventListener('click', closeMobile);
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+        closeMobile();
+      }
+    });
+
+    // ============================================================
+    // ACTIVE NAV LINK
+    // ============================================================
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function updateActiveNav() {
+      const scrollPos = window.scrollY + 120;
+      let currentId = 'hero';
+
+      sections.forEach(function(section) {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentId = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(function(link) {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    window.addEventListener('load', updateActiveNav);
+
+    // ============================================================
+    // SCROLL REVEAL
+    // ============================================================
+    const revealEls = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+      revealEls.forEach(function(el) {
+        observer.observe(el);
+      });
+    } else {
+      revealEls.forEach(function(el) {
+        el.classList.add('visible');
+      });
+    }
+
+    // ============================================================
+    // SMOOTH SCROLL
+    // ============================================================
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const offsetTop = target.offsetTop - 80;
+          window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+          history.pushState(null, null, href);
+        }
+      });
+    });
+
+    // ============================================================
+    // CONTACT SECTION ANIMATIONS
+    // ============================================================
+    const contactLeftH2 = document.querySelector('.contact-left h2');
+    const contactRows = document.querySelectorAll('.contact-row');
+    const contactFormPanel = document.getElementById('contactFormPanel');
+
+    if ('IntersectionObserver' in window) {
+      const contactObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            if (contactLeftH2) {
+              setTimeout(function() {
+                contactLeftH2.classList.add('visible');
+              }, 200);
+            }
+            contactRows.forEach(function(row, index) {
+              setTimeout(function() {
+                row.classList.add('visible');
+              }, 300 + index * 150);
+            });
+            if (contactFormPanel) {
+              setTimeout(function() {
+                contactFormPanel.classList.add('visible');
+              }, 400);
+            }
+          }
+        });
+      }, { threshold: 0.1 });
+
+      const contactSection = document.querySelector('.contact-section');
+      if (contactSection) {
+        contactObserver.observe(contactSection);
+      }
+    } else {
+      if (contactLeftH2) contactLeftH2.classList.add('visible');
+      contactRows.forEach(function(row) { row.classList.add('visible'); });
+      if (contactFormPanel) contactFormPanel.classList.add('visible');
+    }
+
+    // ============================================================
+    // REVIEWS DATA
+    // ============================================================
+    const reviewsData = [{
+      name: 'Sarah M.',
+      rating: 5,
+      text: 'Excellent service from start to finish. The team was professional, punctual, and the quality of work was outstanding. Highly recommend A to Z Technical Services!'
+    }, {
+      name: 'James R.',
+      rating: 5,
+      text: 'Reliable and professional team. They handled our interior construction project with great attention to detail. Communication was clear throughout.'
+    }, {
+      name: 'Lina K.',
+      rating: 5,
+      text: 'Very impressed with their technical maintenance services. Quick response, fair pricing, and excellent workmanship. Will definitely use them again.'
+    }, {
+      name: 'Ahmed S.',
+      rating: 5,
+      text: 'Professional, reliable, and quality-focused. They completed our project on time and exceeded our expectations. A truly trusted technical services partner.'
+    }];
+
+    // ============================================================
+    // BUILD REVIEW CARDS
+    // ============================================================
+    const track = document.getElementById('reviewsTrack');
+    const dotsContainer = document.getElementById('reviewDots');
+
+    reviewsData.forEach(function(review, index) {
+      const card = document.createElement('div');
+      card.className = 'review-card';
+      if (index === 0) card.classList.add('active');
+
+      const stars = '★★★★★';
+      card.innerHTML = `
+          <div class="stars">${stars}</div>
+          <div class="name">${review.name}</div>
+          <div class="text">${review.text}</div>
+          <div class="badge"><i class="fab fa-google" aria-hidden="true"></i> Google Review</div>
+        `;
+      track.appendChild(card);
+
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (index === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to review ' + (index + 1));
+      dot.dataset.index = index;
+      dot.addEventListener('click', function() {
+        goToReview(parseInt(this.dataset.index));
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    // ============================================================
+    // CAROUSEL LOGIC
+    // ============================================================
+    let currentReviewIndex = 0;
+    let autoplayInterval = null;
+    const autoplayDelay = 5000;
+
+    const cards = document.querySelectorAll('.review-card');
+    const totalCards = cards.length;
+    const prevBtn = document.getElementById('prevReview');
+    const nextBtn = document.getElementById('nextReview');
+    const dots = document.querySelectorAll('.dot');
+
+    function getVisibleCount() {
+      const width = window.innerWidth;
+      if (width < 768) return 1;
+      if (width < 1024) return 2;
+      return 3;
+    }
+
+    function updateCarousel() {
+      const visibleCount = getVisibleCount();
+      const gap = 24;
+      const cardWidth = cards[0]?.offsetWidth || 0;
+      const offset = currentReviewIndex * (cardWidth + gap);
+      track.style.transform = 'translateX(-' + offset + 'px)';
+
+      cards.forEach(function(card, i) {
+        const isActive = i >= currentReviewIndex && i < currentReviewIndex + visibleCount;
+        card.classList.toggle('active', isActive);
+      });
+
+      const maxIndex = Math.max(0, totalCards - visibleCount);
+      prevBtn.disabled = currentReviewIndex === 0;
+      nextBtn.disabled = currentReviewIndex >= maxIndex;
+
+      dots.forEach(function(dot, i) {
+        dot.classList.toggle('active', i === currentReviewIndex);
+      });
+    }
+
+    function goToReview(index) {
+      const visibleCount = getVisibleCount();
+      const maxIndex = Math.max(0, totalCards - visibleCount);
+      if (index < 0) index = 0;
+      if (index > maxIndex) index = maxIndex;
+      currentReviewIndex = index;
+      updateCarousel();
+      resetAutoplay();
+    }
+
+    function nextReview() {
+      const visibleCount = getVisibleCount();
+      const maxIndex = Math.max(0, totalCards - visibleCount);
+      if (currentReviewIndex < maxIndex) {
+        goToReview(currentReviewIndex + 1);
+      } else {
+        goToReview(0);
+      }
+    }
+
+    function prevReview() {
+      if (currentReviewIndex > 0) {
+        goToReview(currentReviewIndex - 1);
+      } else {
+        const visibleCount = getVisibleCount();
+        const maxIndex = Math.max(0, totalCards - visibleCount);
+        goToReview(maxIndex);
+      }
+    }
+
+    function resetAutoplay() {
+      if (autoplayInterval) {
+        clearInterval(autoplayInterval);
+        autoplayInterval = null;
+      }
+      startAutoplay();
+    }
+
+    function startAutoplay() {
+      if (autoplayInterval) return;
+      autoplayInterval = setInterval(function() {
+        const visibleCount = getVisibleCount();
+        const maxIndex = Math.max(0, totalCards - visibleCount);
+        if (currentReviewIndex >= maxIndex) {
+          goToReview(0);
+        } else {
+          nextReview();
+        }
+      }, autoplayDelay);
+    }
+
+    function stopAutoplay() {
+      if (autoplayInterval) {
+        clearInterval(autoplayInterval);
+        autoplayInterval = null;
+      }
+    }
+
+    prevBtn.addEventListener('click', function() {
+      prevReview();
+      resetAutoplay();
+    });
+
+    nextBtn.addEventListener('click', function() {
+      nextReview();
+      resetAutoplay();
+    });
+
+    const carouselWrap = document.querySelector('.reviews-carousel-wrap');
+    carouselWrap.addEventListener('mouseenter', stopAutoplay);
+    carouselWrap.addEventListener('mouseleave', startAutoplay);
+
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(updateCarousel, 100);
+    });
+
+    setTimeout(updateCarousel, 100);
+    window.addEventListener('load', function() {
+      setTimeout(updateCarousel, 200);
+      startAutoplay();
+    });
+
+    // ============================================================
+    // CONTACT FORM
+    // ============================================================
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      let isValid = true;
+      const fields = contactForm.querySelectorAll('input, select, textarea');
+
+      fields.forEach(function(field) {
+        const group = field.closest('.form-group');
+        if (group) {
+          group.classList.remove('error');
+          if (field.hasAttribute('required') && !field.value.trim()) {
+            group.classList.add('error');
+            isValid = false;
+          }
+          if (field.type === 'email' && field.value.trim()) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(field.value.trim())) {
+              group.classList.add('error');
+              isValid = false;
+            }
+          }
+        }
+      });
+
+      if (isValid) {
+        formSuccess.classList.add('show');
+        contactForm.reset();
+        setTimeout(function() {
+          formSuccess.classList.remove('show');
+        }, 6000);
+      } else {
+        const firstError = contactForm.querySelector('.form-group.error');
+        if (firstError) {
+          firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    });
+
+    contactForm.querySelectorAll('input, select, textarea').forEach(function(field) {
+      field.addEventListener('input', function() {
+        const group = this.closest('.form-group');
+        if (group) {
+          group.classList.remove('error');
+        }
+      });
+      field.addEventListener('change', function() {
+        const group = this.closest('.form-group');
+        if (group) {
+          group.classList.remove('error');
+        }
+      });
+    });
+
+    // ============================================================
+    // BACK TO TOP
+    // ============================================================
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ============================================================
+    // CONSOLE
+    // ============================================================
+    console.log('A to Z Technical Services Co LLC – Premium Website loaded.');
+    console.log('Comprehensive service portfolio — MEP, interiors, carpentry, masonry, handyman, cleaning.');
+
+  })();
+</script>
+
+</body>
+</html>
