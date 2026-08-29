@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MS Technical Services LLC | Property Maintenance in Dubai</title>
+    <title>MS Technical Services LLC | Property Maintenance Dubai</title>
     <meta name="description" content="Professional property maintenance services in Dubai including plumbing, electrical, painting and general maintenance solutions." />
 
     <!-- Google Fonts -->
@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome 6 (Free) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
         /* ============================================================
-               CSS VARIABLES — PROFESSIONAL RED PALETTE
-            ============================================================ */
+           CSS VARIABLES
+        ============================================================ */
         :root {
             --color-primary: #1a1a1e;
             --color-primary-light: #2a2a30;
@@ -46,8 +46,8 @@
         }
 
         /* ============================================================
-               RESET & BASE
-            ============================================================ */
+           RESET & BASE
+        ============================================================ */
         *,
         *::before,
         *::after {
@@ -88,8 +88,8 @@
         }
 
         /* ============================================================
-               UTILITY
-            ============================================================ */
+           UTILITY
+        ============================================================ */
         .section-label {
             display: inline-block;
             font-size: 0.65rem;
@@ -147,8 +147,8 @@
         }
 
         /* ============================================================
-               BUTTONS
-            ============================================================ */
+           BUTTONS
+        ============================================================ */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -237,8 +237,8 @@
         }
 
         /* ============================================================
-               HEADER — Transparent → Solid on scroll
-            ============================================================ */
+           HEADER
+        ============================================================ */
         .header {
             position: fixed;
             top: 0;
@@ -386,7 +386,6 @@
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        /* Hamburger */
         .hamburger {
             display: none;
             flex-direction: column;
@@ -404,9 +403,6 @@
             border-radius: 1px;
             transition: var(--transition);
         }
-        .header--scrolled .hamburger span {
-            background: #fff;
-        }
         .hamburger.active span:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
         }
@@ -418,7 +414,6 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* Mobile nav */
         .mobile-nav-overlay {
             position: fixed;
             top: 0;
@@ -481,31 +476,60 @@
         }
 
         /* ============================================================
-               HERO — Split Screen
-            ============================================================ */
+           HERO — Fixed Background + Left Card (ONLY HERE)
+        ============================================================ */
         .hero {
             position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: var(--color-primary);
             overflow: hidden;
+            z-index: 1;
         }
 
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            min-height: 100vh;
-            align-items: center;
+            height: 100%;
+            z-index: 0;
+            background: url('https://plus.unsplash.com/premium_photo-1679856789403-c6fd2d5ec83c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVhbCUyMGVzdGF0ZSUyMGFnZW50fGVufDB8fDB8fHww') center/cover no-repeat;
+            filter: brightness(0.5);
         }
 
-        .hero-left {
-            padding: 120px 48px 80px 24px;
-            color: #fff;
+        .hero-content {
             position: relative;
             z-index: 2;
+            width: 100%;
+            padding: 120px 24px 80px;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .hero-card {
+            max-width: 540px;
+            background: rgba(26, 26, 30, 0.85);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            padding: 48px 44px;
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: #fff;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: fadeUp 0.8s ease;
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero-eyebrow {
@@ -522,7 +546,7 @@
 
         .hero-title {
             font-family: var(--font-display);
-            font-size: 4rem;
+            font-size: 3.8rem;
             font-weight: 700;
             line-height: 1.05;
             letter-spacing: -1.5px;
@@ -569,63 +593,15 @@
             font-size: 0.85rem;
         }
 
-        .hero-right {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-            background: var(--color-primary-light);
-        }
-        .hero-right img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.6;
-            transform: scale(1.02);
-            transition: transform 8s ease;
-        }
-        .hero:hover .hero-right img {
-            transform: scale(1);
-        }
-
-        .hero-floating-badge {
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
-            background: rgba(26, 26, 30, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: var(--radius-sm);
-            padding: 18px 24px;
-            color: #fff;
-            text-align: center;
-            min-width: 120px;
-            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
-        }
-        .hero-floating-badge .big {
-            font-family: var(--font-display);
-            font-size: 2rem;
-            font-weight: 700;
-            line-height: 1;
-            color: var(--color-accent-light);
-        }
-        .hero-floating-badge .big span {
-            font-size: 1rem;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.5);
-        }
-        .hero-floating-badge .label {
-            font-size: 0.7rem;
-            opacity: 0.6;
-            letter-spacing: 0.5px;
-        }
-
         /* ============================================================
-               TRUST STRIP
-            ============================================================ */
+           TRUST STRIP
+        ============================================================ */
         .trust-strip {
             background: var(--color-bg-white);
             padding: 28px 0;
             border-bottom: 1px solid var(--color-border);
+            position: relative;
+            z-index: 2;
         }
 
         .trust-grid {
@@ -681,8 +657,8 @@
         }
 
         /* ============================================================
-               ABOUT — Editorial
-            ============================================================ */
+           ABOUT
+        ============================================================ */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -705,17 +681,6 @@
         }
         .about-image-wrap:hover img {
             transform: scale(1.02);
-        }
-
-        .about-image-wrap .image-border {
-            position: absolute;
-            top: 12px;
-            left: 12px;
-            right: 12px;
-            bottom: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: var(--radius-sm);
-            pointer-events: none;
         }
 
         .about-content .section-label {
@@ -762,8 +727,8 @@
         }
 
         /* ============================================================
-               SERVICES — 4 cards in one row
-            ============================================================ */
+           SERVICES
+        ============================================================ */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -848,12 +813,14 @@
         }
 
         /* ============================================================
-               WHY CHOOSE US — Dark navy background
-            ============================================================ */
+           WHY CHOOSE US
+        ============================================================ */
         .why-section {
             background: var(--color-primary);
             color: #fff;
             padding: 100px 0;
+            position: relative;
+            z-index: 2;
         }
 
         .why-section .section-label {
@@ -923,10 +890,12 @@
         }
 
         /* ============================================================
-               PROCESS — Timeline
-            ============================================================ */
+           PROCESS
+        ============================================================ */
         .process-section {
             background: var(--color-bg-white);
+            position: relative;
+            z-index: 2;
         }
 
         .process-timeline {
@@ -1008,10 +977,12 @@
         }
 
         /* ============================================================
-               REVIEWS
-            ============================================================ */
+           REVIEWS
+        ============================================================ */
         .reviews-section {
             background: var(--color-bg-section);
+            position: relative;
+            z-index: 2;
         }
 
         .reviews-header {
@@ -1169,50 +1140,12 @@
         }
 
         /* ============================================================
-               VISUAL BREAK — Parallax
-            ============================================================ */
-        .visual-break {
-            position: relative;
-            height: 480px;
-            overflow: hidden;
-            background: var(--color-primary);
-        }
-        .visual-break img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.3;
-            transform: scale(1.02);
-        }
-        .visual-break .overlay {
-            position: absolute;
-            inset: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-            padding: 24px;
-        }
-        .visual-break .overlay h2 {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 0.6rem;
-        }
-        .visual-break .overlay p {
-            opacity: 0.6;
-            font-size: 1.1rem;
-            margin-bottom: 1.6rem;
-        }
-
-        /* ============================================================
-               CONTACT — Split
-            ============================================================ */
+           CONTACT
+        ============================================================ */
         .contact-section {
             background: var(--color-bg-white);
+            position: relative;
+            z-index: 2;
         }
 
         .contact-grid {
@@ -1370,11 +1303,13 @@
         }
 
         /* ============================================================
-               LOCATION / MAP
-            ============================================================ */
+           LOCATION
+        ============================================================ */
         .location-section {
             background: var(--color-bg-section);
             padding: 80px 0;
+            position: relative;
+            z-index: 2;
         }
 
         .location-grid {
@@ -1424,7 +1359,7 @@
         .location-map-area .map-bg {
             position: absolute;
             inset: 0;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJhIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxwYXRoIGQ9Ik0wIDQwTDQwIDBNNDAgNDBMMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==');
+            background: url('https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJlYWwlMjBlc3RhdGUlMjBhZ2VudHxlbnwwfHwwfHx8MA%3D%3D');
             opacity: 0.3;
         }
         .location-map-area .content {
@@ -1448,19 +1383,20 @@
         }
 
         /* ============================================================
-               FINAL CTA
-            ============================================================ */
+           FINAL CTA
+        ============================================================ */
         .cta-final {
             background: var(--color-primary);
             padding: 100px 0;
             position: relative;
             overflow: hidden;
+            z-index: 2;
         }
         .cta-final::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJiIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0wIDBMNjAgNjBNNjAgMEwwIDYwIiBzdHJva2U9InJnYmEoMTkyLDU3LDQzLDAuMDQpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYikiLz48L3N2Zz4=');
+            background: url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlYWwlMjBlc3RhdGUlMjBhZ2VudHxlbnwwfHwwfHx8MA%3D%3D');
             opacity: 0.5;
         }
 
@@ -1493,12 +1429,14 @@
         }
 
         /* ============================================================
-               FOOTER
-            ============================================================ */
+           FOOTER
+        ============================================================ */
         .footer {
             background: #0a1420;
             color: rgba(255, 255, 255, 0.6);
             padding: 56px 0 24px;
+            position: relative;
+            z-index: 2;
         }
 
         .footer-grid {
@@ -1583,8 +1521,8 @@
         }
 
         /* ============================================================
-               BACK TO TOP
-            ============================================================ */
+           BACK TO TOP
+        ============================================================ */
         .back-to-top {
             position: fixed;
             bottom: 28px;
@@ -1615,8 +1553,8 @@
         }
 
         /* ============================================================
-               SCROLL REVEAL
-            ============================================================ */
+           SCROLL REVEAL
+        ============================================================ */
         .reveal {
             opacity: 0;
             transform: translateY(36px);
@@ -1644,33 +1582,12 @@
         }
 
         /* ============================================================
-               RESPONSIVE
-            ============================================================ */
+           RESPONSIVE
+        ============================================================ */
         @media (max-width: 1024px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                min-height: auto;
-            }
-            .hero-left {
-                padding: 100px 24px 60px;
-                min-height: 70vh;
-            }
-            .hero-right {
-                height: 50vh;
-                min-height: 300px;
-            }
             .hero-title {
-                font-size: 3.2rem;
+                font-size: 3rem;
             }
-            .hero-floating-badge {
-                bottom: 20px;
-                right: 20px;
-                padding: 14px 20px;
-            }
-            .hero-floating-badge .big {
-                font-size: 1.6rem;
-            }
-
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1708,9 +1625,6 @@
                 grid-template-columns: 1fr 1fr;
                 gap: 32px;
             }
-            .visual-break .overlay h2 {
-                font-size: 2.4rem;
-            }
         }
 
         @media (max-width: 900px) {
@@ -1745,12 +1659,17 @@
                 display: flex;
             }
 
-            .hero-left {
-                padding: 80px 20px 40px;
-                min-height: 60vh;
+            .hero-content {
+                padding: 100px 16px 60px;
+                min-height: auto;
+            }
+            .hero-card {
+                padding: 32px 24px;
+                max-width: 100%;
+                margin: 0;
             }
             .hero-title {
-                font-size: 2.4rem;
+                font-size: 2.2rem;
             }
             .hero-text {
                 font-size: 1rem;
@@ -1758,19 +1677,6 @@
             .hero-buttons .btn {
                 width: 100%;
                 justify-content: center;
-            }
-            .hero-right {
-                height: 40vh;
-                min-height: 220px;
-            }
-            .hero-floating-badge {
-                bottom: 16px;
-                right: 16px;
-                padding: 12px 16px;
-                min-width: 80px;
-            }
-            .hero-floating-badge .big {
-                font-size: 1.4rem;
             }
 
             .trust-grid {
@@ -1850,16 +1756,6 @@
             }
             .reviews-rating-block .stars-big {
                 font-size: 1.3rem;
-            }
-
-            .visual-break {
-                height: 340px;
-            }
-            .visual-break .overlay h2 {
-                font-size: 1.8rem;
-            }
-            .visual-break .overlay p {
-                font-size: 0.95rem;
             }
 
             .contact-form-side {
@@ -1958,10 +1854,6 @@
                 font-size: 2.2rem;
             }
 
-            .visual-break .overlay h2 {
-                font-size: 1.4rem;
-            }
-
             .contact-image-side .content h3 {
                 font-size: 1.3rem;
             }
@@ -1985,8 +1877,8 @@
         }
 
         /* ============================================================
-               PREFERS REDUCED MOTION
-            ============================================================ */
+           PREFERS REDUCED MOTION
+        ============================================================ */
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,
@@ -2004,9 +1896,6 @@
             }
             .process-timeline .progress-line {
                 transition: none !important;
-            }
-            .hero-right img {
-                transform: none !important;
             }
         }
     </style>
@@ -2064,12 +1953,12 @@
     </nav>
 
     <!-- ============================================================
-    HERO — Split Screen
+    HERO — Fixed Background + Left Card (ONLY HERE)
     ============================================================ -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
-        <div class="hero-grid">
-            <!-- Left -->
-            <div class="hero-left">
+        <div class="hero-bg"></div>
+        <div class="hero-content container">
+            <div class="hero-card">
                 <span class="hero-eyebrow">Property Maintenance • Dubai</span>
                 <h1 class="hero-title" id="hero-title">
                     Reliable Property Maintenance,<br /><span class="accent">Done Right.</span>
@@ -2094,19 +1983,6 @@
                     <span class="label">Google Rating</span>
                     <span class="label" style="opacity:0.3;">•</span>
                     <span class="label">Trusted by Dubai customers</span>
-                </div>
-            </div>
-
-            <!-- Right -->
-            <div class="hero-right">
-                <img
-                src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm6mI6xiLfOgzsnq2jsyeOcjQJEWfeRIVvu3E60bHHzAFm3JX0al8VsYbU_Uj12XMGySaS4oMgvGit1GELTN0mFMofE-XoRS_B4PeqL_bv-i87XlUKBikQq9eCz1AwXVkHMeJ8cMGknp6ri=w408-h544-k-no"
-                alt="MS Technical Services property maintenance team"
-                loading="eager"
-                />
-                <div class="hero-floating-badge">
-                    <div class="big">4.9 <span>★</span></div>
-                    <div class="label">Google Rating</div>
                 </div>
             </div>
         </div>
@@ -2151,14 +2027,14 @@
     </section>
 
     <!-- ============================================================
-    ABOUT — Editorial
+    ABOUT
     ============================================================ -->
     <section class="section section--white" id="about" aria-labelledby="about-title">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image-wrap reveal">
                     <img
-                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
+                    src="https://plus.unsplash.com/premium_photo-1661432432946-64cdda213bd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVhbCUyMGVzdGF0ZSUyMGFnZW50fGVufDB8fDB8fHww"
                     alt="Professional property maintenance work in Dubai"
                     loading="lazy"
                     />
@@ -2201,7 +2077,7 @@
     </section>
 
     <!-- ============================================================
-    SERVICES — 4 cards in one row
+    SERVICES
     ============================================================ -->
     <section class="section section--light" id="services" aria-labelledby="services-title">
         <div class="container">
@@ -2250,7 +2126,7 @@
     </section>
 
     <!-- ============================================================
-    WHY CHOOSE US — Dark navy background
+    WHY CHOOSE US
     ============================================================ -->
     <section class="why-section" id="why" aria-labelledby="why-title">
         <div class="container">
@@ -2292,7 +2168,7 @@
     </section>
 
     <!-- ============================================================
-    PROCESS — Timeline
+    PROCESS
     ============================================================ -->
     <section class="section process-section" id="process" aria-labelledby="process-title">
         <div class="container">
@@ -2384,19 +2260,7 @@
 </section>
 
 <!-- ============================================================
-VISUAL BREAK
-============================================================ -->
-<section class="visual-break" aria-labelledby="break-title">
-    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&q=80" alt="Dubai property maintenance" loading="lazy" />
-    <div class="overlay">
-        <h2 id="break-title">Keeping Dubai Properties<br />Running Smoothly</h2>
-        <p>Professional maintenance support you can count on.</p>
-        <a href="#contact" class="btn btn-primary btn-sm">Request a Service</a>
-    </div>
-</section>
-
-<!-- ============================================================
-CONTACT — Split
+CONTACT
 ============================================================ -->
 <section class="section contact-section" id="contact" aria-labelledby="contact-title">
     <div class="container">
@@ -2411,7 +2275,7 @@ CONTACT — Split
         <div class="contact-grid">
             <!-- Left: Image + overlay -->
             <div class="contact-image-side reveal">
-                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80" alt="Professional maintenance services" loading="lazy" />
+                <img src="https://plus.unsplash.com/premium_photo-1661436240143-3153db271193?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlYWwlMjBlc3RhdGUlMjBhZ2VudHxlbnwwfHwwfHx8MA%3D%3D" alt="Professional maintenance services" loading="lazy" />
                 <div class="content">
                     <h3>Need Property Maintenance?</h3>
                     <p>Tell us what you need and our team will get back to you.</p>
@@ -2489,7 +2353,7 @@ CONTACT — Split
 </section>
 
 <!-- ============================================================
-LOCATION SECTION
+LOCATION
 ============================================================ -->
 <section class="location-section" id="location" aria-labelledby="location-title">
     <div class="container">
@@ -2534,7 +2398,6 @@ LOCATION SECTION
             </a>
         </div>
     </div>
-</div>
 </div>
 </section>
 
@@ -2764,7 +2627,6 @@ JAVASCRIPT
                 processAnimated = true;
                 processTimeline.classList.add('animated');
 
-                // Animate steps one by one
                 processSteps.forEach(function(step, index) {
                     setTimeout(function() {
                         step.classList.add('active');
